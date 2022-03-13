@@ -1,0 +1,5100 @@
+{
+  "prologue": {
+    "name": "Prologue",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Drive up",
+                "debug_id": "-1",
+                "image": "0000"
+              },
+              "2": {
+                "name": "Broken driveway I",
+                "debug_id": "0",
+                "image": "0001"
+              },
+              "3": {
+                "name": "Birds",
+                "debug_id": "0b",
+                "image": "0002"
+              },
+              "4": {
+                "name": "Broken driveway II",
+                "debug_id": "1",
+                "image": "0003"
+              },
+              "5": {
+                "name": "Granny meeting",
+                "debug_id": "2",
+                "image": "0004"
+              },
+              "6": {
+                "name": "Learn to dash",
+                "debug_id": "3",
+                "image": "0005"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "city": {
+    "chapter_no": 1,
+    "name": "Forsaken City",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Begin",
+                "debug_id": "1",
+                "image": "0001",
+                "categories": ["any", "arb", "hundo"]                
+              },
+              "2": {
+                "name": "Berry and spring",
+                "debug_id": "2",
+                "image": "0002",
+                "categories": ["any", "arb", "hundo"]                
+              },
+              "3": {
+                "name": "Floating platforms",
+                "debug_id": "3",
+                "image": "0003",
+                "categories": ["any", "arb", "hundo"]                
+              },
+              "4": {
+                "name": "Zipper intro",
+                "debug_id": "4",
+                "image": "0004",
+                "categories": ["any", "arb", "hundo"]                
+              },
+              "5": {
+                "name": "Crumbling winged berry",
+                "debug_id": "3b",
+                "image": "0005",
+                "categories": ["any", "arb", "hundo"]                
+              },
+              "6": {
+                "name": "Zipper and top-left berry",
+                "debug_id": "5",
+                "image": "0006",
+                "categories": ["any", "arb", "hundo"]                
+              },
+              "7": {
+                "name": "Up and around berry",
+                "debug_id": "5z",
+                "image": "0007",
+                "categories": ["arb", "hundo"]                
+              },
+              "8": {
+                "name": "Launch berry",
+                "debug_id": "5a",
+                "image": "0008",
+                "categories": ["arb", "hundo"]                
+              }
+            }
+          },
+          "2": {
+            "name": "Crossing",
+            "abbreviation": "CR",
+            "rooms": {
+              "1": {
+                "name": "Dashless is hard",
+                "debug_id": "6",
+                "image": "0009"
+              },
+              "2": {
+                "name": "Over spike pit",
+                "debug_id": "6z",
+                "image": "0010"
+              },
+              "3": {
+                "name": "Theo the Adventurer",
+                "debug_id": "6zb",
+                "image": "0011"
+              },
+              "4": {
+                "name": "Berry above Theo",
+                "debug_id": "7zb",
+                "image": "0012"
+              },
+              "5": {
+                "name": "Coffee shop",
+                "debug_id": "6a",
+                "image": "0013"
+              },
+              "6": {
+                "name": "Zippers & Spikes",
+                "debug_id": "6b",
+                "image": "0014"
+              },
+              "7": {
+                "name": "Zipper gate",
+                "debug_id": "s0",
+                "image": "0015"
+              },
+              "8": {
+                "name": "Heart room",
+                "debug_id": "s1",
+                "image": "0016"
+              },
+              "9": {
+                "name": "Springs and path fork",
+                "debug_id": "6c",
+                "image": "0017"
+              },
+              "10": {
+                "name": "Falling ice",
+                "debug_id": "7",
+                "image": "0018"
+              },
+              "11": {
+                "name": "Berry path I",
+                "debug_id": "7z",
+                "image": "0019"
+              },
+              "12": {
+                "name": "Berry path II",
+                "debug_id": "8z",
+                "image": "0020"
+              },
+              "13": {
+                "name": "Berry path III",
+                "debug_id": "8zb",
+                "image": "0021"
+              },
+              "14": {
+                "name": "Junction",
+                "debug_id": "8",
+                "image": "0022"
+              },
+              "15": {
+                "name": "Tri-zip berry",
+                "debug_id": "7a",
+                "image": "0023"
+              },
+              "16": {
+                "name": "Zip around berry",
+                "debug_id": "9z",
+                "image": "0024"
+              },
+              "17": {
+                "name": "Ceiling zippers",
+                "debug_id": "8b",
+                "image": "0025"
+              },
+              "18": {
+                "name": "Up and right",
+                "debug_id": "9",
+                "image": "0026"
+              }
+            }
+          },
+          "3": {
+            "name": "Chasm",
+            "abbreviation": "CH",
+            "rooms": {
+              "1": {
+                "name": "Mind the gap",
+                "debug_id": "9b",
+                "image": "0027"
+              },
+              "2": {
+                "name": "Winged zip berry",
+                "debug_id": "9c",
+                "image": "0028"
+              },
+              "3": {
+                "name": "Narrow spike shaft",
+                "debug_id": "10",
+                "image": "0029"
+              },
+              "4": {
+                "name": "One way spikes",
+                "debug_id": "10z",
+                "image": "0030"
+              },
+              "5": {
+                "name": "Cliff berry",
+                "debug_id": "10zb",
+                "image": "0031"
+              },
+              "6": {
+                "name": "Underpass",
+                "debug_id": "11",
+                "image": "0032"
+              },
+              "7": {
+                "name": "Cassette room",
+                "debug_id": "11z",
+                "image": "0033"
+              },
+              "8": {
+                "name": "Around and up",
+                "debug_id": "10a",
+                "image": "0034"
+              },
+              "9": {
+                "name": "Overpass",
+                "debug_id": "11",
+                "image": "0035"
+              },
+              "10": {
+                "name": "Snow blocks",
+                "debug_id": "12",
+                "image": "0036"
+              },
+              "11": {
+                "name": "Dash crystal berry",
+                "debug_id": "12z",
+                "image": "0037"
+              },
+              "12": {
+                "name": "Hanging platforms",
+                "debug_id": "12a",
+                "image": "0038"
+              },
+              "13": {
+                "name": "Monument",
+                "debug_id": "end",
+                "image": "0041"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Dual zippers",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Over and under",
+                "debug_id": "02",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Three zipper jumps",
+                "debug_id": "02b",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Stamina jumps",
+                "debug_id": "03",
+                "image": "0005"
+              }
+            }
+          },
+          "2": {
+            "name": "Contraption",
+            "abbreviation": "CT",
+            "rooms": {
+              "1": {
+                "name": "Contraption",
+                "debug_id": "04",
+                "image": "0006"
+              },
+              "2": {
+                "name": "Zip over and up",
+                "debug_id": "05",
+                "image": "0007"
+              },
+              "3": {
+                "name": "One way spikes",
+                "debug_id": "05b",
+                "image": "0008"
+              },
+              "4": {
+                "name": "Stamina jump puzzle",
+                "debug_id": "06",
+                "image": "0009"
+              },
+              "5": {
+                "name": "Obstacle spikes",
+                "debug_id": "07",
+                "image": "0010"
+              }
+            }
+          },
+          "3": {
+            "name": "Scrap Pit",
+            "abbreviation": "SP",
+            "rooms": {
+              "1": {
+                "name": "Crumble block dash",
+                "debug_id": "08",
+                "image": "0011"
+              },
+              "2": {
+                "name": "Little zippers",
+                "debug_id": "08b",
+                "image": "0012"
+              },
+              "3": {
+                "name": "Hanging Zippers",
+                "debug_id": "09",
+                "image": "0013"
+              },
+              "4": {
+                "name": "One way zip",
+                "debug_id": "10",
+                "image": "0014"
+              },
+              "5": {
+                "name": "Zipper launches",
+                "debug_id": "11",
+                "image": "0015"
+              },
+              "6": {
+                "name": "Cassette room",
+                "debug_id": "end",
+                "image": "0017"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Zipper jumps",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Open space",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Heart room",
+                "debug_id": "02",
+                "image": "0003"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "site": {
+    "chapter_no": 2,
+    "name": "Old Site",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Monument",
+                "debug_id": "start",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Sheer wall",
+                "debug_id": "s0",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Transition overhang",
+                "debug_id": "s1",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Heart room",
+                "debug_id": "s2",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Fork",
+                "debug_id": "0",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Shaft entrance",
+                "debug_id": "1",
+                "image": "0006"
+              },
+              "7": {
+                "name": "Iced in",
+                "debug_id": "2",
+                "image": "0007"
+              },
+              "8": {
+                "name": "Shaft",
+                "debug_id": "d0",
+                "image": "0008"
+              },
+              "9": {
+                "name": "Mirror path I",
+                "debug_id": "d7",
+                "image": "0009"
+              },
+              "10": {
+                "name": "Mirror path II",
+                "debug_id": "d8",
+                "image": "0010"
+              },
+              "11": {
+                "name": "Berry Tunnel",
+                "debug_id": "d3",
+                "image": "0011"
+              },
+              "12": {
+                "name": "Mirror",
+                "debug_id": "d3",
+                "image": "0012"
+              },
+              "13": {
+                "name": "Dream blocks intro",
+                "debug_id": "d2",
+                "image": "0013"
+              },
+              "14": {
+                "name": "Cassette room",
+                "debug_id": "d9",
+                "image": "0014"
+              },
+              "15": {
+                "name": "Lower left berry",
+                "debug_id": "d6",
+                "image": "0015"
+              },
+              "16": {
+                "name": "Seed puzzle",
+                "debug_id": "d1",
+                "image": "0016"
+              },
+              "17": {
+                "name": "Zipper dream berry",
+                "debug_id": "d4",
+                "image": "0017"
+              },
+              "18": {
+                "name": "Dream column berry",
+                "debug_id": "d5",
+                "image": "0018"
+              },
+              "19": {
+                "name": "Well, what now?",
+                "debug_id": "1",
+                "image": "0019"
+              },
+              "20": {
+                "name": "Dream puzzle",
+                "debug_id": "3x",
+                "image": "0020"
+              }
+            }
+          },
+          "2": {
+            "name": "Intervention",
+            "abbreviation": "IV",
+            "rooms": {
+              "1": {
+                "name": "Part of you",
+                "debug_id": "3",
+                "image": "0021"
+              },
+              "2": {
+                "name": "Case and berry",
+                "debug_id": "4",
+                "image": "0022"
+              },
+              "3": {
+                "name": "Chase and berry tunnel",
+                "debug_id": "5",
+                "image": "0023"
+              },
+              "4": {
+                "name": "Chase and switch",
+                "debug_id": "6",
+                "image": "0024"
+              },
+              "5": {
+                "name": "Chase and switches",
+                "debug_id": "7",
+                "image": "0025"
+              },
+              "6": {
+                "name": "Chase and spring",
+                "debug_id": "8",
+                "image": "0026"
+              },
+              "7": {
+                "name": "Chase and ice",
+                "debug_id": "9",
+                "image": "0027"
+              },
+              "8": {
+                "name": "Berry and peace",
+                "debug_id": "9b",
+                "image": "0028"
+              },
+              "9": {
+                "name": "Chase downwards",
+                "debug_id": "10",
+                "image": "0029"
+              },
+              "10": {
+                "name": "Chased outside",
+                "debug_id": "2",
+                "image": "0030"
+              },
+              "11": {
+                "name": "Dreaming of awake I",
+                "debug_id": "11",
+                "image": "0031"
+              },
+              "12": {
+                "name": "Dreaming of awake II",
+                "debug_id": "12b",
+                "image": "0032"
+              },
+              "13": {
+                "name": "High dream berry",
+                "debug_id": "12c",
+                "image": "0033"
+              },
+              "14": {
+                "name": "Low dream berry",
+                "debug_id": "12d",
+                "image": "0034"
+              },
+              "15": {
+                "name": "Dreaming of awake 3",
+                "debug_id": "12",
+                "image": "0035"
+              },
+              "16": {
+                "name": "Unknown caller",
+                "debug_id": "13",
+                "image": "0036"
+              }
+            }
+          },
+          "3": {
+            "name": "Awake",
+            "abbreviation": "AW",
+            "rooms": {
+              "1": {
+                "name": "Awake monumnet",
+                "debug_id": "end_0",
+                "image": "0037"
+              },
+              "2": {
+                "name": "Climbing the ruins",
+                "debug_id": "end_s0",
+                "image": "0038"
+              },
+              "3": {
+                "name": "My heart is a fortress",
+                "debug_id": "end_s1",
+                "image": "0039"
+              },
+              "4": {
+                "name": "Tunnel and climb",
+                "debug_id": "end_1",
+                "image": "0040"
+              },
+              "5": {
+                "name": "By the fire",
+                "debug_id": "end_2",
+                "image": "0041"
+              },
+              "6": {
+                "name": "Venture into night",
+                "debug_id": "end_3",
+                "image": "0042"
+              },
+              "7": {
+                "name": "Empty",
+                "debug_id": "end_4",
+                "image": "0043"
+              },
+              "8": {
+                "name": "Springs",
+                "debug_id": "end_3b",
+                "image": "0044"
+              },
+              "9": {
+                "name": "Accending shaft",
+                "debug_id": "end_3cb",
+                "image": "0045"
+              },
+              "10": {
+                "name": "Crumbling winged berry",
+                "debug_id": "end_3c",
+                "image": "0046"
+              },
+              "11": {
+                "name": "Emptier",
+                "debug_id": "end_5",
+                "image": "0047"
+              },
+              "12": {
+                "name": "Calling family",
+                "debug_id": "end_6",
+                "image": "0048"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Monument",
+                "debug_id": "start",
+                "image": "0001"
+              },
+              "2": {
+                "name": "One way dreams",
+                "debug_id": "00",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Dream jump tutorial",
+                "debug_id": "01",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Dream jumps I",
+                "debug_id": "01b",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Dream jumps II",
+                "debug_id": "02b",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Dream jumps III",
+                "debug_id": "02",
+                "image": "0006"
+              }
+            }
+          },
+          "2": {
+            "name": "Combination Lock",
+            "abbreviation": "CL",
+            "rooms": {
+              "1": {
+                "name": "Three keys",
+                "debug_id": "03",
+                "image": "0007"
+              },
+              "2": {
+                "name": "Over and under",
+                "debug_id": "04",
+                "image": "0008"
+              },
+              "3": {
+                "name": "Spike maze",
+                "debug_id": "05",
+                "image": "0009"
+              },
+              "4": {
+                "name": "Combination lock",
+                "debug_id": "06",
+                "image": "0010"
+              },
+              "5": {
+                "name": "Mickey Mouse",
+                "debug_id": "07",
+                "image": "0011"
+              }
+            }
+          },
+          "3": {
+            "name": "Dream Altar",
+            "abbreviation": "DA",
+            "rooms": {
+              "1": {
+                "name": "Spikes, Springs and Dreams",
+                "debug_id": "08b",
+                "image": "0012"
+              },
+              "2": {
+                "name": "One way dream tunnel",
+                "debug_id": "08",
+                "image": "0013"
+              },
+              "3": {
+                "name": "Up and down",
+                "debug_id": "09",
+                "image": "0014"
+              },
+              "4": {
+                "name": "Dream puzzle 1",
+                "debug_id": "10",
+                "image": "0015"
+              },
+              "5": {
+                "name": "Dream puzzle 2",
+                "debug_id": "11",
+                "image": "0016"
+              },
+              "6": {
+                "name": "Cassette room",
+                "debug_id": "end",
+                "image": "0018"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Dream spikes",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Badeline switches",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Heart room",
+                "debug_id": "02",
+                "image": "0003"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "resort": {
+    "chapter_no": 3,
+    "name": "Celestial Resort",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Outside I",
+                "debug_id": "s0",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Outside II",
+                "debug_id": "s1",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Outside berries",
+                "debug_id": "s2",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Outside key",
+                "debug_id": "s3",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Ring the bell",
+                "debug_id": "0x-a",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Dust bunny intro",
+                "debug_id": "00-a",
+                "image": "0006"
+              },
+              "7": {
+                "name": "Locked door",
+                "debug_id": "02-a",
+                "image": "0007"
+              },
+              "8": {
+                "name": "Dust bunnies and key",
+                "debug_id": "02-b",
+                "image": "0008"
+              },
+              "9": {
+                "name": "Three falling shelves",
+                "debug_id": "01-b",
+                "image": "0009"
+              },
+              "10": {
+                "name": "Dust berry",
+                "debug_id": "00-b",
+                "image": "0010"
+              },
+              "11": {
+                "name": "Cassette teaser",
+                "debug_id": "00-c",
+                "image": "0011"
+              },
+              "12": {
+                "name": "Berry balcony interior",
+                "debug_id": "0x-b",
+                "image": "0012"
+              },
+              "13": {
+                "name": "Pressure platforms intro",
+                "debug_id": "03-a",
+                "image": "0013"
+              },
+              "14": {
+                "name": "Dash around berry",
+                "debug_id": "04-b",
+                "image": "0014"
+              },
+              "15": {
+                "name": "Dust pillars",
+                "debug_id": "05-a",
+                "image": "0015"
+              },
+              "16": {
+                "name": "Winged berry",
+                "debug_id": "06-a",
+                "image": "0016"
+              },
+              "17": {
+                "name": "Locked door",
+                "debug_id": "07-a",
+                "image": "0017"
+              },
+              "18": {
+                "name": "Key room",
+                "debug_id": "07-b",
+                "image": "0018"
+              },
+              "19": {
+                "name": "Circling dust platforms",
+                "debug_id": "06-b",
+                "image": "0019"
+              },
+              "20": {
+                "name": "Spiked moss walls",
+                "debug_id": "06-c",
+                "image": "0020"
+              },
+              "21": {
+                "name": "Berry loop",
+                "debug_id": "05-c",
+                "image": "0021"
+              },
+              "22": {
+                "name": "Locked spring platforms",
+                "debug_id": "08-c",
+                "image": "0022"
+              },
+              "23": {
+                "name": "Weaving platform",
+                "debug_id": "08-b",
+                "image": "0023"
+              }
+            }
+          },
+          "2": {
+            "name": "Huge Mess",
+            "abbreviation": "HM",
+            "rooms": {
+              "1": {
+                "name": "Book bridge",
+                "debug_id": "08-a",
+                "image": "0024"
+              },
+              "2": {
+                "name": "Bridge berry",
+                "debug_id": "08-x",
+                "image": "0025"
+              },
+              "3": {
+                "name": "Huge mess",
+                "debug_id": "09-b",
+                "image": "0026"
+              },
+              "4": {
+                "name": "Crates I",
+                "debug_id": "11-x",
+                "image": "0027"
+              },
+              "5": {
+                "name": "Crates II",
+                "debug_id": "11-y",
+                "image": "0028"
+              },
+              "6": {
+                "name": "Crates III",
+                "debug_id": "12-y",
+                "image": "0029"
+              },
+              "7": {
+                "name": "Crates IV",
+                "debug_id": "11-z",
+                "image": "0030"
+              },
+              "8": {
+                "name": "Crates V",
+                "debug_id": "10-z",
+                "image": "0031"
+              },
+              "9": {
+                "name": "Crates VI",
+                "debug_id": "10-y",
+                "image": "0032"
+              },
+              "10": {
+                "name": "Crates button",
+                "debug_id": "10-x",
+                "image": "0033"
+              },
+              "11": {
+                "name": "Books I",
+                "debug_id": "10-c",
+                "image": "0034"
+              },
+              "12": {
+                "name": "Books II",
+                "debug_id": "11-c",
+                "image": "0035"
+              },
+              "13": {
+                "name": "Books III",
+                "debug_id": "12-c",
+                "image": "0036"
+              },
+              "14": {
+                "name": "Books IV",
+                "debug_id": "12-d",
+                "image": "0037"
+              },
+              "15": {
+                "name": "Books V",
+                "debug_id": "11-d",
+                "image": "0038"
+              },
+              "16": {
+                "name": "Books button",
+                "debug_id": "10-d",
+                "image": "0039"
+              },
+              "17": {
+                "name": "Towels I",
+                "debug_id": "11-b",
+                "image": "0040"
+              },
+              "18": {
+                "name": "Towels II",
+                "debug_id": "12-b",
+                "image": "0041"
+              },
+              "19": {
+                "name": "Towels III",
+                "debug_id": "13-b",
+                "image": "0042"
+              },
+              "20": {
+                "name": "Towels IV",
+                "debug_id": "13-a",
+                "image": "0043"
+              },
+              "21": {
+                "name": "Towels V",
+                "debug_id": "13-x",
+                "image": "0044"
+              },
+              "22": {
+                "name": "Towels button",
+                "debug_id": "12-x",
+                "image": "0045"
+              },
+              "23": {
+                "name": "Flooding & pico-8",
+                "debug_id": "11-a",
+                "image": "0046"
+              }
+            }
+          },
+          "3": {
+            "name": "Elevator Shaft",
+            "abbreviation": "ES",
+            "rooms": {
+              "1": {
+                "name": "Elevator shaft",
+                "debug_id": "09-d",
+                "image": "0047"
+              },
+              "2": {
+                "name": "Switch columns",
+                "debug_id": "08-d",
+                "image": "0048"
+              },
+              "3": {
+                "name": "Dusty room",
+                "debug_id": "06-d",
+                "image": "0049"
+              },
+              "4": {
+                "name": "Serpentine",
+                "debug_id": "04-d",
+                "image": "0050"
+              },
+              "5": {
+                "name": "Dust Demo",
+                "debug_id": "04-d",
+                "image": "0051"
+              },
+              "6": {
+                "name": "Lock room",
+                "debug_id": "04-c",
+                "image": "0052"
+              },
+              "7": {
+                "name": "Quad hyper",
+                "debug_id": "02-c",
+                "image": "0053"
+              },
+              "8": {
+                "name": "Tight berries",
+                "debug_id": "03-b",
+                "image": "0054"
+              },
+              "9": {
+                "name": "Cassette room",
+                "debug_id": "01-c",
+                "image": "0055"
+              },
+              "10": {
+                "name": "TAS cycle",
+                "debug_id": "02-d",
+                "image": "0056"
+              }
+            }
+          },
+          "4": {
+            "name": "Presidential Suite",
+            "abbreviation": "PS",
+            "rooms": {
+              "1": {
+                "name": "Presidential Suite",
+                "debug_id": "00-d",
+                "image": "0056.5"
+              },
+              "2": {
+                "name": "Oshiro",
+                "debug_id": "roof00",
+                "image": "0057"
+              },
+              "3": {
+                "name": "Dust pile jump",
+                "debug_id": "roof01",
+                "image": "0058"
+              },
+              "4": {
+                "name": "Dust tunnel",
+                "debug_id": "roof02",
+                "image": "0059"
+              },
+              "5": {
+                "name": "Dust switches",
+                "debug_id": "roof03",
+                "image": "0060"
+              },
+              "6": {
+                "name": "Oshiro inside",
+                "debug_id": "roof04",
+                "image": "0061"
+              },
+              "7": {
+                "name": "Dust springs",
+                "debug_id": "roof05",
+                "image": "0062"
+              },
+              "8": {
+                "name": "Dash crystal race",
+                "debug_id": "roof06b",
+                "image": "0063"
+              },
+              "9": {
+                "name": "Inside and outside",
+                "debug_id": "roof06",
+                "image": "0064"
+              },
+              "10": {
+                "name": "Walk the plank",
+                "debug_id": "roof07",
+                "image": "0065"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Mind the gap",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Jumps off fragments",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Dusty crates",
+                "debug_id": "02",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Wall dust cycle",
+                "debug_id": "03",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Elephant room",
+                "debug_id": "04",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Three switch spring",
+                "debug_id": "05",
+                "image": "0006"
+              }
+            }
+          },
+          "2": {
+            "name": "Staff Quarters",
+            "abbreviation": "SQ",
+            "rooms": {
+              "1": {
+                "name": "Dusty platforms",
+                "debug_id": "06",
+                "image": "0007"
+              },
+              "2": {
+                "name": "Stamina room",
+                "debug_id": "07",
+                "image": "0008"
+              },
+              "3": {
+                "name": "Towel room",
+                "debug_id": "08",
+                "image": "0009"
+              },
+              "4": {
+                "name": "Flooded laundry",
+                "debug_id": "09",
+                "image": "0010"
+              },
+              "5": {
+                "name": "Up and down",
+                "debug_id": "10",
+                "image": "0011"
+              }
+            }
+          },
+          "3": {
+            "name": "Library",
+            "abbreviation": "LB",
+            "rooms": {
+              "1": {
+                "name": "Dusty walls I",
+                "debug_id": "11",
+                "image": "0012"
+              },
+              "2": {
+                "name": "Outside dust pillars",
+                "debug_id": "13",
+                "image": "0013"
+              },
+              "3": {
+                "name": "Dusty walls II",
+                "debug_id": "14",
+                "image": "0014"
+              },
+              "4": {
+                "name": "Dust Elevator",
+                "debug_id": "15",
+                "image": "0015"
+              },
+              "5": {
+                "name": "Dusty springs",
+                "debug_id": "12",
+                "image": "0016"
+              }
+            }
+          },
+          "4": {
+            "name": "Rooftop",
+            "abbreviation": "RT",
+            "rooms": {
+              "1": {
+                "name": "Chimney",
+                "debug_id": "16",
+                "image": "0017"
+              },
+              "2": {
+                "name": "Oshiro returns",
+                "debug_id": "17",
+                "image": "0018"
+              },
+              "3": {
+                "name": "Ground dashing",
+                "debug_id": "18",
+                "image": "0019"
+              },
+              "4": {
+                "name": "Dust cave",
+                "debug_id": "19",
+                "image": "0020"
+              },
+              "5": {
+                "name": "Dash crystal race",
+                "debug_id": "21",
+                "image": "0021"
+              },
+              "6": {
+                "name": "Locked hatch",
+                "debug_id": "20",
+                "image": "0022"
+              },
+              "7": {
+                "name": "Cassette room",
+                "debug_id": "end",
+                "image": "0023"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Cycle",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Platforms",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Heart room",
+                "debug_id": "02",
+                "image": "0003"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ridge": {
+    "chapter_no": 4,
+    "name": "Golden Ridge",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Cloud intro",
+                "debug_id": "a-00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Green bubble intro",
+                "debug_id": "a-01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Water and Granny",
+                "debug_id": "a-01x",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Wind intro",
+                "debug_id": "a-02",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Bubbles and pillars",
+                "debug_id": "a-03",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Quad clouds",
+                "debug_id": "a-04",
+                "image": "0006"
+              },
+              "7": {
+                "name": "Windy platforms",
+                "debug_id": "a-05",
+                "image": "0007"
+              },
+              "8": {
+                "name": "Stamina berry",
+                "debug_id": "a-06",
+                "image": "0008"
+              },
+              "9": {
+                "name": "Archie",
+                "debug_id": "a-07",
+                "image": "0009"
+              },
+              "10": {
+                "name": "Cloud stairs",
+                "debug_id": "a-08",
+                "image": "0010"
+              },
+              "11": {
+                "name": "Seed puzzle",
+                "debug_id": "a-10",
+                "image": "0011"
+              },
+              "12": {
+                "name": "Cassette room",
+                "debug_id": "a-11",
+                "image": "0012"
+              },
+              "13": {
+                "name": "Wind wall",
+                "debug_id": "a-09",
+                "image": "0013"
+              }
+            }
+          },
+          "2": {
+            "name": "Shrine",
+            "abbreviation": "SH",
+            "rooms": {
+              "1": {
+                "name": "Central Shrine room",
+                "debug_id": "b-00",
+                "image": "0014"
+              },
+              "2": {
+                "name": "Double berry",
+                "debug_id": "b-01",
+                "image": "0015"
+              },
+              "3": {
+                "name": "Push blocks",
+                "debug_id": "b-02",
+                "image": "0016"
+              },
+              "4": {
+                "name": "Low autoscroller",
+                "debug_id": "b-03",
+                "image": "0017"
+              },
+              "5": {
+                "name": "Cubic autoscroller",
+                "debug_id": "b-05",
+                "image": "0018"
+              },
+              "6": {
+                "name": "Weaving autoscroller",
+                "debug_id": "b-04",
+                "image": "0019"
+              },
+              "7": {
+                "name": "Cubic autoscroller",
+                "debug_id": "b-06",
+                "image": "0020"
+              },
+              "8": {
+                "name": "Up and around",
+                "debug_id": "b-07",
+                "image": "0021"
+              },
+              "9": {
+                "name": "Small pool",
+                "debug_id": "b-02",
+                "image": "0022"
+              },
+              "10": {
+                "name": "Heart room",
+                "debug_id": "b-sec",
+                "image": "0023"
+              },
+              "11": {
+                "name": "Scroller collision berry",
+                "debug_id": "b-secb",
+                "image": "0024"
+              },
+              "12": {
+                "name": "Main path scroller",
+                "debug_id": "b-05",
+                "image": "0025"
+              },
+              "13": {
+                "name": "Scroller tracks",
+                "debug_id": "b-08b",
+                "image": "0026"
+              },
+              "14": {
+                "name": "First autoscroller",
+                "debug_id": "b-08",
+                "image": "0027"
+              }
+            }
+          },
+          "3": {
+            "name": "Old Trail",
+            "abbreviation": "OT",
+            "rooms": {
+              "1": {
+                "name": "Old trail start",
+                "debug_id": "c-00",
+                "image": "0028"
+              },
+              "2": {
+                "name": "Winged berry",
+                "debug_id": "c-01",
+                "image": "0029"
+              },
+              "3": {
+                "name": "Windy bubbles",
+                "debug_id": "c-02",
+                "image": "0030"
+              },
+              "4": {
+                "name": "Safety flag",
+                "debug_id": "c-04",
+                "image": "0031"
+              },
+              "5": {
+                "name": "Narrow windy platforms",
+                "debug_id": "c-05",
+                "image": "0032"
+              },
+              "6": {
+                "name": "Scroller puzzle",
+                "debug_id": "c-06",
+                "image": "0033"
+              },
+              "7": {
+                "name": "Wind return berry",
+                "debug_id": "c-06b",
+                "image": "0034"
+              },
+              "8": {
+                "name": "Second autoscroller",
+                "debug_id": "c-09",
+                "image": "0035"
+              },
+              "9": {
+                "name": "Tiny crumble blocks",
+                "debug_id": "c-07",
+                "image": "0036"
+              },
+              "10": {
+                "name": "Spring up",
+                "debug_id": "c-08",
+                "image": "0037"
+              },
+              "11": {
+                "name": "Bubble up",
+                "debug_id": "c-10",
+                "image": "0038"
+              }
+            }
+          },
+          "4": {
+            "name": "Cliff Face",
+            "abbreviation": "CF",
+            "rooms": {
+              "1": {
+                "name": "Cliff face entry",
+                "debug_id": "d-00",
+                "image": "0039"
+              },
+              "2": {
+                "name": "Scroller loop berry",
+                "debug_id": "d-00b",
+                "image": "0040"
+              },
+              "3": {
+                "name": "Windy crumble blocks",
+                "debug_id": "d-01",
+                "image": "0041"
+              },
+              "4": {
+                "name": "Scroller switch",
+                "debug_id": "d-02",
+                "image": "0042"
+              },
+              "5": {
+                "name": "Snowball intro",
+                "debug_id": "d-03",
+                "image": "0043"
+              },
+              "6": {
+                "name": "Snowballs are jerks",
+                "debug_id": "d-04",
+                "image": "0044"
+              },
+              "7": {
+                "name": "Quad springs",
+                "debug_id": "d-05",
+                "image": "0045"
+              },
+              "8": {
+                "name": "Small platforms",
+                "debug_id": "d-06",
+                "image": "0046"
+              },
+              "9": {
+                "name": "Six bubbles",
+                "debug_id": "d-07",
+                "image": "0047"
+              },
+              "10": {
+                "name": "Up to tailwind",
+                "debug_id": "d-08",
+                "image": "0048"
+              },
+              "11": {
+                "name": "Tailwind",
+                "debug_id": "d-09",
+                "image": "0049"
+              },
+              "12": {
+                "name": "Gondola",
+                "debug_id": "d-10",
+                "image": "0050"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "a-00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Platforms & crystals",
+                "debug_id": "a-01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Stamina puzzle",
+                "debug_id": "a-02",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Autoscroller slots",
+                "debug_id": "a-03",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Tallscroller",
+                "debug_id": "a-04",
+                "image": "0005"
+              }
+            }
+          },
+          "2": {
+            "name": "Stepping Stones",
+            "abbreviation": "SS",
+            "rooms": {
+              "1": {
+                "name": "Crumbling headwind",
+                "debug_id": "b-00",
+                "image": "0006"
+              },
+              "2": {
+                "name": "Tailwind bubbles",
+                "debug_id": "b-01",
+                "image": "0007"
+              },
+              "3": {
+                "name": "Scrollershaft",
+                "debug_id": "b-02",
+                "image": "0008"
+              },
+              "4": {
+                "name": "Tailwind switches",
+                "debug_id": "b-03",
+                "image": "0009"
+              },
+              "5": {
+                "name": "Headwind & tiny blocks",
+                "debug_id": "b-04",
+                "image": "0010"
+              }
+            }
+          },
+          "3": {
+            "name": "Gusty Canyon",
+            "abbreviation": "GC",
+            "rooms": {
+              "1": {
+                "name": "Tailwind & stamina",
+                "debug_id": "c-00",
+                "image": "0011"
+              },
+              "2": {
+                "name": "Crystal platforms",
+                "debug_id": "c-01",
+                "image": "0012"
+              },
+              "3": {
+                "name": "Crystal tri-scroller",
+                "debug_id": "c-02",
+                "image": "0013"
+              },
+              "4": {
+                "name": "Scroller ascent race",
+                "debug_id": "c-03",
+                "image": "0014"
+              },
+              "5": {
+                "name": "Snaking crystals",
+                "debug_id": "c-04",
+                "image": "0015"
+              }
+            }
+          },
+          "4": {
+            "name": "Eye of the Storm",
+            "abbreviation": "EOTS",
+            "rooms": {
+              "1": {
+                "name": "Alternating wind",
+                "debug_id": "d-00",
+                "image": "0016"
+              },
+              "2": {
+                "name": "Cloud hopping",
+                "debug_id": "d-01",
+                "image": "0017"
+              },
+              "3": {
+                "name": "Switches and bubbles",
+                "debug_id": "d-02",
+                "image": "0018"
+              },
+              "4": {
+                "name": "Long tailwind",
+                "debug_id": "d-03",
+                "image": "0019"
+              },
+              "5": {
+                "name": "Cassette room",
+                "debug_id": "end",
+                "image": "0020"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Bubble jumps",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Vertical scroller",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Heart room",
+                "debug_id": "02",
+                "image": "0003"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "temple": {
+    "chapter_no": 5,
+    "name": "Mirror Temple",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Gondola",
+                "debug_id": "a-00x",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Into the temple",
+                "debug_id": "a-00b",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Tight corridors",
+                "debug_id": "a-00d",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Dash platform",
+                "debug_id": "a-00c",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Red bubble",
+                "debug_id": "a-00",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Central bubble diamond",
+                "debug_id": "a-01",
+                "image": "0006"
+              },
+              "7": {
+                "name": "Dash block berry",
+                "debug_id": "a-02",
+                "image": "0007"
+              },
+              "8": {
+                "name": "Crystal passage berry",
+                "debug_id": "a-03",
+                "image": "0008"
+              },
+              "9": {
+                "name": "Block spring berry",
+                "debug_id": "a-04",
+                "image": "0009"
+              },
+              "10": {
+                "name": "Locked rooms",
+                "debug_id": "a-05",
+                "image": "0010"
+              },
+              "11": {
+                "name": "Dash block berry",
+                "debug_id": "a-06",
+                "image": "0011"
+              },
+              "12": {
+                "name": "Block launch berry",
+                "debug_id": "a-07",
+                "image": "0012"
+              },
+              "13": {
+                "name": "Key room",
+                "debug_id": "a-08",
+                "image": "0013"
+              },
+              "14": {
+                "name": "Duck",
+                "debug_id": "a-10",
+                "image": "0014"
+              },
+              "15": {
+                "name": "Key bubble",
+                "debug_id": "a-09",
+                "image": "0015"
+              },
+              "16": {
+                "name": "Berry fling",
+                "debug_id": "a-11",
+                "image": "0016"
+              },
+              "17": {
+                "name": "Crystal key tunnel",
+                "debug_id": "a-12",
+                "image": "0017"
+              },
+              "18": {
+                "name": "Bubble tunnel",
+                "debug_id": "a-12",
+                "image": "0017.5"
+              },
+              "19": {
+                "name": "Bubble switch berry",
+                "debug_id": "a-15",
+                "image": "0018"
+              },
+              "20": {
+                "name": "Dash block berry",
+                "debug_id": "a-14",
+                "image": "0019"
+              },
+              "21": {
+                "name": "Locked door",
+                "debug_id": "a-13",
+                "image": "0020"
+              }
+            }
+          },
+          "2": {
+            "name": "Depths",
+            "abbreviation": "DP",
+            "rooms": {
+              "1": {
+                "name": "Theo in the mirror",
+                "debug_id": "b-00",
+                "image": "0021"
+              },
+              "2": {
+                "name": "Crystal bubble berry",
+                "debug_id": "b-18",
+                "image": "0022"
+              },
+              "3": {
+                "name": "Depths Cornerboost",
+                "debug_id": "b-01",
+                "image": "0023"
+              },
+              "4": {
+                "name": "Block fling berry",
+                "debug_id": "b-01c",
+                "image": "0024"
+              },
+              "5": {
+                "name": "Rusted gates",
+                "debug_id": "b-20",
+                "image": "0025"
+              },
+              "6": {
+                "name": "Winged berry",
+                "debug_id": "b-21",
+                "image": "0026"
+              },
+              "7": {
+                "name": "Dash block pit",
+                "debug_id": "b-01b",
+                "image": "0027"
+              },
+              "8": {
+                "name": "Junction room",
+                "debug_id": "b-02",
+                "image": "0028"
+              },
+              "9": {
+                "name": "Cool demo bruh",
+                "debug_id": "b-03",
+                "image": "0029"
+              },
+              "10": {
+                "name": "Bubble berry",
+                "debug_id": "b-05",
+                "image": "0030"
+              },
+              "11": {
+                "name": "Key room",
+                "debug_id": "b-04",
+                "image": "0031"
+              },
+              "12": {
+                "name": "Key path I",
+                "debug_id": "b-07",
+                "image": "0032"
+              },
+              "13": {
+                "name": "Key path II",
+                "debug_id": "b-08",
+                "image": "0033"
+              },
+              "14": {
+                "name": "Key path III",
+                "debug_id": "b-09",
+                "image": "0034"
+              },
+              "15": {
+                "name": "Block sandwich berry",
+                "debug_id": "b-10",
+                "image": "0035"
+              },
+              "16": {
+                "name": "Bubble berry",
+                "debug_id": "b-11",
+                "image": "0036"
+              },
+              "17": {
+                "name": "Bubble berry",
+                "debug_id": "b-12",
+                "image": "0037"
+              },
+              "18": {
+                "name": "Button room",
+                "debug_id": "b-13",
+                "image": "0038"
+              },
+              "19": {
+                "name": "Seed puzzle",
+                "debug_id": "b-17",
+                "image": "0039"
+              },
+              "20": {
+                "name": "Strawberry cave",
+                "debug_id": "b-17",
+                "image": "0039.5"
+              },
+              "21": {
+                "name": "Cassette",
+                "debug_id": "b-22",
+                "image": "0040"
+              },
+              "22": {
+                "name": "Key skip room",
+                "debug_id": "b-06",
+                "image": "0041"
+              },
+              "23": {
+                "name": "Floorless bubble room",
+                "debug_id": "b-19",
+                "image": "0042"
+              },
+              "24": {
+                "name": "Extra key door",
+                "debug_id": "b-14",
+                "image": "0043"
+              },
+              "25": {
+                "name": "Heart room",
+                "debug_id": "b-15",
+                "image": "0044"
+              },
+              "26": {
+                "name": "Mirror room",
+                "debug_id": "b-16",
+                "image": "0045"
+              },
+              "27": {
+                "name": "The void",
+                "debug_id": "void",
+                "image": "0046"
+              }
+            }
+          },
+          "3": {
+            "name": "Unravelling",
+            "abbreviation": "UR",
+            "rooms": {
+              "1": {
+                "name": "Falling",
+                "debug_id": "c-00",
+                "image": "0047"
+              },
+              "2": {
+                "name": "Victim and the Monster",
+                "debug_id": "c-01",
+                "image": "0048"
+              },
+              "3": {
+                "name": "Tentacle passage I",
+                "debug_id": "c-01b",
+                "image": "0049"
+              },
+              "4": {
+                "name": "Tentacle passage II",
+                "debug_id": "c-01c",
+                "image": "0050"
+              },
+              "5": {
+                "name": "First seeker",
+                "debug_id": "c-08b",
+                "image": "0051"
+              },
+              "6": {
+                "name": "Berry in the block",
+                "debug_id": "c-08",
+                "image": "0052"
+              },
+              "7": {
+                "name": "Seeker switches I",
+                "debug_id": "c-10",
+                "image": "0053"
+              },
+              "8": {
+                "name": "Seeker switches II",
+                "debug_id": "c-12",
+                "image": "0054"
+              },
+              "9": {
+                "name": "Seeker switches III",
+                "debug_id": "c-07",
+                "image": "0055"
+              },
+              "10": {
+                "name": "Seeker moonlight",
+                "debug_id": "c-11",
+                "image": "0056"
+              },
+              "11": {
+                "name": "Seeker switches VI",
+                "debug_id": "c-09",
+                "image": "0057"
+              },
+              "12": {
+                "name": "Seeker switches V",
+                "debug_id": "c-13",
+                "image": "0058"
+              }
+            }
+          },
+          "4": {
+            "name": "Search",
+            "abbreviation": "SC",
+            "rooms": {
+              "1": {
+                "name": "Bubble crystal maze",
+                "debug_id": "d-00",
+                "image": "0059"
+              },
+              "2": {
+                "name": "Center room",
+                "debug_id": "d-01",
+                "image": "0060"
+              },
+              "3": {
+                "name": "Talk with Theo",
+                "debug_id": "e-00",
+                "image": "0061"
+              },
+              "4": {
+                "name": "Search skip",
+                "debug_id": "d-04",
+                "image": "0062"
+              },
+              "5": {
+                "name": "Key path",
+                "debug_id": "d-05",
+                "image": "0063"
+              },
+              "6": {
+                "name": "Launch platform",
+                "debug_id": "d-06",
+                "image": "0064"
+              },
+              "7": {
+                "name": "Seeker bubble switches",
+                "debug_id": "d-07",
+                "image": "0065"
+              },
+              "8": {
+                "name": "Key 2 path I",
+                "debug_id": "d-02",
+                "image": "0066"
+              },
+              "9": {
+                "name": "Key 2 path II",
+                "debug_id": "d-03",
+                "image": "0067"
+              },
+              "10": {
+                "name": "Launch platform",
+                "debug_id": "d-06",
+                "image": "0068"
+              },
+              "11": {
+                "name": "Upper berry path",
+                "debug_id": "d-09",
+                "image": "0069"
+              },
+              "12": {
+                "name": "Exit bubble",
+                "debug_id": "d-15",
+                "image": "0070"
+              },
+              "13": {
+                "name": "Narrow poles berry",
+                "debug_id": "d-13",
+                "image": "0071"
+              },
+              "14": {
+                "name": "Spare key berry",
+                "debug_id": "d-19",
+                "image": "0072"
+              },
+              "15": {
+                "name": "Seeker scramble",
+                "debug_id": "d-19b",
+                "image": "0073"
+              },
+              "16": {
+                "name": "Seeker pit",
+                "debug_id": "d-10",
+                "image": "0074"
+              },
+              "17": {
+                "name": "Moonlight barrier",
+                "debug_id": "d-20",
+                "image": "0075"
+              }
+            }
+          },
+          "5": {
+            "name": "Rescue",
+            "abbreviation": "RS",
+            "rooms": {
+              "1": {
+                "name": "Carry me",
+                "debug_id": "e-00",
+                "image": "0076"
+              },
+              "2": {
+                "name": "Open for Theo",
+                "debug_id": "e-01",
+                "image": "0077"
+              },
+              "3": {
+                "name": "Seekers & Theo I",
+                "debug_id": "e-02",
+                "image": "0078"
+              },
+              "4": {
+                "name": "Seekers & Theo II",
+                "debug_id": "e-03",
+                "image": "0079"
+              },
+              "5": {
+                "name": "Seekers & Theo III",
+                "debug_id": "e-04",
+                "image": "0080"
+              },
+              "6": {
+                "name": "Seekers & Theo VI",
+                "debug_id": "e-06",
+                "image": "0081"
+              },
+              "7": {
+                "name": "Theo saves the day",
+                "debug_id": "e-05",
+                "image": "0082"
+              },
+              "8": {
+                "name": "Launch platform",
+                "debug_id": "e-07",
+                "image": "0083"
+              },
+              "9": {
+                "name": "Seeker killer",
+                "debug_id": "e-08",
+                "image": "0084"
+              },
+              "10": {
+                "name": "Over and under",
+                "debug_id": "e-09",
+                "image": "0085"
+              },
+              "11": {
+                "name": "Almost there",
+                "debug_id": "e-10",
+                "image": "0086"
+              },
+              "12": {
+                "name": "Eyeball room",
+                "debug_id": "e-11",
+                "image": "0087"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "start",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Bubble gate",
+                "debug_id": "a-00",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Bubble spike tunnel",
+                "debug_id": "a-01",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Dash blocks",
+                "debug_id": "a-02",
+                "image": "0004"
+              }
+            }
+          },
+          "2": {
+            "name": "Central Chamber",
+            "abbreviation": "CC",
+            "rooms": {
+              "1": {
+                "name": "Lower chamber",
+                "debug_id": "b-00",
+                "image": "0005"
+              },
+              "2": {
+                "name": "Bubsdrop",
+                "debug_id": "b-01",
+                "image": "0006"
+              },
+              "3": {
+                "name": "Central chamber",
+                "debug_id": "b-04",
+                "image": "0007"
+              },
+              "4": {
+                "name": "Blades and bubbles",
+                "debug_id": "b-02",
+                "image": "0008"
+              },
+              "5": {
+                "name": "Right key",
+                "debug_id": "b-05",
+                "image": "0009"
+              },
+              "6": {
+                "name": "Left key",
+                "debug_id": "b-06",
+                "image": "0010"
+              },
+              "7": {
+                "name": "Zig-zag bubbles",
+                "debug_id": "b-07",
+                "image": "0011"
+              },
+              "8": {
+                "name": "Dash block ascent",
+                "debug_id": "b-03",
+                "image": "0012"
+              },
+              "9": {
+                "name": "Springblock",
+                "debug_id": "b-08",
+                "image": "0013"
+              },
+              "10": {
+                "name": "Mirror & bladeshaft",
+                "debug_id": "b-09",
+                "image": "0014"
+              }
+            }
+          },
+          "3": {
+            "name": "Through the Mirror",
+            "abbreviation": "TTM",
+            "rooms": {
+              "1": {
+                "name": "Tentacle drop",
+                "debug_id": "c-00",
+                "image": "0015"
+              },
+              "2": {
+                "name": "Seeker switch diamond",
+                "debug_id": "c-01",
+                "image": "0016"
+              },
+              "3": {
+                "name": "Two switches & seekers",
+                "debug_id": "c-02",
+                "image": "0017"
+              },
+              "4": {
+                "name": "Pillar room",
+                "debug_id": "c-03",
+                "image": "0018"
+              },
+              "5": {
+                "name": "Crumble blocks",
+                "debug_id": "c-04",
+                "image": "0019"
+              }
+            }
+          },
+          "4": {
+            "name": "Mix Master",
+            "abbreviation": "MM",
+            "rooms": {
+              "1": {
+                "name": "Mix master",
+                "debug_id": "d-00",
+                "image": "0020"
+              },
+              "2": {
+                "name": "Theo & two seekers",
+                "debug_id": "d-01",
+                "image": "0021"
+              },
+              "3": {
+                "name": "Seeker gauntlet",
+                "debug_id": "d-02",
+                "image": "0022"
+              },
+              "4": {
+                "name": "Land on the platform Theo",
+                "debug_id": "d-03",
+                "image": "0023"
+              },
+              "5": {
+                "name": "Impossible room",
+                "debug_id": "d-04",
+                "image": "0024"
+              },
+              "6": {
+                "name": "Cassette room",
+                "debug_id": "d-05",
+                "image": "0025"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Block bounce",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Block fling",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Heart room",
+                "debug_id": "02",
+                "image": "0003"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "reflection": {
+    "chapter_no": 6,
+    "name": "Reflection",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Aurora",
+                "debug_id": "start",
+                "image": "0001"
+              }
+            }
+          },
+          "2": {
+            "name": "Lake",
+            "abbreviation": "LK",
+            "rooms": {
+              "1": {
+                "name": "Lake",
+                "debug_id": "00",
+                "image": "0002"
+              },
+              "2": {
+                "name": "Feather maze I",
+                "debug_id": "01",
+                "image": "0003"
+              },
+              "3": {
+                "name": "Feather maze II",
+                "debug_id": "02",
+                "image": "0004"
+              },
+              "4": {
+                "name": "Feather U",
+                "debug_id": "03",
+                "image": "0005"
+              },
+              "5": {
+                "name": "Feather maze III",
+                "debug_id": "02",
+                "image": "0006"
+              },
+              "6": {
+                "name": "Feather maze IV",
+                "debug_id": "02b",
+                "image": "0007"
+              }
+            }
+          },
+          "3": {
+            "name": "Hollows",
+            "abbreviation": "HL",
+            "rooms": {
+              "1": {
+                "name": "The hollow",
+                "debug_id": "04",
+                "image": "0008"
+              },
+              "2": {
+                "name": "Heart tunnel",
+                "debug_id": "04b",
+                "image": "0009"
+              },
+              "3": {
+                "name": "Heart room",
+                "debug_id": "04c",
+                "image": "0010"
+              },
+              "4": {
+                "name": "My reflection",
+                "debug_id": "04d",
+                "image": "0011"
+              },
+              "5": {
+                "name": "Cassette Room",
+                "debug_id": "04e",
+                "image": "0012"
+              },
+              "6": {
+                "name": "Kevin",
+                "debug_id": "05",
+                "image": "0013"
+              },
+              "7": {
+                "name": "Kevin's taller brother",
+                "debug_id": "06",
+                "image": "0014"
+              },
+              "8": {
+                "name": "Path split",
+                "debug_id": "07",
+                "image": "0015"
+              },
+              "9": {
+                "name": "Bottom route I",
+                "debug_id": "08a",
+                "image": "0016"
+              },
+              "10": {
+                "name": "Top route I",
+                "debug_id": "08b",
+                "image": "0017"
+              },
+              "11": {
+                "name": "Open bumpers",
+                "debug_id": "09",
+                "image": "0018"
+              },
+              "12": {
+                "name": "Bottom route II",
+                "debug_id": "10a",
+                "image": "0019"
+              },
+              "13": {
+                "name": "Top route II",
+                "debug_id": "10b",
+                "image": "0020"
+              },
+              "14": {
+                "name": "Narrow bumpers",
+                "debug_id": "11",
+                "image": "0021"
+              },
+              "15": {
+                "name": "Bottom route III",
+                "debug_id": "12a",
+                "image": "0022"
+              },
+              "16": {
+                "name": "Top route III",
+                "debug_id": "12b",
+                "image": "0023"
+              },
+              "17": {
+                "name": "Wall break room",
+                "debug_id": "13",
+                "image": "0024"
+              },
+              "18": {
+                "name": "Bottom route IV",
+                "debug_id": "14a",
+                "image": "0025"
+              },
+              "19": {
+                "name": "Top route IV",
+                "debug_id": "14b",
+                "image": "0026"
+              },
+              "20": {
+                "name": "Bumper rows",
+                "debug_id": "15",
+                "image": "0027"
+              },
+              "21": {
+                "name": "Bottom route V",
+                "debug_id": "16a",
+                "image": "0028"
+              },
+              "22": {
+                "name": "Top route V",
+                "debug_id": "16b",
+                "image": "0029"
+              },
+              "23": {
+                "name": "Kevin in the way",
+                "debug_id": "17",
+                "image": "0030"
+              },
+              "24": {
+                "name": "Bottom VI - bumperboost.ez",
+                "debug_id": "18a",
+                "image": "0031"
+              },
+              "25": {
+                "name": "Top VI - 5bumpers.hard",
+                "debug_id": "18b",
+                "image": "0032"
+              },
+              "26": {
+                "name": "Feather room",
+                "debug_id": "19",
+                "image": "0033"
+              },
+              "27": {
+                "name": "Feathers and bumpers",
+                "debug_id": "20",
+                "image": "0034"
+              }
+            }
+          },
+          "4": {
+            "name": "Reflection",
+            "abbreviation": "RF",
+            "rooms": {
+              "1": {
+                "name": "She's here too",
+                "debug_id": "b-00",
+                "image": "0035"
+              },
+              "2": {
+                "name": "Secret climb",
+                "debug_id": "b-00b",
+                "image": "0036"
+              },
+              "3": {
+                "name": "Secret room",
+                "debug_id": "b-00c",
+                "image": "0037"
+              },
+              "4": {
+                "name": "Haircut",
+                "debug_id": "b-01",
+                "image": "0038"
+              },
+              "5": {
+                "name": "The fall",
+                "debug_id": "b-02",
+                "image": "0039"
+              },
+              "6": {
+                "name": "Dive",
+                "debug_id": "b-02b",
+                "image": "0040"
+              },
+              "7": {
+                "name": "The biggest Kevin",
+                "debug_id": "b-03",
+                "image": "0041"
+              }
+            }
+          },
+          "5": {
+            "name": "Rock Bottom",
+            "abbreviation": "RB",
+            "rooms": {
+              "1": {
+                "name": "Confronting myself",
+                "debug_id": "boss-00",
+                "image": "0042"
+              },
+              "2": {
+                "name": "Plasma balls",
+                "debug_id": "boss-01",
+                "image": "0043"
+              },
+              "3": {
+                "name": "Lazer beams",
+                "debug_id": "boss-02",
+                "image": "0044"
+              },
+              "4": {
+                "name": "Vanishing platform",
+                "debug_id": "boss-03",
+                "image": "0045"
+              },
+              "5": {
+                "name": "Rapid fire",
+                "debug_id": "boss-04",
+                "image": "0046"
+              },
+              "6": {
+                "name": "Serpentine pillars",
+                "debug_id": "boss-05",
+                "image": "0047"
+              },
+              "7": {
+                "name": "Falling pillar stairs",
+                "debug_id": "boss-06",
+                "image": "0048"
+              },
+              "8": {
+                "name": "Feather skip",
+                "debug_id": "boss-07",
+                "image": "0049"
+              },
+              "9": {
+                "name": "Falling I",
+                "debug_id": "boss-08",
+                "image": "0050"
+              },
+              "10": {
+                "name": "Serpentine feathers",
+                "debug_id": "boss-09",
+                "image": "0051"
+              },
+              "11": {
+                "name": "The lonely bumper",
+                "debug_id": "boss-10",
+                "image": "0052"
+              },
+              "12": {
+                "name": "Spike bunker",
+                "debug_id": "boss-11",
+                "image": "0053"
+              },
+              "13": {
+                "name": "Falling II",
+                "debug_id": "boss-12",
+                "image": "0054"
+              },
+              "14": {
+                "name": "Mountain climber",
+                "debug_id": "boss-13",
+                "image": "0055"
+              },
+              "15": {
+                "name": "Badeline learned psychic!",
+                "debug_id": "boss-14",
+                "image": "0056"
+              },
+              "16": {
+                "name": "Block launch",
+                "debug_id": "boss-15",
+                "image": "0057"
+              },
+              "17": {
+                "name": "Psychic platforms",
+                "debug_id": "boss-16",
+                "image": "0058"
+              },
+              "18": {
+                "name": "Block trampoline",
+                "debug_id": "boss-17",
+                "image": "0059"
+              },
+              "19": {
+                "name": "Falling III",
+                "debug_id": "boss-18",
+                "image": "0060"
+              },
+              "20": {
+                "name": "Feather room",
+                "debug_id": "boss-19",
+                "image": "0061"
+              },
+              "21": {
+                "name": "Together",
+                "debug_id": "boss-20",
+                "image": "0062"
+              }
+            }
+          },
+          "6": {
+            "name": "Resolution",
+            "abbreviation": "RL",
+            "rooms": {
+              "1": {
+                "name": "Double dash",
+                "debug_id": "after-01",
+                "image": "0064"
+              },
+              "2": {
+                "name": "Ascent",
+                "debug_id": "after-02",
+                "image": "0066"
+              },
+              "3": {
+                "name": "Hold my bag",
+                "debug_id": "after-03",
+                "image": "0067"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Kevin's tour",
+                "debug_id": "a-00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Feather tunnel",
+                "debug_id": "a-01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Sketchy bumpers",
+                "debug_id": "a-02",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Kevin launch",
+                "debug_id": "a-03",
+                "image": "0004"
+              },
+              "5": {
+                "name": "V bumper",
+                "debug_id": "a-04",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Crumble blocks",
+                "debug_id": "a-05",
+                "image": "0006"
+              },
+              "7": {
+                "name": "Kevin switches",
+                "debug_id": "a-06",
+                "image": "0007"
+              }
+            }
+          },
+          "2": {
+            "name": "Reflection",
+            "abbreviation": "RF",
+            "rooms": {
+              "1": {
+                "name": "Haircut",
+                "debug_id": "b-00",
+                "image": "0008"
+              },
+              "2": {
+                "name": "Falling I - Crystals I",
+                "debug_id": "b-01",
+                "image": "0009"
+              },
+              "3": {
+                "name": "Falling II - Kevins",
+                "debug_id": "b-02",
+                "image": "0010"
+              },
+              "4": {
+                "name": "Falling III - Bumpers",
+                "debug_id": "b-03",
+                "image": "0011"
+              },
+              "5": {
+                "name": "Falling IV - Crystals II",
+                "debug_id": "b-04",
+                "image": "0012"
+              },
+              "6": {
+                "name": "Falling V - Kevin",
+                "debug_id": "b-05",
+                "image": "0013"
+              },
+              "7": {
+                "name": "Falling VI - Save dash",
+                "debug_id": "b-06",
+                "image": "0014"
+              },
+              "8": {
+                "name": "Falling VII - Feather",
+                "debug_id": "b-07",
+                "image": "0015"
+              },
+              "9": {
+                "name": "Falling VIII - Crystals III",
+                "debug_id": "b-08",
+                "image": "0016"
+              },
+              "10": {
+                "name": "Haircut dashes",
+                "debug_id": "b-10",
+                "image": "0017"
+              }
+            }
+          },
+          "3": {
+            "name": "Rock Bottom",
+            "abbreviation": "RB",
+            "rooms": {
+              "1": {
+                "name": "Badeline",
+                "debug_id": "c-00",
+                "image": "0018"
+              },
+              "2": {
+                "name": "Falling block jumps",
+                "debug_id": "c-01",
+                "image": "0019"
+              },
+              "3": {
+                "name": "Three dash crystals",
+                "debug_id": "c-02",
+                "image": "0020"
+              },
+              "4": {
+                "name": "Badeline and the seven keys",
+                "debug_id": "c-03",
+                "image": "0021"
+              },
+              "5": {
+                "name": "Step off & downwards",
+                "debug_id": "c-04",
+                "image": "0022"
+              }
+            }
+          },
+          "4": {
+            "name": "Reprieve",
+            "abbreviation": "RP",
+            "rooms": {
+              "1": {
+                "name": "Kevin family",
+                "debug_id": "d-00",
+                "image": "0023"
+              },
+              "2": {
+                "name": "Badeline returns",
+                "debug_id": "d-01",
+                "image": "0024"
+              },
+              "3": {
+                "name": "Hold fire",
+                "debug_id": "d-02",
+                "image": "0025"
+              },
+              "4": {
+                "name": "To the bottom",
+                "debug_id": "d-03",
+                "image": "0026"
+              },
+              "5": {
+                "name": "Final feather",
+                "debug_id": "d-04",
+                "image": "0027"
+              },
+              "6": {
+                "name": "Cassette room",
+                "debug_id": "d-05",
+                "image": "0028"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Wallbounces",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Falling",
+                "debug_id": "01",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Kevin",
+                "debug_id": "02",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Heart Room",
+                "debug_id": "02",
+                "image": "0004"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "summit": {
+    "chapter_no": 7,
+    "name": "The Summit",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Intro cutscene",
+                "debug_id": "a-00-intro",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Start",
+                "debug_id": "a-00",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Spinners and crystals",
+                "debug_id": "a-01",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Wall springs",
+                "debug_id": "a-02",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Demo berry",
+                "debug_id": "a-02b",
+                "image": "0005"
+              },
+              "6": {
+                "name": "Spring pillars",
+                "debug_id": "a-03",
+                "image": "0006"
+              },
+              "7": {
+                "name": "Hanging crystals",
+                "debug_id": "a-04",
+                "image": "0007"
+              },
+              "8": {
+                "name": "Dual berries",
+                "debug_id": "a-04b",
+                "image": "0008"
+              },
+              "9": {
+                "name": "Scaffold",
+                "debug_id": "a-05",
+                "image": "0009"
+              },
+              "10": {
+                "name": "Orb room",
+                "debug_id": "a-06",
+                "image": "0010"
+              }
+            }
+          },
+          "2": {
+            "name": "500 M",
+            "abbreviation": "0.5K",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "b-00",
+                "image": "0011"
+              },
+              "2": {
+                "name": "Conveyor springs",
+                "debug_id": "b-01",
+                "image": "0012"
+              },
+              "3": {
+                "name": "Ascent path split",
+                "debug_id": "b-02",
+                "image": "0013"
+              },
+              "4": {
+                "name": "Zipper ascent",
+                "debug_id": "b-02b",
+                "image": "0014"
+              },
+              "5": {
+                "name": "Conveyor block berry",
+                "debug_id": "b-02e",
+                "image": "0015"
+              },
+              "6": {
+                "name": "Return path",
+                "debug_id": "b-02c",
+                "image": "0016"
+              },
+              "7": {
+                "name": "Gem room",
+                "debug_id": "b-02d",
+                "image": "0017"
+              },
+              "8": {
+                "name": "Tetromino",
+                "debug_id": "b-03",
+                "image": "0018"
+              },
+              "9": {
+                "name": "Winged berry",
+                "debug_id": "b-04",
+                "image": "0019"
+              },
+              "10": {
+                "name": "City switch",
+                "debug_id": "b-05",
+                "image": "0020"
+              },
+              "11": {
+                "name": "Zipper ascent 3",
+                "debug_id": "b-06",
+                "image": "0021"
+              },
+              "12": {
+                "name": "Zipper spike path",
+                "debug_id": "b-07",
+                "image": "0022"
+              },
+              "13": {
+                "name": "Iceblock springs",
+                "debug_id": "b-08",
+                "image": "0023"
+              },
+              "14": {
+                "name": "Orb room",
+                "debug_id": "b-09",
+                "image": "0024"
+              }
+            }
+          },
+          "3": {
+            "name": "1000 M",
+            "abbreviation": "1K",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "c-00",
+                "image": "0025"
+              },
+              "2": {
+                "name": "Dream ascent",
+                "debug_id": "c-01",
+                "image": "0026"
+              },
+              "3": {
+                "name": "Dream switch",
+                "debug_id": "c-02",
+                "image": "0027"
+              },
+              "4": {
+                "name": "Dream springs",
+                "debug_id": "c-03",
+                "image": "0028"
+              },
+              "5": {
+                "name": "Berry dream maze",
+                "debug_id": "c-03b",
+                "image": "0029"
+              },
+              "6": {
+                "name": "Moving dreams",
+                "debug_id": "c-04",
+                "image": "0030"
+              },
+              "7": {
+                "name": "Berry dream ascent",
+                "debug_id": "c-05",
+                "image": "0031"
+              },
+              "8": {
+                "name": "Uniform dreams",
+                "debug_id": "c-06",
+                "image": "0032"
+              },
+              "9": {
+                "name": "Snaking ascent",
+                "debug_id": "c-06b",
+                "image": "0033"
+              },
+              "10": {
+                "name": "Jewel room",
+                "debug_id": "c-06c",
+                "image": "0034"
+              },
+              "11": {
+                "name": "Diagonal dreams",
+                "debug_id": "c-07",
+                "image": "0035"
+              },
+              "12": {
+                "name": "Up & down berry",
+                "debug_id": "c-07b",
+                "image": "0036"
+              },
+              "13": {
+                "name": "Hanging dreams",
+                "debug_id": "c-08",
+                "image": "0037"
+              },
+              "14": {
+                "name": "Orb room",
+                "debug_id": "c-09",
+                "image": "0038"
+              }
+            }
+          },
+          "4": {
+            "name": "1500 M",
+            "abbreviation": "1.5K",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "d-00",
+                "image": "0039"
+              },
+              "2": {
+                "name": "Sinking platforms",
+                "debug_id": "d-01",
+                "image": "0040"
+              },
+              "3": {
+                "name": "Dust bunnies I",
+                "debug_id": "d-01b",
+                "image": "0041"
+              },
+              "4": {
+                "name": "Dust berry",
+                "debug_id": "d-01c",
+                "image": "0042"
+              },
+              "5": {
+                "name": "Switch berry",
+                "debug_id": "d-01d",
+                "image": "0043"
+              },
+              "6": {
+                "name": "Dust bunny diamond",
+                "debug_id": "d-02",
+                "image": "0044"
+              },
+              "7": {
+                "name": "Dust bunnies II",
+                "debug_id": "d-03",
+                "image": "0045"
+              },
+              "8": {
+                "name": "Cassette room",
+                "debug_id": "d-03b",
+                "image": "0046"
+              },
+              "9": {
+                "name": "Dust bunnies III",
+                "debug_id": "d-04",
+                "image": "0047"
+              },
+              "10": {
+                "name": "Quad ultra room",
+                "debug_id": "d-05",
+                "image": "0048"
+              },
+              "11": {
+                "name": "Jewel room",
+                "debug_id": "d-05b",
+                "image": "0049"
+              },
+              "12": {
+                "name": "Dust tunnel",
+                "debug_id": "d-06",
+                "image": "0050"
+              },
+              "13": {
+                "name": "Berry room",
+                "debug_id": "d-07",
+                "image": "0051"
+              },
+              "14": {
+                "name": "frankerZ room",
+                "debug_id": "d-08",
+                "image": "0052"
+              },
+              "15": {
+                "name": "Dusty chimney",
+                "debug_id": "d-09",
+                "image": "0053"
+              },
+              "16": {
+                "name": "Dust serpentine",
+                "debug_id": "d-10",
+                "image": "0054"
+              },
+              "17": {
+                "name": "Soaring berry",
+                "debug_id": "d-10b",
+                "image": "0054.5"
+              },
+              "18": {
+                "name": "Orb room",
+                "debug_id": "d-11",
+                "image": "0055"
+              }
+            }
+          },
+          "5": {
+            "name": "2000 M",
+            "abbreviation": "2K",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "e-00b",
+                "image": "0056"
+              },
+              "2": {
+                "name": "Bubble juggle",
+                "debug_id": "e-00",
+                "image": "0057"
+              },
+              "3": {
+                "name": "Cliff",
+                "debug_id": "e-01",
+                "image": "0058"
+              },
+              "4": {
+                "name": "Rock climb",
+                "debug_id": "e-01b",
+                "image": "0059"
+              },
+              "5": {
+                "name": "Jewel room",
+                "debug_id": "e-01c",
+                "image": "0060"
+              },
+              "6": {
+                "name": "Berry path",
+                "debug_id": "e-02",
+                "image": "0061"
+              },
+              "7": {
+                "name": "Sliding platforms",
+                "debug_id": "e-03",
+                "image": "0062"
+              },
+              "8": {
+                "name": "Headwind",
+                "debug_id": "e-04",
+                "image": "0063"
+              },
+              "9": {
+                "name": "Snowballs",
+                "debug_id": "e-05",
+                "image": "0064"
+              },
+              "10": {
+                "name": "Horizontal scroller",
+                "debug_id": "e-06",
+                "image": "0065"
+              },
+              "11": {
+                "name": "Vertical scroller",
+                "debug_id": "e-07",
+                "image": "0066"
+              },
+              "12": {
+                "name": "Center room",
+                "debug_id": "e-08",
+                "image": "0067"
+              },
+              "13": {
+                "name": "Left berry",
+                "debug_id": "e-09",
+                "image": "0068"
+              },
+              "14": {
+                "name": "Crystal maze",
+                "debug_id": "e-11",
+                "image": "0069"
+              },
+              "15": {
+                "name": "Seed puzzle",
+                "debug_id": "e-12",
+                "image": "0070"
+              },
+              "16": {
+                "name": "Tailwind",
+                "debug_id": "e-10",
+                "image": "0071"
+              },
+              "17": {
+                "name": "Scroller jumps",
+                "debug_id": "e-10b",
+                "image": "0072"
+              },
+              "18": {
+                "name": "Orb room",
+                "debug_id": "e-13",
+                "image": "0073"
+              }
+            }
+          },
+          "6": {
+            "name": "2500 M",
+            "abbreviation": "2.5K",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "f-00",
+                "image": "0074"
+              },
+              "2": {
+                "name": "Dash block berry",
+                "debug_id": "f-01",
+                "image": "0075"
+              },
+              "3": {
+                "name": "Dash block path",
+                "debug_id": "f-02",
+                "image": "0076"
+              },
+              "4": {
+                "name": "Jewel room",
+                "debug_id": "f-02b",
+                "image": "0077"
+              },
+              "5": {
+                "name": "Launch platform",
+                "debug_id": "f-04",
+                "image": "0078"
+              },
+              "6": {
+                "name": "Up & down blocks",
+                "debug_id": "f-03",
+                "image": "0079"
+              },
+              "7": {
+                "name": "Central lock",
+                "debug_id": "f-05",
+                "image": "0080"
+              },
+              "8": {
+                "name": "Blade bubbles",
+                "debug_id": "f-06",
+                "image": "0081"
+              },
+              "9": {
+                "name": "Key skip room",
+                "debug_id": "f-07",
+                "image": "0082"
+              },
+              "10": {
+                "name": "Bubbles & dash blocks",
+                "debug_id": "f-08",
+                "image": "0083"
+              },
+              "11": {
+                "name": "Berry route I",
+                "debug_id": "f-08b",
+                "image": "0084"
+              },
+              "12": {
+                "name": "Berry route II",
+                "debug_id": "f-08d",
+                "image": "0085"
+              },
+              "13": {
+                "name": "Berry route III",
+                "debug_id": "f-08c",
+                "image": "0086"
+              },
+              "14": {
+                "name": "Crystal bubble route",
+                "debug_id": "f-09",
+                "image": "0087"
+              },
+              "15": {
+                "name": "Thread the needle",
+                "debug_id": "f-10",
+                "image": "0088"
+              },
+              "16": {
+                "name": "Door skip",
+                "debug_id": "f-10b",
+                "image": "0089"
+              },
+              "17": {
+                "name": "Orb room",
+                "debug_id": "f-11",
+                "image": "0090"
+              }
+            }
+          },
+          "7": {
+            "name": "3000 M",
+            "abbreviation": "3K",
+            "rooms": {
+              "1": {
+                "name": "Flag 30",
+                "debug_id": "g-00",
+                "image": "0091"
+              },
+              "2": {
+                "name": "Flag 29",
+                "debug_id": "g-00",
+                "image": "0092"
+              },
+              "3": {
+                "name": "Flag 28",
+                "debug_id": "g-00b",
+                "image": "0093"
+              },
+              "4": {
+                "name": "Heart Room",
+                "debug_id": "g-00b",
+                "image": "0094"
+              },
+              "5": {
+                "name": "Flag 27",
+                "debug_id": "g-00b",
+                "image": "0095"
+              },
+              "6": {
+                "name": "Flag 26",
+                "debug_id": "g-00b",
+                "image": "0096"
+              },
+              "7": {
+                "name": "Flag 25",
+                "debug_id": "g-00b",
+                "image": "0097"
+              },
+              "8": {
+                "name": "Flag 24",
+                "debug_id": "g-00b",
+                "image": "0098"
+              },
+              "9": {
+                "name": "Flag 23",
+                "debug_id": "g-00b",
+                "image": "0099"
+              },
+              "10": {
+                "name": "Flag 22",
+                "debug_id": "g-00b",
+                "image": "0100"
+              },
+              "11": {
+                "name": "Flag 21",
+                "debug_id": "g-00b",
+                "image": "0101"
+              },
+              "12": {
+                "name": "Flag 20",
+                "debug_id": "g-00b",
+                "image": "0102"
+              },
+              "13": {
+                "name": "Flag 19",
+                "debug_id": "g-01",
+                "image": "0103"
+              },
+              "14": {
+                "name": "Flag 18",
+                "debug_id": "g-01",
+                "image": "0104"
+              },
+              "15": {
+                "name": "Flag 17",
+                "debug_id": "g-01",
+                "image": "0105"
+              },
+              "16": {
+                "name": "Flag 16",
+                "debug_id": "g-01",
+                "image": "0106"
+              },
+              "17": {
+                "name": "Flag 15",
+                "debug_id": "g-01",
+                "image": "0107"
+              },
+              "18": {
+                "name": "Flag 14",
+                "debug_id": "g-01",
+                "image": "0108"
+              },
+              "19": {
+                "name": "Flag 13",
+                "debug_id": "g-01",
+                "image": "0109"
+              },
+              "20": {
+                "name": "Flag 12",
+                "debug_id": "g-01",
+                "image": "0110"
+              },
+              "21": {
+                "name": "Flag 11",
+                "debug_id": "g-01",
+                "image": "0111"
+              },
+              "22": {
+                "name": "Flag 10",
+                "debug_id": "g-01",
+                "image": "0112"
+              },
+              "23": {
+                "name": "Flag 9",
+                "debug_id": "g-01",
+                "image": "0113"
+              },
+              "24": {
+                "name": "Flag 8",
+                "debug_id": "g-01",
+                "image": "0114"
+              },
+              "25": {
+                "name": "Flag 7",
+                "debug_id": "g-01",
+                "image": "0115"
+              },
+              "26": {
+                "name": "Flag 6",
+                "debug_id": "g-02",
+                "image": "0116"
+              },
+              "27": {
+                "name": "Flag 5",
+                "debug_id": "g-03",
+                "image": "0117"
+              },
+              "28": {
+                "name": "Flag 4",
+                "debug_id": "g-03",
+                "image": "0118"
+              },
+              "29": {
+                "name": "Flag 3",
+                "debug_id": "g-03",
+                "image": "0119"
+              },
+              "30": {
+                "name": "Flag 2",
+                "debug_id": "g-03",
+                "image": "0120"
+              },
+              "31": {
+                "name": "Flag 1",
+                "debug_id": "g-03",
+                "image": "0121"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Intro",
+                "debug_id": "a-00-intro",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Crystal dashing",
+                "debug_id": "a-00",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Wall springs",
+                "debug_id": "a-01",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Spring pillars",
+                "debug_id": "a-02",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Orb room",
+                "debug_id": "a-03",
+                "image": "0005"
+              }
+            }
+          },
+          "2": {
+            "name": "500 M",
+            "abbreviation": "0.5K",
+            "rooms": {
+              "1": {
+                "name": "Zipper ascent I",
+                "debug_id": "b-00",
+                "image": "0006"
+              },
+              "2": {
+                "name": "Zipper ascent II",
+                "debug_id": "b-01",
+                "image": "0007"
+              },
+              "3": {
+                "name": "Falling ice",
+                "debug_id": "b-02",
+                "image": "0008"
+              },
+              "4": {
+                "name": "Orb room",
+                "debug_id": "b-03",
+                "image": "0009"
+              }
+            }
+          },
+          "3": {
+            "name": "1000 M",
+            "abbreviation": "1K",
+            "rooms": {
+              "1": {
+                "name": "Dream blocks I",
+                "debug_id": "c-01",
+                "image": "0010"
+              },
+              "2": {
+                "name": "Dream blocks II",
+                "debug_id": "c-00",
+                "image": "0011"
+              },
+              "3": {
+                "name": "Keep off the ground",
+                "debug_id": "c-02",
+                "image": "0012"
+              },
+              "4": {
+                "name": "Orb room",
+                "debug_id": "c-03",
+                "image": "0013"
+              }
+            }
+          },
+          "4": {
+            "name": "1500 M",
+            "abbreviation": "1.5K",
+            "rooms": {
+              "1": {
+                "name": "Dust springs",
+                "debug_id": "d-00",
+                "image": "0014"
+              },
+              "2": {
+                "name": "Dust cycles",
+                "debug_id": "d-01",
+                "image": "0015"
+              },
+              "3": {
+                "name": "Dust switch",
+                "debug_id": "d-02",
+                "image": "0016"
+              },
+              "4": {
+                "name": "Orb room",
+                "debug_id": "d-03",
+                "image": "0017"
+              }
+            }
+          },
+          "5": {
+            "name": "2000 M",
+            "abbreviation": "2K",
+            "rooms": {
+              "1": {
+                "name": "Cloud hops",
+                "debug_id": "e-00",
+                "image": "0018"
+              },
+              "2": {
+                "name": "Springscroller",
+                "debug_id": "e-01",
+                "image": "0019"
+              },
+              "3": {
+                "name": "Headwind snowballs",
+                "debug_id": "e-02",
+                "image": "0020"
+              },
+              "4": {
+                "name": "Orb room",
+                "debug_id": "e-03",
+                "image": "0021"
+              }
+            }
+          },
+          "6": {
+            "name": "2500 M",
+            "abbreviation": "2.5K",
+            "rooms": {
+              "1": {
+                "name": "Dash block fling",
+                "debug_id": "f-00",
+                "image": "0022"
+              },
+              "2": {
+                "name": "Bubble spike maze",
+                "debug_id": "f-01",
+                "image": "0023"
+              },
+              "3": {
+                "name": "Crystals & dash blocks",
+                "debug_id": "f-02",
+                "image": "0024"
+              },
+              "4": {
+                "name": "Orb room",
+                "debug_id": "f-03",
+                "image": "0025"
+              }
+            }
+          },
+          "7": {
+            "name": "3000 M",
+            "abbreviation": "3K",
+            "rooms": {
+              "1": {
+                "name": "Flag 20",
+                "debug_id": "g-00",
+                "image": "0026"
+              },
+              "2": {
+                "name": "Flag 19",
+                "debug_id": "g-00",
+                "image": "0027"
+              },
+              "3": {
+                "name": "Flag 18",
+                "debug_id": "g-00",
+                "image": "0028"
+              },
+              "4": {
+                "name": "Flag 17",
+                "debug_id": "g-00",
+                "image": "0029"
+              },
+              "5": {
+                "name": "Flag 16",
+                "debug_id": "g-00",
+                "image": "0030"
+              },
+              "6": {
+                "name": "Flag 15",
+                "debug_id": "g-00",
+                "image": "0031"
+              },
+              "7": {
+                "name": "Flag 14",
+                "debug_id": "g-01",
+                "image": "0032"
+              },
+              "8": {
+                "name": "Flag 13",
+                "debug_id": "g-01",
+                "image": "0033"
+              },
+              "9": {
+                "name": "Flag 12",
+                "debug_id": "g-01",
+                "image": "0034"
+              },
+              "10": {
+                "name": "Flag 11",
+                "debug_id": "g-01",
+                "image": "0035"
+              },
+              "11": {
+                "name": "Flag 10",
+                "debug_id": "g-01",
+                "image": "0036"
+              },
+              "12": {
+                "name": "Flag 9",
+                "debug_id": "g-01",
+                "image": "0037"
+              },
+              "13": {
+                "name": "Flag 8",
+                "debug_id": "g-02",
+                "image": "0038"
+              },
+              "14": {
+                "name": "Flag 7",
+                "debug_id": "g-02",
+                "image": "0039"
+              },
+              "15": {
+                "name": "Flag 6",
+                "debug_id": "g-02",
+                "image": "0040"
+              },
+              "16": {
+                "name": "Flag 5",
+                "debug_id": "g-02",
+                "image": "0041"
+              },
+              "17": {
+                "name": "Flag 4",
+                "debug_id": "g-02",
+                "image": "0042"
+              },
+              "18": {
+                "name": "Flag 3",
+                "debug_id": "g-02",
+                "image": "0043"
+              },
+              "19": {
+                "name": "Flag 2",
+                "debug_id": "g-02",
+                "image": "0044"
+              },
+              "20": {
+                "name": "Flag 1",
+                "debug_id": "g-02",
+                "image": "0045"
+              },
+              "21": {
+                "name": "Cassette",
+                "debug_id": "g-03",
+                "image": "0046"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Wallbounces",
+                "debug_id": "01",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Springs",
+                "debug_id": "02",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Crystal maze",
+                "debug_id": "03",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Heart room",
+                "debug_id": "04",
+                "image": "0004"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "epilogue": {
+    "name": "Epilogue",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Granny's house",
+                "debug_id": "outside",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Inside",
+                "debug_id": "inside",
+                "image": "0002"
+              },
+              "3": {
+                "name": "The bridge",
+                "debug_id": "bridge",
+                "image": "0003"
+              },
+              "4": {
+                "name": "The nest",
+                "debug_id": "secret",
+                "image": "0004"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "core": {
+    "chapter_no": 8,
+    "name": "Core",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Car",
+                "debug_id": "0x",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Reunion with granny",
+                "debug_id": "00",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Dash loss",
+                "debug_id": "01",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Granny's warning",
+                "debug_id": "02",
+                "image": "0004"
+              }
+            }
+          },
+          "2": {
+            "name": "Into the Core",
+            "abbreviation": "ITC",
+            "rooms": {
+              "1": {
+                "name": "Gaps and conveyors",
+                "debug_id": "a-00",
+                "image": "0005"
+              },
+              "2": {
+                "name": "Fireballs and spring",
+                "debug_id": "a-01",
+                "image": "0006"
+              },
+              "3": {
+                "name": "Core block",
+                "debug_id": "a-02",
+                "image": "0007"
+              },
+              "4": {
+                "name": "Ascent I",
+                "debug_id": "a-03",
+                "image": "0008"
+              },
+              "5": {
+                "name": "Ice skip",
+                "debug_id": "b-00",
+                "image": "0009"
+              },
+              "6": {
+                "name": "Rising balls I",
+                "debug_id": "b-01",
+                "image": "0010"
+              },
+              "7": {
+                "name": "Rising balls II",
+                "debug_id": "b-02",
+                "image": "0011"
+              },
+              "8": {
+                "name": "Fireball snake",
+                "debug_id": "b-03",
+                "image": "0012"
+              },
+              "9": {
+                "name": "Ice switch",
+                "debug_id": "b-04",
+                "image": "0013"
+              },
+              "10": {
+                "name": "Backtrack",
+                "debug_id": "b-05",
+                "image": "0014"
+              },
+              "11": {
+                "name": "Left berry",
+                "debug_id": "b-06",
+                "image": "0015"
+              },
+              "12": {
+                "name": "Ascent II",
+                "debug_id": "b-07b",
+                "image": "0016"
+              },
+              "13": {
+                "name": "Ascent III",
+                "debug_id": "b-07",
+                "image": "0017"
+              }
+            }
+          },
+          "3": {
+            "name": "Hot and Cold",
+            "abbreviation": "HAC",
+            "rooms": {
+              "1": {
+                "name": "Conveyor and blocks",
+                "debug_id": "c-00",
+                "image": "0018"
+              },
+              "2": {
+                "name": "Berry bumpers",
+                "debug_id": "c-00b",
+                "image": "0019"
+              },
+              "3": {
+                "name": "Circling balls",
+                "debug_id": "c-01",
+                "image": "0020"
+              },
+              "4": {
+                "name": "Bumper segments",
+                "debug_id": "c-02",
+                "image": "0021"
+              },
+              "5": {
+                "name": "Ice bouncing",
+                "debug_id": "c-03",
+                "image": "0022"
+              },
+              "6": {
+                "name": "Frozen berry",
+                "debug_id": "c-03b",
+                "image": "0023"
+              },
+              "7": {
+                "name": "Fire and conveyors",
+                "debug_id": "c-04",
+                "image": "0024"
+              }
+            }
+          },
+          "4": {
+            "name": "Heart of the Mountain",
+            "abbreviation": "HOTM",
+            "rooms": {
+              "1": {
+                "name": "Rising lava I",
+                "debug_id": "d-00",
+                "image": "0025"
+              },
+              "2": {
+                "name": "Rising lava II",
+                "debug_id": "d-01",
+                "image": "0026"
+              },
+              "3": {
+                "name": "Rising ice I",
+                "debug_id": "d-02",
+                "image": "0027"
+              },
+              "4": {
+                "name": "Rising ice II",
+                "debug_id": "d-03",
+                "image": "0028"
+              },
+              "5": {
+                "name": "Rising lava III",
+                "debug_id": "d-04",
+                "image": "0029"
+              },
+              "6": {
+                "name": "Serpentine",
+                "debug_id": "d-05",
+                "image": "0030"
+              },
+              "7": {
+                "name": "Core block ascent",
+                "debug_id": "d-06",
+                "image": "0031"
+              },
+              "8": {
+                "name": "Orb room",
+                "debug_id": "d-07",
+                "image": "0032"
+              },
+              "9": {
+                "name": "Sealed room",
+                "debug_id": "d-08",
+                "image": "0033"
+              },
+              "10": {
+                "name": "Fire pillar switches",
+                "debug_id": "d-09",
+                "image": "0034"
+              },
+              "11": {
+                "name": "Bumper boosts",
+                "debug_id": "d-10",
+                "image": "0035"
+              },
+              "12": {
+                "name": "One Crystal passage",
+                "debug_id": "d-10b",
+                "image": "0036"
+              },
+              "13": {
+                "name": "Feathers",
+                "debug_id": "d-10c",
+                "image": "0037"
+              },
+              "14": {
+                "name": "Cassette room",
+                "debug_id": "d-11",
+                "image": "0038"
+              },
+              "15": {
+                "name": "Heart of the mountain",
+                "debug_id": "space",
+                "image": "0039"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "name": "B",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "00",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Heart gate",
+                "debug_id": "01",
+                "image": "0002"
+              }
+            }
+          },
+          "2": {
+            "name": "Into the Core",
+            "abbreviation": "ITC",
+            "rooms": {
+              "1": {
+                "name": "Fireballs",
+                "debug_id": "a-00",
+                "image": "0003"
+              },
+              "2": {
+                "name": "Fire conveyors",
+                "debug_id": "a-01",
+                "image": "0004"
+              },
+              "3": {
+                "name": "Ice switch",
+                "debug_id": "a-02",
+                "image": "0005"
+              },
+              "4": {
+                "name": "Ice bouncing I",
+                "debug_id": "a-03",
+                "image": "0006"
+              },
+              "5": {
+                "name": "Ice blocks",
+                "debug_id": "a-04",
+                "image": "0007"
+              },
+              "6": {
+                "name": "Ice bumpers",
+                "debug_id": "a-05",
+                "image": "0008"
+              }
+            }
+          },
+          "3": {
+            "name": "Burning or Freezing",
+            "abbreviation": "BOF",
+            "rooms": {
+              "1": {
+                "name": "Fire tunnel",
+                "debug_id": "b-00",
+                "image": "0009"
+              },
+              "2": {
+                "name": "Fire & ice segments",
+                "debug_id": "b-01",
+                "image": "0010"
+              },
+              "3": {
+                "name": "Ice bouncing II",
+                "debug_id": "b-02",
+                "image": "0011"
+              },
+              "4": {
+                "name": "Crystal conveyors",
+                "debug_id": "b-03",
+                "image": "0012"
+              },
+              "5": {
+                "name": "Fireball conveyors",
+                "debug_id": "b-04",
+                "image": "0013"
+              },
+              "6": {
+                "name": "Circling balls",
+                "debug_id": "b-05",
+                "image": "0014"
+              }
+            }
+          },
+          "4": {
+            "name": "Heartbeat",
+            "abbreviation": "HB",
+            "rooms": {
+              "1": {
+                "name": "Rising fire",
+                "debug_id": "c-01",
+                "image": "0015"
+              },
+              "2": {
+                "name": "Rising ice",
+                "debug_id": "c-02",
+                "image": "0016"
+              },
+              "3": {
+                "name": "Wall conveyors",
+                "debug_id": "c-03",
+                "image": "0017"
+              },
+              "4": {
+                "name": "Compendium",
+                "debug_id": "c-04",
+                "image": "0018"
+              },
+              "5": {
+                "name": "Floor and ceiling",
+                "debug_id": "c-05",
+                "image": "0019"
+              },
+              "6": {
+                "name": "Ball snake",
+                "debug_id": "c-06",
+                "image": "0020"
+              },
+              "7": {
+                "name": "Jank blocks",
+                "debug_id": "c-07",
+                "image": "0022"
+              },
+              "8": {
+                "name": "Cassette room",
+                "debug_id": "space",
+                "image": "0023"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "name": "C",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Begin",
+            "abbreviation": "BG",
+            "rooms": {
+              "1": {
+                "name": "Heart gate",
+                "debug_id": "intro",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Hyper tutorial",
+                "debug_id": "00",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Blocks and bumpers",
+                "debug_id": "01",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Hot and cold",
+                "debug_id": "02",
+                "image": "0004"
+              },
+              "5": {
+                "name": "Heart room",
+                "debug_id": "02",
+                "image": "0005"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "farewell": {
+    "chapter_no": 9,
+    "name": "Farewell",
+    "official": true,
+    "sides": {
+      "1": {
+        "name": "A",
+        "official": true,
+        "checkpoints": {
+          "1": {
+            "name": "Start",
+            "abbreviation": "ST",
+            "rooms": {
+              "1": {
+                "name": "Past",
+                "debug_id": "intro-00-past",
+                "image": "0001"
+              },
+              "2": {
+                "name": "Present",
+                "debug_id": "intro-01-future",
+                "image": "0002"
+              },
+              "3": {
+                "name": "Clouds",
+                "debug_id": "intro-02-launch",
+                "image": "0003"
+              },
+              "4": {
+                "name": "Space",
+                "debug_id": "intro-03-space",
+                "image": "0004"
+              }
+            }
+          },
+          "2": {
+            "name": "Singular",
+            "abbreviation": "SI",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "a-00",
+                "image": "0005"
+              },
+              "2": {
+                "name": "Crystal tunnel",
+                "debug_id": "a-01",
+                "image": "0006"
+              },
+              "3": {
+                "name": "Sliding block",
+                "debug_id": "a-02",
+                "image": "0007"
+              },
+              "4": {
+                "name": "Block toss",
+                "debug_id": "a-03",
+                "image": "0008"
+              },
+              "5": {
+                "name": "Spring blocks I",
+                "debug_id": "a-04",
+                "image": "0009"
+              },
+              "6": {
+                "name": "Spring blocks II",
+                "debug_id": "a-05",
+                "image": "0010"
+              },
+              "7": {
+                "name": "First Fish",
+                "debug_id": "b-00",
+                "image": "0011"
+              },
+              "8": {
+                "name": "Fish bounce I",
+                "debug_id": "b-01",
+                "image": "0012"
+              },
+              "9": {
+                "name": "Fish bounce II",
+                "debug_id": "b-02",
+                "image": "0013"
+              },
+              "10": {
+                "name": "Dream fish",
+                "debug_id": "b-03",
+                "image": "0014"
+              },
+              "11": {
+                "name": "Fish cave",
+                "debug_id": "b-04",
+                "image": "0015"
+              },
+              "12": {
+                "name": "Fish spring I",
+                "debug_id": "b-05",
+                "image": "0016"
+              },
+              "13": {
+                "name": "Fish spring II",
+                "debug_id": "b-06",
+                "image": "0017"
+              },
+              "14": {
+                "name": "Electric maze",
+                "debug_id": "b-07",
+                "image": "0018"
+              }
+            }
+          },
+          "3": {
+            "name": "Power Source",
+            "abbreviation": "PS",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "c-00",
+                "image": "0019"
+              },
+              "2": {
+                "name": "Top route I",
+                "debug_id": "c-alt-00",
+                "image": "0020"
+              },
+              "3": {
+                "name": "Top route II",
+                "debug_id": "c-alt-01",
+                "image": "0021"
+              },
+              "4": {
+                "name": "Bottom route I",
+                "debug_id": "c-00b",
+                "image": "0022"
+              },
+              "5": {
+                "name": "Bottom route II",
+                "debug_id": "c-01",
+                "image": "0023"
+              },
+              "6": {
+                "name": "Bottom route III",
+                "debug_id": "c-02",
+                "image": "0024"
+              },
+              "7": {
+                "name": "Keyskip Jelly",
+                "debug_id": "c-03",
+                "image": "0025"
+              },
+              "8": {
+                "name": "Locked room",
+                "debug_id": "d-00",
+                "image": "0026"
+              },
+              "9": {
+                "name": "Bottom left key",
+                "debug_id": "d-01",
+                "image": "0027.5"
+              },
+              "10": {
+                "name": "Top left key",
+                "debug_id": "d-02",
+                "image": "0028.5"
+              },
+              "11": {
+                "name": "Bottom right key",
+                "debug_id": "d-03",
+                "image": "0029.5"
+              },
+              "12": {
+                "name": "Top right key",
+                "debug_id": "d-04",
+                "image": "0030.5"
+              },
+              "13": {
+                "name": "Top key",
+                "debug_id": "d-05",
+                "image": "0031.5"
+              },
+              "14": {
+                "name": "Keyskip I",
+                "debug_id": "d-05",
+                "image": "0032"
+              },
+              "15": {
+                "name": "Keyskip II / Bubble stars",
+                "debug_id": "e-00y",
+                "image": "0033"
+              },
+              "16": {
+                "name": "Keyskip III",
+                "debug_id": "e-00yb",
+                "image": "0034"
+              }
+            }
+          },
+          "4": {
+            "name": "Remembered",
+            "abbreviation": "RM",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "e-00z",
+                "image": "0035"
+              },
+              "2": {
+                "name": "Cloud fish switch",
+                "debug_id": "e-00",
+                "image": "0036"
+              },
+              "3": {
+                "name": "Jelly up",
+                "debug_id": "e-00b",
+                "image": "0037"
+              },
+              "4": {
+                "name": "Falling pillars",
+                "debug_id": "e-01",
+                "image": "0038"
+              },
+              "5": {
+                "name": "Jelly right",
+                "debug_id": "e-02",
+                "image": "0039"
+              },
+              "6": {
+                "name": "Fish springs",
+                "debug_id": "e-03",
+                "image": "0040"
+              },
+              "7": {
+                "name": "Jelly gates",
+                "debug_id": "e-04",
+                "image": "0041"
+              },
+              "8": {
+                "name": "Fish push",
+                "debug_id": "e-05",
+                "image": "0042"
+              },
+              "9": {
+                "name": "Aloft fish",
+                "debug_id": "e-05b",
+                "image": "0043"
+              },
+              "10": {
+                "name": "Fish bounce",
+                "debug_id": "e-05c",
+                "image": "0044"
+              },
+              "11": {
+                "name": "Glide springs",
+                "debug_id": "e-06",
+                "image": "0045"
+              },
+              "12": {
+                "name": "Fishscroller",
+                "debug_id": "e-07",
+                "image": "0046"
+              },
+              "13": {
+                "name": "Jellyscroller",
+                "debug_id": "e-08",
+                "image": "0047"
+              }
+            }
+          },
+          "5": {
+            "name": "Event Horizon",
+            "abbreviation": "EH",
+            "rooms": {
+              "1": {
+                "name": "Heart gate",
+                "debug_id": "f-door",
+                "image": "0048"
+              },
+              "2": {
+                "name": "Wavedash Tutorial I",
+                "debug_id": "f-00",
+                "image": "0049"
+              },
+              "3": {
+                "name": "Wavedash Tutorial II",
+                "debug_id": "f-00",
+                "image": "0049.1"
+              },
+              "4": {
+                "name": "Wavedash Tutorial III",
+                "debug_id": "f-01",
+                "image": "0049.2"
+              },
+              "5": {
+                "name": "Bird",
+                "debug_id": "f-02",
+                "image": "0049.3"
+              },
+              "6": {
+                "name": "Beyond the heart",
+                "debug_id": "f-03",
+                "image": "0050"
+              },
+              "7": {
+                "name": "Wavedash blocks",
+                "debug_id": "f-04",
+                "image": "0051"
+              },
+              "8": {
+                "name": "Conveyor",
+                "debug_id": "f-05",
+                "image": "0052"
+              },
+              "9": {
+                "name": "Kevin",
+                "debug_id": "f-06",
+                "image": "0053"
+              },
+              "10": {
+                "name": "Wavedash zippers",
+                "debug_id": "f-07",
+                "image": "0054"
+              },
+              "12": {
+                "name": "Autoscroller",
+                "debug_id": "f-08",
+                "image": "0055"
+              },
+              "13": {
+                "name": "Bounce switch",
+                "debug_id": "f-09",
+                "image": "0056"
+              },
+              "14": {
+                "name": "Vertical Zipper",
+                "debug_id": "g-00",
+                "image": "0057"
+              },
+              "15": {
+                "name": "Wavedash bubbles",
+                "debug_id": "g-01",
+                "image": "0058"
+              },
+              "16": {
+                "name": "Dream switch",
+                "debug_id": "g-03",
+                "image": "0059"
+              },
+              "17": {
+                "name": "Moving dream blocks",
+                "debug_id": "g-02",
+                "image": "0060"
+              },
+              "18": {
+                "name": "Comb",
+                "debug_id": "g-04",
+                "image": "0061"
+              },
+              "19": {
+                "name": "Cloud gap",
+                "debug_id": "g-05",
+                "image": "0062"
+              },
+              "20": {
+                "name": "Bird trail",
+                "debug_id": "g-06",
+                "image": "0063"
+              }
+            }
+          },
+          "6": {
+            "name": "Determination",
+            "abbreviation": "DT",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "h-00b",
+                "image": "0064"
+              },
+              "2": {
+                "name": "Sandwich",
+                "debug_id": "h-00",
+                "image": "0065"
+              },
+              "3": {
+                "name": "Spring scroller",
+                "debug_id": "h-01",
+                "image": "0066"
+              },
+              "4": {
+                "name": "Wind bubbles",
+                "debug_id": "h-02",
+                "image": "0067"
+              },
+              "5": {
+                "name": "Airlock",
+                "debug_id": "h-03",
+                "image": "0068"
+              },
+              "6": {
+                "name": "Stargate",
+                "debug_id": "h-03b",
+                "image": "0069"
+              },
+              "7": {
+                "name": "Starshaft",
+                "debug_id": "h-04",
+                "image": "0070"
+              },
+              "8": {
+                "name": "Demo room",
+                "debug_id": "h-04b",
+                "image": "0071"
+              },
+              "9": {
+                "name": "Tri-switch",
+                "debug_id": "h-05",
+                "image": "0072"
+              },
+              "10": {
+                "name": "Falling pillars",
+                "debug_id": "h-06",
+                "image": "0073"
+              },
+              "11": {
+                "name": "Fire & Ice",
+                "debug_id": "h-06b",
+                "image": "0074"
+              },
+              "12": {
+                "name": "Wind dash",
+                "debug_id": "h-07",
+                "image": "0075"
+              },
+              "13": {
+                "name": "Windsprings",
+                "debug_id": "h-07",
+                "image": "0076"
+              },
+              "14": {
+                "name": "Conveyor",
+                "debug_id": "h-08",
+                "image": "0077"
+              },
+              "15": {
+                "name": "Kevin",
+                "debug_id": "h-09",
+                "image": "0078"
+              },
+              "16": {
+                "name": "Feathers & stars",
+                "debug_id": "h-10",
+                "image": "0079"
+              }
+            }
+          },
+          "7": {
+            "name": "Stubbornness",
+            "abbreviation": "SB",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "i-00",
+                "image": "0080"
+              },
+              "2": {
+                "name": "Bounce or grab",
+                "debug_id": "i-00b",
+                "image": "0081"
+              },
+              "3": {
+                "name": "Spring blocks",
+                "debug_id": "i-01",
+                "image": "0082"
+              },
+              "4": {
+                "name": "Horseshoe",
+                "debug_id": "i-02",
+                "image": "0083"
+              },
+              "5": {
+                "name": "Crystal columns",
+                "debug_id": "i-03",
+                "image": "0084"
+              },
+              "6": {
+                "name": "Bubble lock",
+                "debug_id": "i-04",
+                "image": "0085"
+              },
+              "7": {
+                "name": "Underhang",
+                "debug_id": "i-05",
+                "image": "0086"
+              }
+            }
+          },
+          "8": {
+            "name": "Reconciliation",
+            "abbreviation": "RC",
+            "rooms": {
+              "1": {
+                "name": "Start",
+                "debug_id": "j-00",
+                "image": "0087"
+              },
+              "2": {
+                "name": "Jelly throw",
+                "debug_id": "j-00b",
+                "image": "0089"
+              },
+              "3": {
+                "name": "Bird & Badeline",
+                "debug_id": "j-01",
+                "image": "0090"
+              },
+              "4": {
+                "name": "Social distancing",
+                "debug_id": "j-02",
+                "image": "0091"
+              },
+              "5": {
+                "name": "Moving pillars",
+                "debug_id": "j-03",
+                "image": "0092"
+              },
+              "6": {
+                "name": "Jelly dash",
+                "debug_id": "j-04",
+                "image": "0093"
+              },
+              "7": {
+                "name": "Feather pillars",
+                "debug_id": "j-05",
+                "image": "0094"
+              },
+              "8": {
+                "name": "Shifting maze",
+                "debug_id": "j-06",
+                "image": "0095"
+              },
+              "9": {
+                "name": "Fish Field",
+                "debug_id": "j-07",
+                "image": "0096"
+              },
+              "10": {
+                "name": "Dream jumps",
+                "debug_id": "j-08",
+                "image": "0097"
+              },
+              "11": {
+                "name": "Electric press",
+                "debug_id": "j-09",
+                "image": "0098"
+              },
+              "12": {
+                "name": "Dash block maze",
+                "debug_id": "j-10",
+                "image": "0099"
+              },
+              "13": {
+                "name": "Sping scroller",
+                "debug_id": "j-11",
+                "image": "00100"
+              },
+              "14": {
+                "name": "Wavedash blocks",
+                "debug_id": "j-12",
+                "image": "00101"
+              },
+              "15": {
+                "name": "Windfeather",
+                "debug_id": "j-13",
+                "image": "00102"
+              },
+              "16": {
+                "name": "Chokefish",
+                "debug_id": "j-14",
+                "image": "00103"
+              },
+              "17": {
+                "name": "Jelly bounce",
+                "debug_id": "j-14b",
+                "image": "00104"
+              },
+              "18": {
+                "name": "Kevin",
+                "debug_id": "j-15",
+                "image": "00105"
+              }
+            }
+          },
+          "9": {
+            "name": "Farewell",
+            "abbreviation": "FW",
+            "rooms": {
+              "1": {
+                "name": "Farewell",
+                "debug_id": "j-16",
+                "image": "0106"
+              },
+              "2": {
+                "name": "Forced death",
+                "debug_id": "j-17",
+                "image": "0107"
+              },
+              "3": {
+                "name": "Spawn set",
+                "debug_id": "j-18",
+                "image": "0108"
+              },
+              "4": {
+                "name": "Moonberry room",
+                "debug_id": "j-19",
+                "image": "0109"
+              },
+              "5": {
+                "name": "Golden room",
+                "debug_id": "end-golden",
+                "image": "0110"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
