@@ -63,80 +63,42 @@
               {
                 "name": "Begin",
                 "debug_id": "1",
-                "image": "1",
-                "categories": [
-                  "any",
-                  "arb",
-                  "hundo"
-                ]
+                "image": "1"                
               },
               {
                 "name": "Berry and spring",
                 "debug_id": "2",
-                "image": "2",
-                "categories": [
-                  "any",
-                  "arb",
-                  "hundo"
-                ]
+                "image": "2"
               },
               {
                 "name": "Floating platforms",
                 "debug_id": "3",
-                "image": "3",
-                "categories": [
-                  "any",
-                  "arb",
-                  "hundo"
-                ]
+                "image": "3"
               },
               {
                 "name": "Zipper intro",
                 "debug_id": "4",
-                "image": "4",
-                "categories": [
-                  "any",
-                  "arb",
-                  "hundo"
-                ]
+                "image": "4"
               },
               {
                 "name": "Crumbling winged berry",
                 "debug_id": "3b",
-                "image": "5",
-                "categories": [
-                  "any",
-                  "arb",
-                  "hundo"
-                ]
+                "image": "5"
               },
               {
                 "name": "Zipper and top-left berry",
                 "debug_id": "5",
-                "image": "6",
-                "categories": [
-                  "any",
-                  "arb",
-                  "hundo"
-                ]
+                "image": "6"
               },
               {
                 "name": "Up and around berry",
                 "debug_id": "5z",
-                "image": "7",
-                "categories": [
-                  "arb",
-                  "hundo"
-                ]
+                "image": "7"
               },
               {
                 "name": "Launch berry",
                 "debug_id": "5a",
-                "image": "8",
-                "categories": [
-                  "arb",
-                  "hundo"
-                ]
+                "image": "8"
               }
             ]
           },
