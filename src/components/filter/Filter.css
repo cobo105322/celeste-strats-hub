@@ -1,0 +1,10 @@
+.filters-div .filter{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.filters-div label{
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,7 @@
+.navbar-panel{
+    height: 90vh;
+}
+
+.navbar-panel .p-toggleable-content, .navbar-panel .p-panel-content{
+    height: 100%;    
+}
