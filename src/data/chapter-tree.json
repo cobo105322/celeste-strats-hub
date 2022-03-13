@@ -63,42 +63,50 @@
               {
                 "name": "Begin",
                 "debug_id": "1",
-                "image": "1"                
+                "image": "1",
+                "linked": ["2"]               
               },
               {
                 "name": "Berry and spring",
                 "debug_id": "2",
-                "image": "2"
+                "image": "2",
+                "linked": ["1", "3"]
               },
               {
                 "name": "Floating platforms",
                 "debug_id": "3",
-                "image": "3"
+                "image": "3",
+                "linked": ["2", "4"]
               },
               {
                 "name": "Zipper intro",
                 "debug_id": "4",
-                "image": "4"
+                "image": "4",
+                "linked": ["3", "3b"]
               },
               {
                 "name": "Crumbling winged berry",
                 "debug_id": "3b",
-                "image": "5"
+                "image": "5",
+                "linked": ["4", "5"]
               },
               {
                 "name": "Zipper and top-left berry",
                 "debug_id": "5",
-                "image": "6"
+                "image": "6",
+                "linked": ["3b", "5z", "5a", "6"]
               },
               {
                 "name": "Up and around berry",
                 "debug_id": "5z",
-                "image": "7"
+                "image": "7",
+                "linked": ["5"]
               },
               {
                 "name": "Launch berry",
                 "debug_id": "5a",
-                "image": "8"
+                "image": "8",
+                "linked": ["5"]
               }
             ]
           },
