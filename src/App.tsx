@@ -27,23 +27,19 @@ export default class App extends React.Component<any, AppState> {
     }
   }
 
-  render() {
-    let enums = EnumDifficulty;
-    console.log(Object.keys(enums));
+  render() {    
     return (
       <div className="App">
         <div className="grid">
           <div className="hidden md:block col-2"><Navbar/></div>
           <div className="col-12 lg:col-10">
             <Filter />
-            <Switch>                            
-              {/* <Route path="room/:chapter/:side/:checkpoint/:id" render={routeProps => <Room match={routeProps.match} chapterTree={this.state.chapterTree} />} /> */}
+            <Switch>                                          
               <Route path="/room/:chapter/:side/:checkpoint/:id" render={routeProps => <Room match={routeProps.match} chapterTree={this.state.chapterTree} />} />
               <Route path="/about" render={()=><About filteredTree={this.state.filteredTree} />} />
               <Route path="/" render={()=><Home filteredTree={this.state.filteredTree} />} />
               
             </Switch> 
-            <Link to="/about">as</Link>
           </div>
         </div>
       </div>
