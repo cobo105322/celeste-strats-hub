@@ -1,0 +1,26 @@
+{
+    "strats": [
+        {
+            "categories": ["any", "arb", "hundo", "aas"],
+            "difficulty": ["INTERMEDIATE"],
+            "tags": ["city"],
+            "summary": "Double wallbounce to extended hyper",
+            "description": "Enter from right side, do a neutral transition wallbounce, another wallbounce on left side, then extended hyper and finish with an updash wallbounce",
+            "gif": "https://gfycat.com/sinfulantiquehyena",
+            "room_id": "1a-4",
+            "entry_id": "1a-3",
+            "exit_id": "1a-3b"    
+        },
+        {
+            "categories": ["any"],
+            "difficulty": ["INTERMEDIATE"],
+            "tags": ["city"],
+            "summary": "Super to wallbounce to cornerkick",
+            "description": "Enter on the right side, super on the small platform and wallbounce to get to the top platform. Immediatly upright and cornerkick out of the room.",
+            "gif": "https://gfycat.com/realisticdimpledasiaticmouflon",
+            "room_id": "1a-3b",
+            "entry_id": "1a-3",
+            "exit_id": "1a-5"    
+        }
+    ]
+}
