@@ -1,13 +1,15 @@
-export interface Room{
+export interface iRoom{
     name: string,
     debug_id: string,
+    id: string,
     image: string,
+    linked: string[]
 }
 
 export interface Checkpoint{
     name: string,
     abbreviation: string,
-    rooms: Room[],
+    rooms: iRoom[],
 }
 
 export interface Side{
