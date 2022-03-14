@@ -10,10 +10,12 @@ import Filter from './components/filter/Filter';
 import { EnumDifficulty } from './models/enums/EnumDifficulty';
 import Navbar from './components/navbar/Navbar';
 import Room from './components/room/Room';
+import { FilterState } from './models/interfaces/FilterState';
 
 interface AppState {
   chapterTree: ChapterTree,
-  filteredTree: ChapterTree
+  filteredTree: ChapterTree,
+  currentFilters: FilterState
 }
 export default class App extends React.Component<any, AppState> {
   constructor(props: any) {
@@ -23,7 +25,13 @@ export default class App extends React.Component<any, AppState> {
 
     this.state = {
       chapterTree: chapterTree,
-      filteredTree: chapterTree
+      filteredTree: chapterTree,
+      currentFilters: {
+        category: [],
+        difficulty: [],
+        from: [],
+        tags: ''
+      }
     }
   }
 
@@ -35,7 +43,7 @@ export default class App extends React.Component<any, AppState> {
           <div className="col-12 lg:col-10">
             <Filter />
             <Switch>                                          
-              <Route path="/room/:chapter/:side/:checkpoint/:id" render={routeProps => <Room match={routeProps.match} chapterTree={this.state.chapterTree} />} />
+              <Route path="/room/:id" render={routeProps => <Room params={(routeProps.match.params as any)} filters={this.state.currentFilters} chapterTree={this.state.chapterTree} />} />
               <Route path="/about" render={()=><About filteredTree={this.state.filteredTree} />} />
               <Route path="/" render={()=><Home filteredTree={this.state.filteredTree} />} />
               

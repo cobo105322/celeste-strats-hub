@@ -1,7 +1,7 @@
 import './Home.css';
 
 import React from 'react';
-import { Chapter, ChapterTree, Checkpoint, Side, Room } from '../../models/interfaces/ChapterTree';
+import { Chapter, ChapterTree, Checkpoint, Side, iRoom } from '../../models/interfaces/ChapterTree';
 
 import { Accordion, AccordionTab } from 'primereact/accordion';
 
@@ -38,24 +38,23 @@ export default class Home extends React.PureComponent<HomeProps, HomeState> {
         return tree[chapterKey] ? tree[chapterKey].sides : [];
     }
 
-    getSideCheckpoints(chapterKey: string, sideIndex: number): Checkpoint[] {
-        let tree: any = this.props.filteredTree;
-        return (tree[chapterKey] && tree[chapterKey].sides && tree[chapterKey].sides[sideIndex]) ? tree[chapterKey].sides[sideIndex].checkpoints : [];
+    getSideCheckpoints(side: Side): Checkpoint[] {
+        return side.checkpoints;
     }
 
-    getCheckpointRooms(chapterKey: string, sideIndex: number, checkpointIndex: number): Room[] {
-        let tree: any = this.props.filteredTree;
-        return tree[chapterKey].sides[sideIndex].checkpoints[checkpointIndex].rooms;
+    getCheckpointRooms(checkpoint: Checkpoint): iRoom[] {
+        return checkpoint.rooms;
     }
 
 
     renderChapter(chapterKey: string, chapter: Chapter): JSX.Element {
+        let firstimg = chapter.sides[0].checkpoints[0].rooms[0].id;
         return (
             <div key={"home_ch_" + chapterKey} className="col-6 lg:col-2"
                 onClick={() => this.setState({ chapterKey: chapterKey, side: null, sideNumber: null, checkpoint: null, checkpointNumber: null, activeIndex: 1 })}
             >
                 <p>{chapter.name}</p>
-                <img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${chapterKey}_1_1_1.png`} />
+                <img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${firstimg}.png`} />
             </div>
         );
     }
@@ -74,11 +73,12 @@ export default class Home extends React.PureComponent<HomeProps, HomeState> {
         )
     }
 
-    renderSide(side: Side, sideNum: number, chapterKey: string): JSX.Element {
+    renderSide(side: Side, sideNum: number): JSX.Element {
+        let firstimg = side.checkpoints[0].rooms[0].id;
         return (
-            <div key={"home_side_" + side.name} className="col-6 lg:col-3" onClick={() => this.setState({ side: side, sideNumber: sideNum, checkpoint: null, checkpointNumber: null, activeIndex: 2 })}>
+            <div key={"home_side_" + side.name} className="col-6 lg:col-3" onClick={() => this.setState({ side: side, checkpoint: null, activeIndex: 2 })}>
                 <p>{side.name}</p>
-                {<img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${chapterKey}_${sideNum}_1_1.png`} />}
+                <img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${firstimg}.png`} />
             </div>
         );
     }
@@ -88,39 +88,39 @@ export default class Home extends React.PureComponent<HomeProps, HomeState> {
         if (!this.state.chapterKey) return <div />
         let sides: Side[] = this.getChapterSides(this.state.chapterKey);
         return (
-            <div className="grid home-select-div">
-                {/* <div className="col-12"><h2>Sides</h2></div> */}
-                {sides.map((side, i) => this.renderSide(side, i + 1, this.state.chapterKey))}
+            <div className="grid home-select-div">                
+                {sides.map((side, i) => this.renderSide(side, i))}
             </div>
         )
     }
 
-    renderCheckpoint(checkpoint: Checkpoint, checkpointNum: number, sideNum: number, chapterKey: string): JSX.Element {
+    renderCheckpoint(checkpoint: Checkpoint): JSX.Element {
+        let firstimg = checkpoint.rooms[0].id;
         return (
-            <div key={"home_check_" + checkpoint.name} className="col-6 lg:col-3" onClick={() => this.setState({ checkpoint: checkpoint, checkpointNumber: checkpointNum, activeIndex: 3 })}>
+            <div key={"home_check_" + checkpoint.name} className="col-6 lg:col-3" onClick={() => this.setState({ checkpoint: checkpoint, activeIndex: 3 })}>
                 <p>{checkpoint.name}</p>
-                {<img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${chapterKey}_${sideNum}_${checkpointNum}_1.png`} />}
+                {<img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${firstimg}.png`} />}
             </div>
         );
     }
 
     renderCheckpoints(): JSX.Element {
         if (!this.state.chapterKey || !this.state.side) return <div />
-        let checkpoints: Checkpoint[] = this.getSideCheckpoints(this.state.chapterKey, this.state.sideNumber - 1);
+        let checkpoints: Checkpoint[] = this.getSideCheckpoints(this.state.side);
         return (
-            <div className="grid home-select-div">
-                {/* <div className="col-12"><h2>Sides</h2></div> */}
-                {checkpoints.map((checkpoint, i) => this.renderCheckpoint(checkpoint, i + 1, this.state.sideNumber, this.state.chapterKey))}
+            <div className="grid home-select-div">                
+                {checkpoints.map((checkpoint, i) => this.renderCheckpoint(checkpoint))}
             </div>
         )
     }
 
-    renderRoom(room: Room, checkpointNum: number, sideNum: number, chapterKey: string): JSX.Element {        
+    renderRoom(room: iRoom): JSX.Element {    
+        if (!this.state.chapterKey || !this.state.side  || !this.state.checkpoint) return <div />
         return (
             <div key={"home_room_" + room.debug_id} className="col-6 lg:col-2">
-               <Link to={`/room/${chapterKey}/${sideNum}/${checkpointNum}/${room.debug_id}`}>
+               <Link to={`/room/${room.id}`}>
                     <p>{room.debug_id}</p>
-                    {<img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${chapterKey}_${sideNum}_${checkpointNum}_${room.image}.png`} />}
+                    {<img style={{ width: '100%' }} src={`${process.env.PUBLIC_URL}/img/room/${room.id}.png`} />}
                 </Link>
             </div>
         );
@@ -128,10 +128,10 @@ export default class Home extends React.PureComponent<HomeProps, HomeState> {
 
     renderRooms(): JSX.Element {
         if (!this.state.chapterKey || !this.state.side || !this.state.checkpoint) return <div />
-        let rooms: Room[] = this.getCheckpointRooms(this.state.chapterKey, this.state.sideNumber - 1, this.state.checkpointNumber-1);
+        let rooms: iRoom[] = this.getCheckpointRooms(this.state.checkpoint);
         return (
             <div className="grid home-select-div">
-                {rooms.map(room => this.renderRoom(room, this.state.checkpointNumber, this.state.sideNumber, this.state.chapterKey))}
+                {rooms.map(room => this.renderRoom(room))}
             </div>
         )
     }
