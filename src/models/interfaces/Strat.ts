@@ -4,6 +4,9 @@ export interface Strat{
     categories: EnumCategory[],
     difficulty: EnumDifficulty[],
     tags: string[],
+    summary: string,
+    description: string,
+    gif: string,
     room_id: string,
     entry_id: string,
     exit_id: string
