@@ -1,0 +1,14 @@
+.roomdata-row{
+    border-bottom: 1.5px solid rgb(156, 156, 156);
+    text-align: left;;
+}
+
+.roomdata-title{
+    font-weight: bold;    
+}
+
+.roomdata-row{
+    padding-right: 30px;
+    margin-right: 30px;
+}
+
