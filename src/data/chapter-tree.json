@@ -156,108 +156,184 @@
                 "name": "Dashless is hard",
                 "debug_id": "6",
                 "image": "1",
+                "linked": [
+                  "5"
+                  "6z"
+                  "6a"
+                ],
                 "id": "1a-6"
               },
               {
                 "name": "Over spike pit",
                 "debug_id": "6z",
                 "image": "2",
+                "linked": [
+                  "6"
+                  "6zb"
+                  "7zb"
+                ],
                 "id": "1a-6z"
               },
               {
                 "name": "Theo the Adventurer",
                 "debug_id": "6zb",
                 "image": "3",
+                "linked": [
+                  "6z"
+                  "7zb"
+                ],
                 "id": "1a-6zb"
               },
               {
                 "name": "Berry above Theo",
                 "debug_id": "7zb",
                 "image": "4",
+                "linked": [
+                  "6z"
+                  "6zb"
+                ],
                 "id": "1a-7zb"
               },
               {
                 "name": "Coffee shop",
                 "debug_id": "6a",
                 "image": "5",
+                "linked": [
+                  "6"
+                  "6b"
+                ],c
                 "id": "1a-6a"
               },
               {
                 "name": "Zippers & Spikes",
                 "debug_id": "6b",
                 "image": "6",
+                "linked": [
+                  "6"
+                  "s0"
+                  "6c"
+                ],
                 "id": "1a-6b"
               },
               {
                 "name": "Zipper gate",
                 "debug_id": "s0",
                 "image": "7",
+                "linked": [
+                  "6b"
+                  "s1"
+                ],
                 "id": "1a-s0"
               },
               {
                 "name": "Heart room",
                 "debug_id": "s1",
                 "image": "8",
+                "linked": [
+                  "s0"
+                ],
                 "id": "1a-s1"
               },
               {
                 "name": "Springs and path fork",
                 "debug_id": "6c",
                 "image": "9",
+                "linked": [
+                  "6b"
+                  "7z"
+                  "7"
+                ],
                 "id": "1a-6c"
               },
               {
                 "name": "Falling ice",
                 "debug_id": "7",
                 "image": "10",
+                "linked": [
+                  "6c"
+                  "8"
+                ],
                 "id": "1a-7"
               },
               {
                 "name": "Berry path I",
                 "debug_id": "7z",
                 "image": "11",
+                "linked": [
+                  "6c"
+                  "8z"
+                ],
                 "id": "1a-7z"
               },
               {
                 "name": "Berry path II",
                 "debug_id": "8z",
                 "image": "12",
+                "linked": [
+                  "7z"
+                  "8zb"
+                ],
                 "id": "1a-8z"
               },
               {
                 "name": "Berry path III",
                 "debug_id": "8zb",
                 "image": "13",
+                "linked": [
+                  "8z"
+                  "8"
+                ],
                 "id": "1a-8zb"
               },
               {
                 "name": "Junction",
                 "debug_id": "8",
                 "image": "14",
+                "linked": [
+                  "7"
+                  "8zb"
+                  "9z"
+                  "7a"
+                  "8b"
+                ],
                 "id": "1a-8"
               },
               {
                 "name": "Tri-zip berry",
                 "debug_id": "7a",
                 "image": "15",
+                "linked": [
+                  "8"
+                ],
                 "id": "1a-7a"
               },
               {
                 "name": "Zip around berry",
                 "debug_id": "9z",
                 "image": "16",
+                "linked": [
+                  "8"
+                ],
                 "id": "1a-9z"
               },
               {
                 "name": "Ceiling zippers",
                 "debug_id": "8b",
                 "image": "17",
+                "linked": [
+                  "8"
+                  "9"
+                ],
                 "id": "1a-8b"
               },
               {
                 "name": "Up and right",
                 "debug_id": "9",
                 "image": "18",
+                "linked": [
+                  "8b"
+                  "9b"
+                ],
                 "id": "1a-9"
               }
             ]
@@ -270,78 +346,129 @@
                 "name": "Mind the gap",
                 "debug_id": "9b",
                 "image": "1",
+                "linked": [
+                  "9"
+                  "10"
+                  "10a"
+                  "9c"
+                ],
                 "id": "1a-9b"
               },
               {
                 "name": "Winged zip berry",
                 "debug_id": "9c",
                 "image": "2",
+                "linked": [
+                  "9b"
+                ],
                 "id": "1a-9c"
               },
               {
                 "name": "Narrow spike shaft",
                 "debug_id": "10",
                 "image": "3",
+                "linked": [
+                  "9b"
+                  "10z"
+                  "11"
+                ],
                 "id": "1a-10"
               },
               {
                 "name": "One way spikes",
                 "debug_id": "10z",
                 "image": "4",
+                "linked": [
+                  "10"
+                  "10zb"
+                ],
                 "id": "1a-10z"
               },
               {
                 "name": "Cliff berry",
                 "debug_id": "10zb",
                 "image": "5",
+                "linked": [
+                  "10z"
+                ],
                 "id": "1a-10zb"
               },
               {
                 "name": "Underpass",
                 "debug_id": "11",
                 "image": "6",
+                "linked": [
+                  "10"
+                  "11z"
+                ],
                 "id": "1a-11"
               },
               {
                 "name": "Cassette room",
                 "debug_id": "11z",
                 "image": "7",
+                "linked": [
+                  "11"
+                ],
                 "id": "1a-11z"
               },
               {
                 "name": "Around and up",
                 "debug_id": "10a",
                 "image": "8",
+                "linked": [
+                  "9b"
+                  "11"
+                ],
                 "id": "1a-10a"
               },
               {
                 "name": "Overpass",
                 "debug_id": "11",
                 "image": "9",
+                "linked": [
+                  "10a"
+                  "12"
+                ],
                 "id": "1a-11"
               },
               {
                 "name": "Snow blocks",
                 "debug_id": "12",
                 "image": "10",
+                "linked": [
+                  "11"
+                  "12z"
+                  "12a"
+                ],
                 "id": "1a-12"
               },
               {
                 "name": "Dash crystal berry",
                 "debug_id": "12z",
                 "image": "11",
+                "linked": [
+                  "12"
+                ],
                 "id": "1a-12z"
               },
               {
                 "name": "Hanging platforms",
                 "debug_id": "12a",
                 "image": "12",
+                "linked": [
+                  "12"
+                  "end"
+                ],
                 "id": "1a-12a"
               },
               {
                 "name": "Monument",
                 "debug_id": "end",
                 "image": "13",
+                "linked": [
+                  "12a"
+                ],
                 "id": "1a-end"
               }
             ]
