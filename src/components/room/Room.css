@@ -12,3 +12,31 @@
     margin-right: 30px;
 }
 
+.strat-preview-div p{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.strat-details-div{
+    text-align: left;
+}
+
+.strat-container {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+}
+  
+.strat-dummy {
+margin-top: 75%;
+/* 4:3 aspect ratio */
+}
+  
+.strat-wrapper {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
