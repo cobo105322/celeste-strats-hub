@@ -10,6 +10,8 @@ import { APIService } from '../../utils/ApiService';
 import { EnumAPIEndpoint } from '../../models/enums/EnumAPIEndpoint';
 import { Panel } from 'primereact/panel';
 import { RoomLogic } from './RoomLogic';
+import { Accordion, AccordionTab } from 'primereact/accordion';
+import { isThisTypeNode } from 'typescript';
 
 interface MatchParams {
   id: string
@@ -24,7 +26,9 @@ interface ComponentProps {
 }
 
 interface ComponentState {
-  roomStrats: Strat[]
+  roomStrats: Strat[],
+  accordionIndex: number,
+  selectedStrat: Strat
 }
 
 export default class Room extends React.Component<ComponentProps, ComponentState> {
@@ -33,7 +37,9 @@ export default class Room extends React.Component<ComponentProps, ComponentState
   constructor(props: any) {
     super(props);
     this.state = {
-      roomStrats: null
+      roomStrats: null,
+      accordionIndex: 1,
+      selectedStrat: null
     }
 
     this.roomLogic = new RoomLogic(this.props.params.id, this.props.chapterTree);
@@ -121,13 +127,37 @@ export default class Room extends React.Component<ComponentProps, ComponentState
 
       </div>)
   }
+  
+  renderStratsTable(): JSX.Element{
+    return <div className="grid">
+      {this.state.roomStrats.map(strat=>{
+        return <div className="col-6 lg:col-3">
+          <p>{strat.summary}</p>
+          <iframe src={strat.gif+'?autoplay=1'} ></iframe>
+        </div>
+      })}
+    </div>
+  }
 
-  renderStratsTable(){
+  renderStratsSection() {
     let strats = this.state.roomStrats;
     return (
       <>
-      <h2>Strats</h2>
-      <div>TODO</div>
+        <h2>Strats</h2>
+        <Accordion activeIndex={this.state.accordionIndex} onTabChange={(e) => this.setState({ accordionIndex: e.index })}>
+          <AccordionTab header="Strats">
+            {this.renderStratsTable}
+          </AccordionTab>
+          <AccordionTab disabled={!this.state.selectedStrat} header="Details">
+            
+          </AccordionTab>
+          {/* <AccordionTab disabled={!this.state.chapterKey || !this.state.side} header="Checkpoints">
+            {this.renderCheckpoints()}
+          </AccordionTab>
+          <AccordionTab disabled={(!this.state.chapterKey || !this.state.side || !this.state.checkpoint)} header="Rooms">
+            {this.renderRooms()}
+          </AccordionTab> */}
+        </Accordion>
       </>
     )
   }
@@ -143,18 +173,18 @@ export default class Room extends React.Component<ComponentProps, ComponentState
           <div style={{ display: 'flex', justifyContent: 'center' }}> <ReactLoading type="spin" color="#000000" /> </div>
         </div>)
     }
-    
+
     return (
 
       <div className="room">
         <Panel>
-        <div className="grid">
-          {this.renderRoomImage()}
-          {this.renderRoomData()}
-        </div>
-        {this.renderStratsTable()}
-      
-      </Panel>
+          <div className="grid">
+            {this.renderRoomImage()}
+            {this.renderRoomData()}
+          </div>
+          {this.renderStratsSection()}
+
+        </Panel>
       </div >
     );
   }
