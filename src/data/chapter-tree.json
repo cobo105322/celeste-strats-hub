@@ -716,120 +716,202 @@
                 "name": "Monument",
                 "debug_id": "start",
                 "image": "1",
+                "linked": [
+                  "s0"
+                  "0"
+                ],
                 "id": "2a-start"
               },
               {
                 "name": "Sheer wall",
                 "debug_id": "s0",
                 "image": "2",
+                "linked": [
+                  "start"
+                  "s1"
+                ],
                 "id": "2a-s0"
               },
               {
                 "name": "Transition overhang",
                 "debug_id": "s1",
                 "image": "3",
+                "linked": [
+                  "s0"
+                  "s2"
+                ],
                 "id": "2a-s1"
               },
               {
                 "name": "Heart room",
                 "debug_id": "s2",
                 "image": "4",
+                "linked": [
+                  "s1"
+                ],
                 "id": "2a-s2"
               },
               {
                 "name": "Fork",
                 "debug_id": "0",
                 "image": "5",
+                "linked": [
+                  "start"
+                  "1"
+                  "3x"
+                ],
                 "id": "2a-0"
               },
               {
                 "name": "Shaft entrance",
                 "debug_id": "1",
                 "image": "6",
+                "linked": [
+                  "0"
+                  "d0"
+                ],
                 "id": "2a-1"
               },
               {
                 "name": "Iced in",
                 "debug_id": "2",
                 "image": "7",
+                "linked": [
+                  "1"
+                ],
                 "id": "2a-2"
               },
               {
                 "name": "Shaft",
                 "debug_id": "d0",
                 "image": "8",
+                "linked": [
+                  "1"
+                  "d1"
+                  "d6"
+                  "d9"
+                  "d7"
+                  "d2"
+                  "d4"
+                ],
                 "id": "2a-d0"
               },
               {
                 "name": "Mirror path I",
                 "debug_id": "d7",
                 "image": "9",
+                "linked": [
+                  "d0"
+                  "d8"
+                ],
                 "id": "2a-d7"
               },
               {
                 "name": "Mirror path II",
                 "debug_id": "d8",
                 "image": "10",
+                "linked": [
+                  "d7"
+                  "d3"
+                ],
                 "id": "2a-d8"
               },
               {
                 "name": "Berry Tunnel",
                 "debug_id": "d3",
                 "image": "11",
+                "linked": [
+                  "d8"
+                ],
                 "id": "2a-d3"
               },
               {
                 "name": "Mirror",
                 "debug_id": "d3",
                 "image": "12",
+                "linked": [
+                  "d8"
+                  "d2"
+                ],
                 "id": "2a-d3"
               },
               {
                 "name": "Dream blocks intro",
                 "debug_id": "d2",
                 "image": "13",
+                "linked": [
+                  "d3"
+                  "d4"
+                  "d0"
+                ],
                 "id": "2a-d2"
               },
               {
                 "name": "Cassette room",
                 "debug_id": "d9",
                 "image": "14",
+                "linked": [
+                  "d0"
+                ],
                 "id": "2a-d9"
               },
               {
                 "name": "Lower left berry",
                 "debug_id": "d6",
                 "image": "15",
+                "linked": [
+                  "d0"
+                  "d1"
+                ],
                 "id": "2a-d6"
               },
               {
                 "name": "Seed puzzle",
                 "debug_id": "d1",
                 "image": "16",
+                "linked": [
+                  "d6"
+                  "d0"
+                ],
                 "id": "2a-d1"
               },
               {
                 "name": "Zipper dream berry",
                 "debug_id": "d4",
                 "image": "17",
+                "linked": [
+                  "d0"
+                  "d2"
+                  "d5"
+                ],
                 "id": "2a-d4"
               },
               {
                 "name": "Dream column berry",
                 "debug_id": "d5",
                 "image": "18",
+                "linked": [
+                  "d4"
+                ],
                 "id": "2a-d5"
               },
               {
                 "name": "Well, what now?",
                 "debug_id": "1",
                 "image": "19",
+                "linked": [
+                  "0"
+                ],
                 "id": "2a-1"
               },
               {
                 "name": "Dream puzzle",
                 "debug_id": "3x",
                 "image": "20",
+                "linked": [
+                  "0"
+                  "3"
+                ],
                 "id": "2a-3x"
               }
             ]
@@ -842,96 +924,158 @@
                 "name": "Part of you",
                 "debug_id": "3",
                 "image": "1",
+                "linked": [
+                  "3x"
+                  "4"
+                ],
                 "id": "2a-3"
               },
               {
-                "name": "Case and berry",
+                "name": "Chase and berry",
                 "debug_id": "4",
                 "image": "2",
+                "linked": [
+                  "3"
+                  "5"
+                ],
                 "id": "2a-4"
               },
               {
                 "name": "Chase and berry tunnel",
                 "debug_id": "5",
                 "image": "3",
+                "linked": [
+                  "4"
+                  "6"
+                ],
                 "id": "2a-5"
               },
               {
                 "name": "Chase and switch",
                 "debug_id": "6",
                 "image": "4",
+                "linked": [
+                  "5"
+                  "7"
+                ],
                 "id": "2a-6"
               },
               {
                 "name": "Chase and switches",
                 "debug_id": "7",
                 "image": "5",
+                "linked": [
+                  "#"
+                ],
                 "id": "2a-7"
               },
               {
                 "name": "Chase and spring",
                 "debug_id": "8",
                 "image": "6",
+                "linked": [
+                  "7"
+                  "9"
+                ],
                 "id": "2a-8"
               },
               {
                 "name": "Chase and ice",
                 "debug_id": "9",
                 "image": "7",
+                "linked": [
+                  "8"
+                  "9b"
+                  "10"
+                ],
                 "id": "2a-9"
               },
               {
                 "name": "Berry and peace",
                 "debug_id": "9b",
                 "image": "8",
+                "linked": [
+                  "9"
+                ],
                 "id": "2a-9b"
               },
               {
                 "name": "Chase downwards",
                 "debug_id": "10",
                 "image": "9",
+                "linked": [
+                  "9"
+                  "2"
+                ],
                 "id": "2a-10"
               },
               {
                 "name": "Chased outside",
                 "debug_id": "2",
                 "image": "10",
+                "linked": [
+                  "10"
+                  "11"
+                ],
                 "id": "2a-2"
               },
               {
                 "name": "Dreaming of awake I",
                 "debug_id": "11",
                 "image": "11",
+                "linked": [
+                  "2"
+                  "12b"
+                ],
                 "id": "2a-11"
               },
               {
                 "name": "Dreaming of awake II",
                 "debug_id": "12b",
                 "image": "12",
+                "linked": [
+                  "11"
+                  "12c"
+                  "12d"
+                  "12"
+                ],
                 "id": "2a-12b"
               },
               {
                 "name": "High dream berry",
                 "debug_id": "12c",
                 "image": "13",
+                "linked": [
+                  "12b"
+                ],
                 "id": "2a-12c"
               },
               {
                 "name": "Low dream berry",
                 "debug_id": "12d",
                 "image": "14",
+                "linked": [
+                  "12b"
+                ],
                 "id": "2a-12d"
               },
               {
                 "name": "Dreaming of awake 3",
                 "debug_id": "12",
                 "image": "15",
+                "linked": [
+                  "12b"
+                  "13"
+                ],
                 "id": "2a-12"
               },
               {
                 "name": "Unknown caller",
                 "debug_id": "13",
                 "image": "16",
+                "linked": [
+                  "12"
+                ],
                 "id": "2a-13"
               }
             ]
@@ -944,72 +1088,120 @@
                 "name": "Awake monumnet",
                 "debug_id": "end_0",
                 "image": "1",
+                "linked": [
+                  "end_s0"
+                  "end_s1"
+                ],
                 "id": "2a-end_0"
               },
               {
                 "name": "Climbing the ruins",
                 "debug_id": "end_s0",
                 "image": "2",
+                "linked": [
+                  "end_0"
+                  "end_s1"
+                  "end_1"
+                ],
                 "id": "2a-end_s0"
               },
               {
                 "name": "My heart is a fortress",
                 "debug_id": "end_s1",
                 "image": "3",
+                "linked": [
+                  "end_0"
+                ],
                 "id": "2a-end_s1"
               },
               {
                 "name": "Tunnel and climb",
                 "debug_id": "end_1",
                 "image": "4",
+                "linked": [
+                  "end_0"
+                  "end_s0"
+                  "end_2"
+                ],
                 "id": "2a-end_1"
               },
               {
                 "name": "By the fire",
                 "debug_id": "end_2",
                 "image": "5",
+                "linked": [
+                  "end_1"
+                  "end_3"
+                ],
                 "id": "2a-end_2"
               },
               {
                 "name": "Venture into night",
                 "debug_id": "end_3",
                 "image": "6",
+                "linked": [
+                  "end_2"
+                  "end_4"
+                ],
                 "id": "2a-end_3"
               },
               {
                 "name": "Empty",
                 "debug_id": "end_4",
                 "image": "7",
+                "linked": [
+                  "end_3"
+                  "end_3b"
+                ],
                 "id": "2a-end_4"
               },
               {
                 "name": "Springs",
                 "debug_id": "end_3b",
                 "image": "8",
+                "linked": [
+                  "end_4"
+                  "end_3cb"
+                  "end_5"
+                ],
                 "id": "2a-end_3b"
               },
               {
                 "name": "Accending shaft",
                 "debug_id": "end_3cb",
                 "image": "9",
+                "linked": [
+                  "end_3b"
+                  "end_3c"
+                ],
                 "id": "2a-end_3cb"
               },
               {
                 "name": "Crumbling winged berry",
                 "debug_id": "end_3c",
                 "image": "10",
+                "linked": [
+                  "end_3cb"
+                ],
                 "id": "2a-end_3c"
               },
               {
                 "name": "Emptier",
                 "debug_id": "end_5",
                 "image": "11",
+                "linked": [
+                  "end_3b"
+                  "end_6"
+                ],
                 "id": "2a-end_5"
               },
               {
                 "name": "Calling family",
                 "debug_id": "end_6",
                 "image": "12",
+                "linked": [
+                  "end_5"
+                ],
                 "id": "2a-end_6"
               }
             ]
