@@ -32,24 +32,22 @@ interface ComponentState {
 }
 
 export default class Room extends React.Component<ComponentProps, ComponentState> {
-
+  
   private roomLogic: RoomLogic;
   constructor(props: any) {
     super(props);
-    this.state = {
-      roomStrats: null,
-      accordionIndex: 1,
-      selectedStrat: null
-    }
+    this.state = this.getInitialState()
 
     this.roomLogic = new RoomLogic(this.props.params.id, this.props.chapterTree);
 
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidUpdate(prevProps: ComponentProps) {
+    console.log(this.props.filters)
     if (this.props.params.id !== prevProps.params.id) {
       this.initialize();
     }
+
   }
 
 
@@ -57,11 +55,20 @@ export default class Room extends React.Component<ComponentProps, ComponentState
     this.initialize();
   }
 
-  initialize() {
+  getInitialState(): ComponentState{
+    return  {
+      roomStrats: null,
+      accordionIndex: 0,
+      selectedStrat: null
+    }
+  }
+
+  initialize() {    
     this.roomLogic = new RoomLogic(this.props.params.id, this.props.chapterTree);
+    this.setState(this.getInitialState());
     setTimeout(() => {
       APIService.APICall(EnumAPIEndpoint.GET_STRATS, { room_id: this.props.params.id }).then((strats: Strat[]) => {
-        this.setState({ roomStrats: strats })
+        this.setState({ roomStrats: this.roomLogic.getFilteredStrats(strats, this.props.filters) })
       })
     }, 1); //Simulating load
   }
@@ -70,6 +77,11 @@ export default class Room extends React.Component<ComponentProps, ComponentState
     let fullId = this.roomLogic.room.id.substring(0, 3) + debugId;
     //We get the first part of the identifier
     return <Link to={"/room/" + fullId}>{debugId}</Link>
+  }
+
+  getLinkById(id: string) {    
+    //We get the first part of the identifier
+    return <Link to={"/room/" + id}>{id}</Link>
   }
 
   renderRoomImage() {
@@ -121,22 +133,59 @@ export default class Room extends React.Component<ComponentProps, ComponentState
             Adjacent
             </div>
           <div className="col-8">
-            {this.roomLogic.room.linked.map((link, i) => <label>{i !== 0 && ', '}{this.getLink(link)}</label>)}
+            {this.roomLogic.room.linked.map((linked_id, i) => <label>{i !== 0 && ', '}{this.getLink(linked_id)}</label>)}
           </div>
         </div>
 
       </div>)
   }
+
   
   renderStratsTable(): JSX.Element{
+    if (!this.state.roomStrats) {
+      return (
+        <div className="loading">
+          <p>Loading...</p>
+          <div style={{ display: 'flex', justifyContent: 'center' }}> <ReactLoading type="spin" color="#000000" /> </div>
+        </div>)
+    }
+    let filteredStrats: Strat[] = this.roomLogic.getFilteredStrats(this.state.roomStrats, this.props.filters);
     return <div className="grid">
-      {this.state.roomStrats.map(strat=>{
-        return <div className="col-6 lg:col-3">
-          <p>{strat.summary}</p>
-          <iframe src={strat.gif+'?autoplay=1'} ></iframe>
+      {filteredStrats.map((strat,i)=>{
+        return <div key={"strat_"+i} className="col-12 lg:col-4 strat-preview-div">
+          <p onClick={()=>this.setState({selectedStrat: strat, accordionIndex: 1})}>{strat.summary}</p>
+          {this.renderStratGif(strat)}
         </div>
       })}
     </div>
+  }
+
+  renderStratDetails(): JSX.Element{
+    if(!this.state.selectedStrat) return <div/>;
+    let strat = this.state.selectedStrat;
+    return <div className="grid strat-details-div">
+        <div className="col-12 lg:col-4">
+          {this.renderStratGif(strat)}
+        </div>
+        <div className="col-12 lg:col-6">
+          <p><b>Summary:</b> {strat.summary}</p>
+          <p><b>Category:</b> {strat.categories.join(', ')}</p>
+          <p><b>Difficulty:</b> {strat.difficulty.join(', ')}</p>                    
+          <p><b>Exit:</b> {this.getLinkById(strat.exit_id)}</p>                    
+        </div>
+        <div className="col-12">
+          {strat.description}
+        </div>
+    </div>
+  }
+
+  renderStratGif(strat: Strat){
+    return  <div className="strat-container">
+    <div className="strat-dummy"></div>
+    <div className="strat-wrapper">
+        <iframe src={strat.gif+'?autoplay=0&controls=0'}  height='100%' width='100%' />
+    </div>
+  </div>
   }
 
   renderStratsSection() {
@@ -146,10 +195,10 @@ export default class Room extends React.Component<ComponentProps, ComponentState
         <h2>Strats</h2>
         <Accordion activeIndex={this.state.accordionIndex} onTabChange={(e) => this.setState({ accordionIndex: e.index })}>
           <AccordionTab header="Strats">
-            {this.renderStratsTable}
+            {this.renderStratsTable()}
           </AccordionTab>
           <AccordionTab disabled={!this.state.selectedStrat} header="Details">
-            
+            {this.renderStratDetails()}
           </AccordionTab>
           {/* <AccordionTab disabled={!this.state.chapterKey || !this.state.side} header="Checkpoints">
             {this.renderCheckpoints()}
@@ -165,13 +214,6 @@ export default class Room extends React.Component<ComponentProps, ComponentState
   render() {
     if (!this.roomLogic.roomExists()) {
       return <div>Error - room not found.</div>
-    }
-    if (!this.state.roomStrats) {
-      return (
-        <div className="loading">
-          <p>Loading...</p>
-          <div style={{ display: 'flex', justifyContent: 'center' }}> <ReactLoading type="spin" color="#000000" /> </div>
-        </div>)
     }
 
     return (

@@ -41,7 +41,7 @@ export default class App extends React.Component<any, AppState> {
         <div className="grid">
           <div className="hidden md:block col-2"><Navbar/></div>
           <div className="col-12 lg:col-10">
-            <Filter />
+            <Filter onFilterUpdate={(currentFilters: FilterState)=>this.setState({currentFilters: currentFilters})}/>
             <Switch>                                          
               <Route path="/room/:id" render={routeProps => <Room params={(routeProps.match.params as any)} filters={this.state.currentFilters} chapterTree={this.state.chapterTree} />} />
               <Route path="/about" render={()=><About filteredTree={this.state.filteredTree} />} />
