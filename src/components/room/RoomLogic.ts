@@ -1,3 +1,5 @@
+import { Strat } from './../../models/interfaces/Strat';
+import { FilterState } from './../../models/interfaces/FilterState';
 import { Chapter, Side, Checkpoint, iRoom } from './../../models/interfaces/ChapterTree';
 import { ChapterTree } from "../../models/interfaces/ChapterTree";
 interface FullRoom {
@@ -42,7 +44,16 @@ export class RoomLogic {
         return null;
     }
 
-    public roomExists() {
+    roomExists() {
         return this.fullroom !== null;
     }
+
+    getFilteredStrats(strats: Strat[], filters: FilterState): Strat[]{
+        return strats.filter(strat=>
+            (!filters.category.length || filters.category.some(cat=>strat.categories.includes(cat))) &&
+            (!filters.difficulty.length || filters.difficulty.some(diff=>strat.difficulty.includes(diff))) &&            
+            (!filters.tags || strat.tags.includes(filters.tags))
+        );
+    }
+
 }
