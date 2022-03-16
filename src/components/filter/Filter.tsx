@@ -12,11 +12,13 @@ import { InputText } from 'primereact/inputtext';
 
 interface ComponentState {
     currentFilters: FilterState,
-    // categoryOptions: SelectItem[],
-    // difficultyOptions: SelectItem[],
 }
 
-export default class Filter extends React.PureComponent<any, ComponentState> {
+interface componentProps {
+    onFilterUpdate: (filters: FilterState)=>void;
+}
+
+export default class Filter extends React.PureComponent<componentProps, ComponentState> {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -54,6 +56,10 @@ export default class Filter extends React.PureComponent<any, ComponentState> {
         ]
     }
 
+    notifyFiltersUpdated(){
+        this.props.onFilterUpdate(this.state.currentFilters);
+    }
+
     render() {
         let { currentFilters } = this.state;
         return (
@@ -67,7 +73,10 @@ export default class Filter extends React.PureComponent<any, ComponentState> {
                             className='filter'
                             value={currentFilters.category}
                             options={this.getCategoryOptions()}
-                            onChange={(e) => this.setState({ currentFilters: { ...currentFilters, category: e.target.value } })}
+                            onChange={(e) => {
+                                this.setState({ currentFilters: { ...currentFilters, category: e.target.value } }, ()=>this.notifyFiltersUpdated());
+                                
+                            }}
                             display={"chip"}
                             // maxSelectedLabels = {2}
                             // selectedItemsLabel = {"{0} items selected"}
@@ -80,7 +89,7 @@ export default class Filter extends React.PureComponent<any, ComponentState> {
                             value={currentFilters.difficulty}
                             className='filter'
                             options={this.getDifficultyOptions()}
-                            onChange={(e) => this.setState({ currentFilters: { ...currentFilters, difficulty: e.target.value } })}
+                            onChange={(e) => this.setState({ currentFilters: { ...currentFilters, difficulty: e.target.value } }, ()=>this.notifyFiltersUpdated())}
                             display={"chip"}
                         />
                     </div>
@@ -90,7 +99,7 @@ export default class Filter extends React.PureComponent<any, ComponentState> {
                         <InputText
                             value={currentFilters.tags}
                             className='filter'                            
-                            onChange={(e) => this.setState({ currentFilters: { ...currentFilters, tags: e.target.value } })}                            
+                            onChange={(e) => this.setState({ currentFilters: { ...currentFilters, tags: e.target.value } }, ()=>this.notifyFiltersUpdated())}                            
                         />
                     </div>
                 </div>
