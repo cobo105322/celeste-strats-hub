@@ -1,8 +1,9 @@
 import { EnumDifficulty } from './../enums/EnumDifficulty';
 import { EnumCategory } from './../enums/EnumCategory';
 export interface Strat{
+    id: number,
     categories: EnumCategory[],
-    difficulty: EnumDifficulty[],
+    difficulty: EnumDifficulty[],    
     tags: string[],
     summary: string,
     description: string,
