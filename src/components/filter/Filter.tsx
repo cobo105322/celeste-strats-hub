@@ -39,6 +39,8 @@ export default class Filter extends React.PureComponent<componentProps, Componen
             { label: 'Any%', value: EnumCategory.ANY_PERCENT },
             { label: 'All Red Berries', value: EnumCategory.ALL_RED_BERRIES },
             { label: '100%', value: EnumCategory.HUNDRED_PERCENT },
+            { label: 'All Casettes', value: EnumCategory.ALL_CASSETTES },
+            { label: 'All Hearts', value: EnumCategory.ALL_HEARTS },
             { label: 'All A Sides', value: EnumCategory.ALL_A_SIDES },
             { label: 'All B sides', value: EnumCategory.ALL_B_SIDES },
             { label: 'All C sides', value: EnumCategory.ALL_C_SIDES },
