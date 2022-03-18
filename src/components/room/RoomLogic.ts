@@ -50,8 +50,8 @@ export class RoomLogic {
 
     getFilteredStrats(strats: Strat[], filters: FilterState): Strat[]{
         return strats.filter(strat=>
-            (!filters.category.length || filters.category.some(cat=>strat.categories.includes(cat))) &&
-            (!filters.difficulty.length || filters.difficulty.some(diff=>strat.difficulty.includes(diff))) &&            
+            (!filters.category.length || filters.category.some(cat=>strat.categories.map(c=>c.id).includes(cat))) &&
+            (!filters.difficulty.length || filters.difficulty.some(diff=>strat.difficulties.map(d=>d.id).includes(diff))) &&            
             (!filters.tags || strat.tags.includes(filters.tags))
         );
     }
