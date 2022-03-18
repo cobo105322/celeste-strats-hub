@@ -1481,138 +1481,235 @@
                 "name": "Outside I",
                 "debug_id": "s0",
                 "image": "1",
+                "linked": [
+                  "s1"
+                ],
                 "id": "3a-s0"
               },
               {
                 "name": "Outside II",
                 "debug_id": "s1",
                 "image": "2",
+                "linked": [
+                  "s0",
+                  "s2"
+                ],
                 "id": "3a-s1"
               },
               {
                 "name": "Outside berries",
                 "debug_id": "s2",
                 "image": "3",
+                "linked": [
+                  "s1",
+                  "s3"
+                ],
                 "id": "3a-s2"
               },
               {
                 "name": "Outside key",
                 "debug_id": "s3",
                 "image": "4",
+                "linked": [
+                  "s2",
+                  "0x-a",
+                  "0x-b"
+                ],
                 "id": "3a-s3"
               },
               {
                 "name": "Ring the bell",
                 "debug_id": "0x-a",
                 "image": "5",
+                "linked": [
+                  "s3",
+                  "00-a"
+                ],
                 "id": "3a-0x-a"
               },
               {
                 "name": "Dust bunny intro",
                 "debug_id": "00-a",
                 "image": "6",
+                "linked": [
+                  "0x-a",
+                  "02-a"
+                ],
                 "id": "3a-00-a"
               },
               {
                 "name": "Locked door",
                 "debug_id": "02-a",
                 "image": "7",
+                "linked": [
+                  "00-a",
+                  "02-b",
+                  "03-a"
+                ],
                 "id": "3a-02-a"
               },
               {
                 "name": "Dust bunnies and key",
                 "debug_id": "02-b",
                 "image": "8",
+                "linked": [
+                  "02-a",
+                  "01-b"
+                ],
                 "id": "3a-02-b"
               },
               {
                 "name": "Three falling shelves",
                 "debug_id": "01-b",
                 "image": "9",
+                "linked": [
+                  "02-b",
+                  "00-b"
+                ],
                 "id": "3a-01-b"
               },
               {
                 "name": "Dust berry",
                 "debug_id": "00-b",
                 "image": "10",
+                "linked": [
+                  "01-b",
+                  "00-c",
+                  "0x-b"
+                ],
                 "id": "3a-00-b"
               },
               {
                 "name": "Cassette teaser",
                 "debug_id": "00-c",
                 "image": "11",
+                "linked": [
+                  "00-b"
+                ],
                 "id": "3a-00-c"
               },
               {
                 "name": "Berry balcony interior",
                 "debug_id": "0x-b",
                 "image": "12",
+                "linked": [
+                  "00-b",
+                  "s3"
+                ],
                 "id": "3a-0x-b"
               },
               {
                 "name": "Pressure platforms intro",
                 "debug_id": "03-a",
                 "image": "13",
+                "linked": [
+                  "02-a",
+                  "04-b",
+                  "05-a"
+                ],
                 "id": "3a-03-a"
               },
               {
                 "name": "Dash around berry",
                 "debug_id": "04-b",
                 "image": "14",
+                "linked": [
+                  "03-a"
+                ],
                 "id": "3a-04-b"
               },
               {
                 "name": "Dust pillars",
                 "debug_id": "05-a",
                 "image": "15",
+                "linked": [
+                  "03-a",
+                  "06-a"
+                ],
                 "id": "3a-05-a"
               },
               {
                 "name": "Winged berry",
                 "debug_id": "06-a",
                 "image": "16",
+                "linked": [
+                  "05-a",
+                  "07-a"
+                ],
                 "id": "3a-06-a"
               },
               {
                 "name": "Locked door",
                 "debug_id": "07-a",
                 "image": "17",
+                "linked": [
+                  "06-a",
+                  "07-b",
+                  "08-a"
+                ],
                 "id": "3a-07-a"
               },
               {
                 "name": "Key room",
                 "debug_id": "07-b",
                 "image": "18",
+                "linked": [
+                  "07-a",
+                  "06-b",
+                  "06-c",
+                  "08-b"
+                ],
                 "id": "3a-07-b"
               },
               {
                 "name": "Circling dust platforms",
                 "debug_id": "06-b",
                 "image": "19",
+                "linked": [
+                  "07-b",
+                  "06-c"
+                ],
                 "id": "3a-06-b"
               },
               {
                 "name": "Spiked moss walls",
                 "debug_id": "06-c",
                 "image": "20",
+                "linked": [
+                  "06-b",
+                  "05-c",
+                  "07-b",
+                  "08-c"
+                ],
                 "id": "3a-06-c"
               },
               {
                 "name": "Berry loop",
                 "debug_id": "05-c",
                 "image": "21",
+                "linked": [
+                  "05-c"
+                ],
                 "id": "3a-05-c"
               },
               {
                 "name": "Locked spring platforms",
                 "debug_id": "08-c",
                 "image": "22",
+                "linked": [
+                  "06-c",
+                  "08-b"
+                ],
                 "id": "3a-08-c"
               },
               {
                 "name": "Weaving platform",
                 "debug_id": "08-b",
                 "image": "23",
+                "linked": [
+                  "08-c",
+                  "07-b"
+                ],
                 "id": "3a-08-b"
               }
             ]
