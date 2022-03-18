@@ -67,8 +67,10 @@ export default class Room extends React.Component<ComponentProps, ComponentState
     this.roomLogic = new RoomLogic(this.props.params.id, this.props.chapterTree);
     this.setState(this.getInitialState());
     setTimeout(() => {
-      APIService.APICall(EnumAPIEndpoint.GET_STRATS, { room_id: this.props.params.id }).then((strats: Strat[]) => {
-        this.setState({ roomStrats: this.roomLogic.getFilteredStrats(strats, this.props.filters) })
+      APIService.APICall(EnumAPIEndpoint.GET_STRATS, { roomid: this.props.params.id }, "get").then((response: Response) => {
+        if(response.ok){
+          response.json().then((strats: Strat[])=>this.setState({ roomStrats: strats }));
+        }        
       })
     }, 1); //Simulating load
   }
@@ -169,8 +171,8 @@ export default class Room extends React.Component<ComponentProps, ComponentState
         </div>
         <div className="col-12 lg:col-6">
           <p><b>Summary:</b> {strat.summary}</p>
-          <p><b>Category:</b> {strat.categories.join(', ')}</p>
-          <p><b>Difficulty:</b> {strat.difficulty.join(', ')}</p>                    
+          <p><b>Category:</b> {strat.categories.map(c=>c.label).join(', ')}</p>
+          <p><b>Difficulty:</b> {strat.difficulties.map(c=>c.label).join(', ')}</p>                    
           <p><b>Exit:</b> {this.getLinkById(strat.exit_id)}</p>                    
         </div>
         <div className="col-12">
@@ -200,12 +202,6 @@ export default class Room extends React.Component<ComponentProps, ComponentState
           <AccordionTab disabled={!this.state.selectedStrat} header="Details">
             {this.renderStratDetails()}
           </AccordionTab>
-          {/* <AccordionTab disabled={!this.state.chapterKey || !this.state.side} header="Checkpoints">
-            {this.renderCheckpoints()}
-          </AccordionTab>
-          <AccordionTab disabled={(!this.state.chapterKey || !this.state.side || !this.state.checkpoint)} header="Rooms">
-            {this.renderRooms()}
-          </AccordionTab> */}
         </Accordion>
       </>
     )
