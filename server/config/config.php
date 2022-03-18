@@ -5,17 +5,17 @@ $config = array(
 
 if($config["env"]=="local"){
     $dbconfig = array(
-        "servername"=>"localhost",
-        "user"=>"root",
+        "servername"=>"",
+        "user"=>"",
         "password"=>"",
-        "dbname"=>"strathubdb"
+        "dbname"=>""
     );
 }else{
     $dbconfig = array(
-        "servername"=>"localhost",
-        "user"=>"str_user",
-        "password"=>"jamonete123",
-        "dbname"=>"strathubdb"
+        "servername"=>"",
+        "user"=>"",
+        "password"=>"",
+        "dbname"=>""
     );
 }
 
