@@ -45,7 +45,7 @@ foreach($strats as $currStrat){
   array_push($responseArray, $currStrat);
 
 }
-
+$conn->close();
 echo json_encode($responseArray);
 
 ?>
