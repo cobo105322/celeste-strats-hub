@@ -65,7 +65,7 @@ export default class Filter extends React.PureComponent<componentProps, Componen
     render() {
         let { currentFilters } = this.state;
         return (
-            <Panel header="Filters" toggleable>
+            <Panel id="filter-panel" header="Filters" toggleable>
                 <div className="grid filters-div">
 
                     <div className="col-12 md:col-6 lg:col-3">                        

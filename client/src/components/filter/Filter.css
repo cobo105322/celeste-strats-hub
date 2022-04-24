@@ -8,3 +8,7 @@
     text-align: left;
     padding-bottom: 5px;
 }
+
+#filter-panel .p-panel-header{
+    border-radius: 0px;
+}
