@@ -22,7 +22,7 @@ $conn->select_db($dbconfig["dbname"]);
 //Hash the password with sha2
 $password = hash("sha256", $_POST["password"]);
 
-$stmt = $conn->prepare("SELECT name, email FROM user WHERE name = ? AND password = ?");
+$stmt = $conn->prepare("SELECT id, name, email FROM user WHERE name = ? AND password = ?");
 if($stmt){
     $stmt -> bind_param("ss", $_POST["name"], $password);
     $stmt->execute();
@@ -30,11 +30,15 @@ if($stmt){
 $resultado = getArrayFromResult($stmt->get_result());
 if(sizeof($resultado)>0){ //Login succesful
     $user = array(
+        "id"=>$resultado[0]["id"],
         "name"=>$resultado[0]["name"],
         "email"=>$resultado[0]["email"]
     );
     $_SESSION["user"] = $user;
     die(json_encode($user));
+}else{
+    http_response_code(403);
+    die();
 }
 
 ?>
