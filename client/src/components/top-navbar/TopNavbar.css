@@ -1,0 +1,10 @@
+#menubar{
+    border-radius: 0px;
+    border-bottom: 0px;
+}
+
+#logout-btn{
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
