@@ -1,9 +1,9 @@
-import './Navbar.css';
+import './LeftNavbar.css';
 
 import React from 'react';
 import { Panel } from 'primereact/panel';
 
-export default class Navbar extends React.PureComponent<any, any> {
+export default class LeftNavbar extends React.PureComponent<any, any> {
     constructor(props: any) {
       super(props);     
     }
