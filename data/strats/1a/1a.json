@@ -1,0 +1,380 @@
+[
+  {
+    "name": "1 super cornerboost",
+    "start": "1 start",
+    "end": "1 cornerboost",
+    "categories": "*",
+    "description": "From the start of the room, do an extended super without pressing any direction. Hold right after the jump input, then buffer a jump with a second jump button while holding grab as you approach the first raised platform to guarantee a cornerboost."
+  },
+  {
+    "name": "1 climbjump super",
+    "start": "1 cornerboost",
+    "end": "1 top-right",
+    "categories": ["any"],
+    "description": "Climbjump on the side of the second raised platform. Your vertical height will be aligned with the floor of the second raised platform so you can extended super off of it."
+  },
+  {
+    "name": "1 up-right super",
+    "start": "1 cornerboost",
+    "end": "1 top-right",
+    "categories": ["any"],
+    "description": "Dash up-right shortly after the cornerboost so you land on the second raised platform as quickly as possible (starting your dash around the right pole of the sign should work). From there, extended super towards the top right section of the room."
+  },
+  {
+    "name": "1 wallbounce exit",
+    "start": "1 top-right",
+    "end": "2 wallbounce entry",
+    "categories": ["any"],
+    "description": "Dash up and wallbounce out of the room."
+  },
+  {
+    "name": "1 climbjump exit",
+    "start": "1 top-right",
+    "end": "2 climbjump entry",
+    "categories": ["any"],
+    "description": "Dash up and climbjump into the next room."
+  },
+  {
+    "name": "2 wavedash cornerboost",
+    "start": "2 wallbounce entry",
+    "end": "2 right side",
+    "categories": ["any"],
+    "description": "Wavedash from room entry and hold jump. This should line you up to cornerboost off the spring. Continue holding right and buffer another climbjump off the spiked corner. With a max height jump you should be able to dash right directly to the raised part of the ground."
+  },
+  {
+    "name": "2 super hcb",
+    "start": "2 climbjump entry",
+    "end": "2 right side",
+    "categories": ["any"],
+    "description": "Transition climbjump to land quickly. Do an extended super, holding right and jump. When you are almost directly over the spring, near the right edge of the pine tree in the background, down-right dash into the spring. Buffer a right dash into a corner boost over the spikes."
+  },
+  {
+    "name": "2 single wallbounce exit",
+    "start": "2 right side",
+    "end": "3 left side entry",
+    "categories": ["any"],
+    "description": "Bunnyhop to the right and dash up to get a max height wallbounce on the right wall."
+  },
+  {
+    "name": "2 wallbounce wallkick exit",
+    "start": "2 right side",
+    "end": "3 cornerboost setup entry",
+    "categories": ["any"],
+    "description": "Bunnyhop and dash up to get a wallbounce on the left wall then neutral jump back off the right wall to exit moving toward the left side."
+  },
+  {
+    "name": "3 left wallbounce, hyper over top",
+    "start": "3",
+    "end": "4 right up dash entry",
+    "categories": ["any"],
+    "description": "Wallbounce off the large left wall, aiming to land on the platform as quickly as possible. Extended hyper towards the right, then from the air do an extended super off the rightmost platform. Dash up along the right wall to exit."
+  },
+  {
+    "name": "3 left climbjump, wallbounce, hyper over top",
+    "start": "3 cornerboost setup entry",
+    "end": "4 right up dash entry",
+    "categories": [],
+    "description": "Do a cornerboost off the lower bit of wall on the left, and buffer a dash up. Wallbounce off the large left wall using leniency pixels, aiming to land on the platform as quickly as possible. Extended hyper towards the right, then from the air do an extended super off the rightmost platform. Dash up along the right wall to exit."
+  },
+  {
+    "name": "4 transition wallbounce, hyper up dash",
+    "start": "4 right up dash entry",
+    "end": "3b entry",
+    "categories": ["any"],
+    "description": "Enter with a transition wallbounce, then do a wallbounce off the left wall right above the spikes. Extended hyper over the traffic block, then dash up as soon as you pass the right wall. Exit with a wallbounce."
+  },
+  {
+    "name": "3b right dash wallbounce",
+    "start": "3b entry",
+    "end": "3b top",
+    "categories": ["any"],
+    "description": "Hold right from the transition. Once you are higher than the raised platform on your right, do a right dash and land on the raised platform. Then quickly jump to the right, off the platform and line yourself up with the wall for a dash up then wallbounce. Start holding right so you can reach the left ledge of the platform.",
+    "notes": "If you demodash up and buffer jump for the wallbounce, you should consistently reach the top of the platform without having to climbjump off the left side."
+  },
+  {
+    "name": "3b super wallbounce",
+    "start": "3b entry",
+    "end": "3b top",
+    "categories": ["any"],
+    "description": "Do a rightward climbjump from the transition, holding jump and right. Once you are lined up vertically with the raised platform, do a right dash and super off of it. Dash up once you are lined up with the wall, and wallbounce low. Start holding right early enough to ensure aren't sticking out over the ledge when you land."
+  },
+  {
+    "name": "3b cornerkick exit",
+    "start": "3b top",
+    "end": "5 climbjump entry",
+    "categories": ["any"],
+    "description": "Dash up-right and cornerkick to exit."
+  },
+  {
+    "name": "5 reverse hyper cornerboost",
+    "start": "5 climbjump entry",
+    "end": "5 spring",
+    "categories": ["any"],
+    "description": "Enter with a transition climbjump and dash toward the traffic block. Try to activate it by standing on the right side of the traffic block. After activating the traffic block, wait until you are a bit below the spikes, which are right next to the traffic block's path, and dash down left to start a reverse extended hyper dash. Jump off the traffic block when the traffic block nears its peak to get a vertical boost and keep holding jump. This will line you up to for a cornerboost on the ground that is left to the vertical wall separating you from the exit. Buffer a cornerboost on the left side of that ground, and demodash when Madeline's head reaches the bottom of the wall or bonks on the side of the wall. This will allow you to demo dash straight to the spring."
+  },
+  {
+    "name": "5 transition wallbounce exit",
+    "start": "5 spring",
+    "end": "6 left up dash entry",
+    "categories": ["any"],
+    "description": "Move to the right and wallkick off the rightmost wall. This will line you up for an up dash along the left wall to exit the room, and a transition wallbounce start for the next room.",
+    "notes": "Dashing up directly from the spring to wallbounce out will save frames on this screen, but will lose even more frames on the next screen compared with getting a transition wallbounce."
+  },
+  {
+    "name": "6 double wallbounce",
+    "start": "6 left up dash entry",
+    "end": "6 top left",
+    "categories": ["any"],
+    "description": "Enter with a transition wallbounce, then do another wallbounce off the left wall, into a jump off the right wall to land in the top left corner."
+  },
+  {
+    "name": "6 top reverse hyper up-right",
+    "start": "6 top left",
+    "end": "6a wall bonk",
+    "categories": ["any"],
+    "description": "Reverse hyper and hold jump and right until Madeline is just to the left of the spikes. Dash up-right and you should be able to make it over the spikes. Hyper out, holding jump until the room transition, then bunnyhop and hold jump and right until you hit the wall."
+  },
+  {
+    "name": "6 top reverse hyper cornerboost",
+    "start": "6 top left",
+    "end": "6a wall bonk",
+    "categories": ["any"],
+    "description": "Reverse hyper and hold jump and right until Madeline's right side is just over the the left edge of the spikes. Dash right and cornerboost, aiming to land on the left edge of the raised ground at the right edge of the screen. Hyper into the next screen, holding right and jump until you hit the wall."
+  },
+  {
+    "name": "6a triple dash",
+    "start": "6a wall bonk",
+    "end": "6a dash crystal",
+    "categories": [],
+    "description": "Once you hit the wall, release jump and fall while holding left to avoid the spikes below. When you are just left to the spikes, dash down-right to reach the bottom platform, followed quickly by a right dash and an up dash. Buffer a wallbounce off the wall above. By doing this, the peak of your wallbounce will always have the same height, which conveniently lines you up for the next part. "
+  },
+  {
+    "name": "6a bunnyhop",
+    "start": "6a wall bonk",
+    "end": "6a dash crystal",
+    "categories": [],
+    "description": "Once you hit the wall, release jump and fall while holding left to avoid the spikes below. When you are just left of the spikes, dash down-right to reach the bottom platform. Bunnyhop to the right until you are lined up with the wall above. Dash up and buffer a wallbounce by buffering your jump. By doing this, the peak of your wallbounce will always have the same height, which conveniently lines you up for the next part. ",
+    "notes": "If you get a wavedash instead of a bunnyhop, you were too close the ground when dashing down-right."
+  },
+  {
+    "name": "6a bottom route cornerboost ultra",
+    "start": "6a dash crystal",
+    "end": "6b ultra entry",
+    "categories": ["any"],
+    "description": "At the peak of your wallbounce (this should coincide with the first frame where the outline of the dash crystal is completely visible after Madeline collects it), demo right so you can demo hyper off the wooden platform. Right after you jump for the demo hyper, you can cornerboost off of the small hump in front of you which will give you some vertical height and horizontal speed, during which you should be holding jump (if you're unlucky, you won't get extra speed so the next part will not work). After the cornerboost, wait until you reach around the top left part of the coffee shop [img]1a_6a_cornerboost_ultra_cue.png[/img] and do a down right dash for a ultra, and slide towards the next room. (You'll be noticeably faster speed than when you did not get enough speed, or when you didn't get the speed on the cornerboost).",
+    "notes": "You do not need that much speed for the next room, however having a lot of speed will save a bit of time in this and the next room."
+  },
+  {
+    "name": "6a top route start",
+    "start": "6a dash crystal",
+    "end": "6b top route up-right",
+    "categories": "any, arb, hearts",
+    "description": "At the peak of your wallbounce (this should coincide with the first frame where the outline of the dash crystal is completely visible after Madeline collects it), demo right so you can demo hyper off the wooden platform, then bunnyhop off the raised section of ground. Once you reach the top-right corner of the coffee shop in the background, dash up-right. [img]1a_6a_coffee_shop_upright_cue.png[/img]"
+  },
+  {
+    "name": "6b bottom route",
+    "start": "6b ultra entry",
+    "end": "6c super/cornerboost entry",
+    "categories": ["any"],
+    "description": "After sliding into the transition, buffer a jump and do a full height jump after the transition. This will give you the right amount of height for a right demo dash towards the traffic block, which lets you demo hyper off of the traffic block. After that, you want to aim toward the middle-left side of the vertical traffic block ahead (you could greed frames and land as early as possible). Dash down to cancel your momentum and move to the middle of the traffic block. You can do the next part in either of two ways: 1) Jump when the traffic block is coming to a stop, and dash up right to land on the top right platform, then super into the transition. 2) Jump when the traffic block is coming to a stop, the do a climb jump on the wall that you normally move past. The little dust that indicates where the climb jump happens should be a little bit below the mid point of the right wall. [img]1a_6b_blockboost_dust_cue.png[/img] Keep holding jump and right while doing this. This double block boost should give you a perfect height to do either a super on the top platform or a cornerboost on the corner of that platform. Keep holding right and jump, and both the super and cornerboost will send you toward the transition with a bit of height and speed."
+  },
+  {
+    "name": "6b top route start",
+    "start": "6b top route up-right",
+    "end": "6b top jumpthrough",
+    "categories": "any, arb, hearts",
+    "description": "After the screen transition, wait briefly until you are horizontally aligned with the wall above you, then dash up. Depending on how close you are to the wall, you can either tap left as you dash up to face the wall then do a climbjump, or press left climbjump once you reach the wall. Do a small neutral jump off the wall to quickly land on the wooden platform above."
+  },
+  {
+    "name": "6n top route bunnyhop",
+    "start": "6b top jumpthrough",
+    "end": "6b ultra start",
+    "categories": ["any"],
+    "description": "Hyper to the right into the secret path, then bunnyhop into a climbjump."
+  },
+  {
+    "name": "6b top route 3 cornerkick",
+    "start": "6b top jumpthrough",
+    "end": "6b ultra start",
+    "categories": ["any"],
+    "description": "Hyper to the right into the secret path, then bunnyhop into a cornerkick with a second jump."
+  },
+  {
+    "name": "6b top route ultra",
+    "start": "6b ultra start",
+    "end": "6b ultra end",
+    "categories": ["any"],
+    "description": "The goal for this part is to get an ultra off the metal girder tile at the left edge of the ground below. [img]1a_6b_ultra_girder_cue.png[/img] Start by doing an extended hyper. To get maximum speed, you will want to extend this as far as possible, jumping around the end of the caution stripe pattern in the background, or later. [img]1a_6b_ultra_1.png[/img] Hold jump out of the hyper, then once you are lined up with the \"IT'S\" in the sign, dash down-right. [img]1a_6b_ultra_2.png[/img] This should line you up to hit the metal girder tile. If you hit the correct tile, you should hear a metallic sound effect, different from the sound hitting the rest of the ground will make. Hold jump, while continuing to hold down-right. Note that if you have enough speed, you should be able to safely buffer the jump on the ultra and still be fine."
+  },
+  {
+    "name": "6c bottom route end",
+    "start": "6c super/cornerboost entry",
+    "end": "6c spring 2",
+    "categories": ["any"],
+    "description": "For both the super and the cornerboost, you should have enough height for a right dash into the first spring. Do not buffer the right dash from the transition (although in some cases it doesn't matter if you do buffer the dash), wait a tiny bit before doing so. After the spring launches you up, demo right over the spikes, then fast fall to the second spring."
+  },
+  {
+    "name": "6c top route",
+    "start": "6b ultra end",
+    "end": "6c spring 2",
+    "categories": ["any"],
+    "description": "Continue holding jump and down-right through the transition. Let go of jump when you are directly above the first spring. When you reach the bottom of the wall, you should be corner corrected downward, which will allow you to demo right directly into the second spring. If you released jump too late, you will slam into the wall and lose all your speed. [img]1a_6c_failed_held_jump.png[/img] If you released down too early, you will also hit into the wall, but should see a cloud of dust around Madeline. [img]1a_6c_failed_released_down_1.png[/img] If you release down later than this, but too early before your demo, you see the cloud of dust around the lower wall. [img]1a_6c_failed_released_down_2.png[/img] The cloud of dust should not appear if you get corner corrected properly. [img]1a_6c_corner_correct.png[/img]"
+  },
+  {
+    "name": "6c super exit",
+    "start": "6c spring 2",
+    "end": "7",
+    "categories": [],
+    "description": "Bounce off the spring then try to time your up-right dash early enough to land quickly. Then jump, dash right and super, and dash up out of the room."
+  },
+  {
+    "name": "8 wavedash super exit",
+    "start": "8 entry",
+    "end": "8b entry",
+    "categories": ["any"],
+    "description": "Do a wavedash, then when you are horizontally aligned with the pillar in the background, dash up-right. [img]1a_8_upright_cue.png[/img] This will land you on the left edge of the crumble platform. From the platform, do an extended super, then dash up to land at the end of the screen. Hyper into the next screen, releasing jump during the transition.",
+    "notes": "The further right you enter the room, the shorter your initial wavedash can be, thus the quicker you will be able to land from your up-right dash. It is possible to do too short of a wavedash where you will always die to the spikes when you reach the desired horizontal position."
+  },
+  {
+    "name": "8b demohyper",
+    "start": "8b entry",
+    "end": "9 entry",
+    "categories": ["any"],
+    "description": "Do a short demohyper off the first traffic block, landing on the second block. As the traffic blocks moves up, you can adjust your position to line yourself up with the left wall above. Use the traffic block to launch up, then dash up along the left wall into the transition."
+  },
+  {
+    "name": "8b demohyper down-right",
+    "start": "8b entry",
+    "end": "9 entry",
+    "categories": ["any"],
+    "description": "Do a demohyper off the first traffic block, then dash down-right to the second traffic block, followed by a down dash to avoid sliding off. Use the traffic block to launch up, then dash up along the left wall into the transition."
+  },
+  {
+    "name": "9 wallbounce wavedash",
+    "start": "9 entry",
+    "end": "9 top",
+    "categories": ["any"],
+    "description": "Transition wallbounce into the room, holding right. Once you are at the peak of your jump, wavedash right, sliding under the traffic block. Hold right and jump until you are lined up with the left wall above, then dash up and wallbounce. If you dash up too far right, you can climbjump up to safety."
+  },
+  {
+    "name": "9 wallbounce demohyper",
+    "start": "9 entry",
+    "end": "9 top",
+    "categories": ["any"],
+    "description": "Transition wallbounce into the room, holding right. Once you are able to be corner corrected above the bump, but before you are above it, demo hyper right, sliding under the traffic block. You must get corner corrected upward to get your dash back. Hold right and jump until you are lined up with the left wall above, then dash up and wall bounce."
+  },
+  {
+    "name": "9 two hypers exit",
+    "start": "9 top",
+    "end": "9b up dash",
+    "categories": ["any"],
+    "description": "Do two hypers, letting go of down after the second one, and avoid holding jump through the transition. This will line you up to be able to dash up to the platform above."
+  },
+  {
+    "name": "9 grounded ultra exit",
+    "start": "9 top",
+    "end": "9b up dash",
+    "categories": ["any"],
+    "description": "Do a short hyper landing on the right edge of the paint cans. [img]1a_9_paint_cans.png[/img] Dash down-right from here through the transition, then buffer a grounded ultra. This will line you up be able to dash up to the platform above."
+  },
+  {
+    "name": "9b up dash hyper bunnyhop",
+    "start": "9b up dash",
+    "end": "10a",
+    "categories": ["any"],
+    "description": "Dash up as soon as you can do so without bonking, then hold left until landing. Do a very short hyper then bunnyhop and hold jump, then up-right dash to reach the wall. Climbjump up through the transition."
+  },
+  {
+    "name": "10a transition climbjump super wallbounce",
+    "start": "10a",
+    "end": "10a top right",
+    "categories": ["any", "arb"],
+    "description": "Do a transition climbjump into an extended super. Once you are past the wall, dash up and wall bounce into the dash crystal. Dash up-right as soon as possible to land as far left on the platform as you can."
+  },
+  {
+    "name": "10a hyper cornerglide",
+    "start": "10a top right",
+    "end": "10a left platform",
+    "categories": ["any", "arb"],
+    "description": "Hyper to the left, holding down-left and jump, and you should regain your dash as you glide over the raised metal ground. Once Madeline's head is below the outcropping of the right wall, you should be able to demo up-left and pass under it. Do a short climb jump then a short neutral jump to land on the wooden platform."
+  },
+  {
+    "name": "10a wallbounce left exit",
+    "start": "10a left platform",
+    "end": "11 left entry",
+    "categories": ["any", "arb"],
+    "description": "Dash up and buffer a wall bounce, holding jump."
+  },
+  {
+    "name": "11 wallbounce",
+    "start": "11 spring",
+    "end": "11 crumble",
+    "categories": ["any", "arb"],
+    "description": "Hold left as you bounce off the spring, then when you reach the wall, and your head is vertically lined up with the spikes to the right, dash up and wallbounce. For optimal speed, time the wallbounce when Madeline's head is directly below the flat horizontal line near the top of the wall. When you reach the platform, do a quick turn-around climbjump onto it."
+  },
+  {
+    "name": "11 hyper wavedash bunnyhop",
+    "start": "11 crumble",
+    "end": "12 right entry",
+    "categories": ["any", "arb"],
+    "description": "Do an extended hyper to the left off the crumble platform, then do a short wavedash off the highest raised piece of ground. Bunnyhop off the right edge of the leftmost section of raised ground, then when you reach the left wall, dash up and wall bounce. If you are aligned with the background poster at the start of your dash, then you will want to wallbounce when you are vertically aligned with the third X from the top of the steel girder."
+  },
+  {
+    "name": "12 chasm cornerboost",
+    "start": "12 right",
+    "end": "12 exit",
+    "categories": ["any"],
+    "description": "Do an extended super off the block to the right, holding jump and right. Buffer a climbjump off the tall wall in the center, then release jump when you are directly above the left pair of spikes on the wall. [img]1a_12_chasm_cb.png[/img] When you are vertically lined up with the last section of raised spiked ground to the right, dash right and corner boost.",
+    "credit": "Lnf"
+  },
+  {
+    "name": "12 demohyper to spring exit",
+    "start": "12 exit",
+    "end": "12a block",
+    "categories": [],
+    "description": "Jump and do a demohyper off the raised metal ground to the right. This will take you through the transition and to the spring on the next screen."
+  },
+  {
+    "name": "12a up-right cornerkick",
+    "start": "12a block",
+    "end": "12 platform",
+    "categories": ["any", "arb"],
+    "description": "Do two quick climbjumps off the traffic block, then two more climbjumps off the left wall. Do one neutral jump to reach the bottom of the next wall layer, the wall kick off to the right. Once you pass the seam on the background tiles, dash up-right. [img]1a_12a_upright_cue.png[/img] Buffer a neutral jump to cornerkick up to the wooden platform.",
+    "notes": "This uses koral's cue which is slightly different from a cue I have, using Madeline's vertical instead of horizontal position to time the dash. Should test to compare both to see which works better (or maybe include both)."
+  },
+  {
+    "name": "12a climbjump exit",
+    "start": "12a platform",
+    "end": "end climbjump entry",
+    "categories": ["any", "arb"],
+    "description": "Once you land on the right side of the platform, dash up-left, then climbjump off the right corner exiting the screen."
+  },
+  {
+    "name": "12a up dash wallbounce exit",
+    "start": "12a platform",
+    "end": "end entry",
+    "categories": ["any", "arb"],
+    "description": "Hold left after the cornerkick so you land on the left side of the platform. Dash up, then wallbounce off the tile where the ceiling splits into two different heights. [img]1a_12a_up_wb.png[/img] This will take you through the transition."
+  },
+  {
+    "name": "end up-right hyper",
+    "start": "end entry",
+    "end": "end end",
+    "categories": ["any", "arb"],
+    "description": "Dash up-right to the memorial, then hyper to the right to reach the end of the chapter."
+  },
+  {
+    "name": "end demohyper",
+    "start": "end entry",
+    "end": "end end",
+    "categories": ["any", "arb"],
+    "description": "Hold right on entry and dash right once you are at the height of the first raised ground tile to the right. Super off the left edge of the tile. Hold jump until you have enough height to demo onto the ground where the memorial is. Demo hyper off the ground here, which will take you to the end of the chapter."
+  },
+  {
+    "name": "end grounded ultra",
+    "start": "end entry",
+    "end": "end end",
+    "categories": ["any", "arb"],
+    "description": "Hold right on entry and dash right once you are at the height of the first raised ground tile to the right. Super off the left edge of the tile. Hold jump until you have enough height to demo onto the ground where the memorial is. Demo hyper off the ground here, into a grounded ultra which will take you to the end of the chapter."
+  }
+]

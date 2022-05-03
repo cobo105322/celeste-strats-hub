@@ -1,0 +1,177 @@
+[
+  {
+    "name": "1 super bunnyhop x2",
+    "start": "1 start",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "2 up-right spring",
+    "start": "2",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "2 reverse wavedash hcb",
+    "start": "2 wb entry",
+    "end": "2 right side",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "3b rcb exit",
+    "start": "3b top",
+    "end": "5 climbjump entry",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "5 double super",
+    "start": "5",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "6 bottom -> wavedash bunnyhop",
+    "start": "6",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "6 bottom -> hyper cb",
+    "start": "6",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "6a bottom route easier start",
+    "start": "6a dash crystal",
+    "end": "6b",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "7 something basic",
+    "start": "7",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "7 transition wallbounce",
+    "start": "7",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "7 super cb",
+    "start": "7",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "8 wavedash, up-right exit",
+    "start": "8",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "8b right dash -> hyper",
+    "start": "8b",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "9 wavedash w/o wb",
+    "start": "9",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "9b extended hyper",
+    "start": "9b",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "9b up-left cb -> hyper bunnyhop",
+    "start": "9b",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "10a wallbounce, hyper left",
+    "start": "10a",
+    "end": "",
+    "categories": ["any", "arb"],
+    "description": ""
+  },
+  {
+    "name": "10a wb right exit",
+    "start": "10a left platform",
+    "end": "11 right entry",
+    "categories": ["any", "arb"],
+    "description": ""
+  },
+  {
+    "name": "11 wallkick start",
+    "start": "11 right entry",
+    "end": "11 spring",
+    "categories": ["any", "arb"],
+    "description": ""
+  },
+  {
+    "name": "11 double climbjump start",
+    "start": "11 left entry",
+    "end": "11 spring",
+    "categories": ["any", "arb"],
+    "description": ""
+  },
+  {
+    "name": "11 hyper x2",
+    "start": "11 crumble",
+    "end": "12 right entry",
+    "categories": ["any", "arb"],
+    "description": ""
+  },
+  {
+    "name": "12 super, set up spike jump",
+    "start": "12",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "12 faster spike jump setup",
+    "start": "12",
+    "end": "",
+    "categories": ["any"],
+    "description": ""
+  },
+  {
+    "name": "12a some form of up dash",
+    "start": "12a",
+    "end": "",
+    "categories": ["any", "arb"],
+    "description": ""
+  },
+  {
+    "name": "end trans. wb, right -> hyper",
+    "start": "12a platform",
+    "end": "end end",
+    "categories": ["any", "arb"],
+    "description": ""
+  }
+]
