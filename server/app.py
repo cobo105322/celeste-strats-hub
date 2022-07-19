@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from markupsafe import escape
 from werkzeug.middleware.proxy_fix import ProxyFix
 
@@ -13,6 +13,6 @@ if PROXIES:
     )
 
 
-@app.get('/strats/<chapter>/<room>')
-def strats(chapter, room):
-    return jsonify(get_strats_for_room(escape(chapter), escape(room)))
+@app.get('/strats')
+def strats():
+    return jsonify(get_strats_for_room(escape(request.args['chapter']), escape(request.args['room'])))

@@ -1,6 +1,6 @@
 export enum EnumAPIEndpoint{
     //STRATS
-    GET_STRATS="api/getRoomStrats.php",
+    GET_STRATS="api/strats",
     SUBMIT_STRAT="api/submitRoomStrat.php",
 
     //AUTH
