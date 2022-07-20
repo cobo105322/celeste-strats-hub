@@ -44,7 +44,6 @@ export default class Room extends React.Component<ComponentProps, ComponentState
   }
 
   componentDidUpdate(prevProps: ComponentProps) {
-    console.log(this.props.filters)
     if (this.props.params.id !== prevProps.params.id) {
       this.initialize();
     }
@@ -67,7 +66,13 @@ export default class Room extends React.Component<ComponentProps, ComponentState
   initialize() {
     this.roomLogic = new RoomLogic(this.props.params.id, this.props.chapterTree);
     this.setState(this.getInitialState());
-    APIService.APICall(EnumAPIEndpoint.GET_STRATS, { roomid: this.props.params.id }, "get").then((response: Response) => {
+    if (!this.roomLogic.roomExists()) {
+      return;
+    }
+    APIService.APICall(EnumAPIEndpoint.GET_STRATS, {
+      chapter: this.roomLogic.chapter.chapter_no.toString() + this.roomLogic.side.name.toLowerCase(),
+      room: this.roomLogic.room.debug_id,
+    }, "get").then((response: Response) => {
       if (response.ok) {
         response.json().then((strats: Strat[]) => this.setState({ roomStrats: strats }));
       }
@@ -155,7 +160,7 @@ export default class Room extends React.Component<ComponentProps, ComponentState
     return <div className="grid">
       {filteredStrats.map((strat, i) => {
         return <div key={"strat_" + i} className="col-12 lg:col-4 strat-preview-div">
-          <p onClick={() => this.setState({ selectedStrat: strat, accordionIndex: 1 })}>{strat.summary}</p>
+          <p onClick={() => this.setState({ selectedStrat: strat, accordionIndex: 1 })}>{strat}</p>
           {this.renderStratGif(strat)}
         </div>
       })}
@@ -170,10 +175,10 @@ export default class Room extends React.Component<ComponentProps, ComponentState
         {this.renderStratGif(strat)}
       </div>
       <div className="col-12 lg:col-6">
-        <p><b>Summary:</b> {strat.summary}</p>
-        <p><b>Category:</b> {strat.categories.map(c => c.label).join(', ')}</p>
-        <p><b>Difficulty:</b> {strat.difficulties.map(c => c.label).join(', ')}</p>
-        <p><b>Exit:</b> {this.getLinkById(strat.exit_id)}</p>
+        <p><b>Description:</b> {strat}</p>
+        {/*<p><b>Category:</b> {strat.categories.map(c => c.label).join(', ')}</p>*/}
+        {/*<p><b>Difficulty:</b> {strat.difficulties.map(c => c.label).join(', ')}</p>*/}
+        {/*<p><b>Exit:</b> {this.getLinkById(strat.exit_id)}</p>*/}
       </div>
       <div className="col-12">
         {strat.description}
@@ -185,7 +190,7 @@ export default class Room extends React.Component<ComponentProps, ComponentState
     return <div className="strat-container">
       <div className="strat-dummy"></div>
       <div className="strat-wrapper">
-        <iframe src={strat.gif + '?autoplay=0&controls=0'} height='100%' width='100%' />
+        {/*<iframe src={strat.gif + '?autoplay=0&controls=0'} height='100%' width='100%' />*/}
       </div>
     </div>
   }

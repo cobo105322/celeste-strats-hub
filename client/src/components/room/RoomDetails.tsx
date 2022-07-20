@@ -70,7 +70,7 @@ export default class RoomDetails extends React.PureComponent<ComponentProps, any
             Adjacent
           </div>
           <div className="col-8">
-            {this.props.room.linked.map((linked_id, i) => <label>{i !== 0 && ', '}{this.getLink(linked_id)}</label>)}
+            {/*{this.props.room.linked.map((linked_id, i) => <label>{i !== 0 && ', '}{this.getLink(linked_id)}</label>)}*/}
           </div>
         </div>
         {!this.props.submitting &&

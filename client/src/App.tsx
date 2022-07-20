@@ -46,14 +46,14 @@ export default class App extends React.Component<any, AppState> {
 
   componentDidMount(): void {
     //We try to autologin
-    APIService.APICall(EnumAPIEndpoint.AUTOLOGIN, {}).then(r=>{
-      if(r.ok){
-        r.json().then(user=>{
-          ClientService.setUser(user);
-          this.forceUpdate();
-        })
-      }
-    })
+    // APIService.APICall(EnumAPIEndpoint.AUTOLOGIN, {}).then(r=>{
+    //   if(r.ok){
+    //     r.json().then(user=>{
+    //       ClientService.setUser(user);
+    //       this.forceUpdate();
+    //     })
+    //   }
+    // })
   }
 
   render() {    
