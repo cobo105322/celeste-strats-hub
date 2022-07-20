@@ -8,7 +8,7 @@ export class APIService {
         let finalUrl: string;
         let credentials: RequestCredentials = 'include';
 
-        finalUrl = endpoint;
+        finalUrl = this.SERVER_URL + endpoint;
 
         //Crea un FormData y le anade los parametros recibidos
 
