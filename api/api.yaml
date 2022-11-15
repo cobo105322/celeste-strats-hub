@@ -1,0 +1,326 @@
+openapi: 3.0.0
+
+info:
+  title: Celeste Speedrun Library
+  description: Digital Library covering all things Celeste speedrunning.
+  version: 0.1.0
+
+servers:
+  - url: "/api"
+
+paths:
+  /status:
+    get:
+      summary: Healthcheck
+      description: Check that the API is up and running
+      operationId: get_api_status
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: boolean
+                    description: Always true
+  /chapters:
+    get:
+      summary: List all chapters
+      description: List all chapters, including B-Sides and C-Sides, in vanilla Celeste
+      operationId: get_chapters
+#      parameters:
+#        - name: status
+#          in: query
+#          description: Status values that need to be considered for filter
+#          required: true
+#          style: form
+#          explode: false
+#          deprecated: true
+#          schema:
+#            type: array
+#            items:
+#              type: string
+#              enum:
+#                - available
+#                - pending
+#                - sold
+#              default: available
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Chapter'
+        '400':
+          description: Invalid request
+  /checkpoints:
+    get:
+      summary: List all checkpoints for the specified chapter
+      operationId: get_checkpoints
+      parameters:
+        - name: chapter
+          in: query
+          description: Token of the chapter to list checkpoints for
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Checkpoint'
+        '400':
+          description: Invalid request
+  /rooms:
+    get:
+      summary: List all rooms for the specified checkpoint
+      operationId: get_rooms
+      parameters:
+        - name: checkpoint
+          in: query
+          description: Token of the checkpoint to list rooms for
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Room'
+        '400':
+          description: Invalid request
+  /strats:
+    get:
+      summary: List all known strats for the specified room
+      operationId: get_strats
+      parameters:
+        - name: chapter
+          in: query
+          description: Token of the chapter the room is in
+          required: true
+          schema:
+            type: string
+        - name: room
+          in: query
+          description: Debug code of the room
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Strat'
+        '400':
+          description: Invalid request
+
+#  /pet/findByTags:
+#    get:
+#      tags:
+#        - pet
+#      summary: Finds Pets by tags
+#      description: >-
+#        Multiple tags can be provided with comma separated strings. Use tag1,
+#        tag2, tag3 for testing.
+#      operationId: findPetsByTags
+#      parameters:
+#        - name: tags
+#          in: query
+#          description: Tags to filter by
+#          required: true
+#          style: form
+#          explode: false
+#          schema:
+#            type: array
+#            items:
+#              type: string
+#      responses:
+#        '200':
+#          description: successful operation
+#          content:
+#            application/xml:
+#              schema:
+#                type: array
+#                items:
+#                  $ref: '#/components/schemas/Pet'
+#            application/json:
+#              schema:
+#                type: array
+#                items:
+#                  $ref: '#/components/schemas/Pet'
+#        '400':
+#          description: Invalid tag value
+#      security:
+#        - petstore_auth:
+#            - 'read:pets'
+#      deprecated: true
+#  '/pet/{petId}':
+#    get:
+#      tags:
+#        - pet
+#      summary: Find pet by ID
+#      description: Returns a single pet
+#      operationId: getPetById
+#      parameters:
+#        - name: petId
+#          in: path
+#          description: ID of pet to return
+#          required: true
+#          schema:
+#            type: integer
+#            format: int64
+#      responses:
+#        '200':
+#          description: successful operation
+#          content:
+#            application/xml:
+#              schema:
+#                $ref: '#/components/schemas/Pet'
+#            application/json:
+#              schema:
+#                $ref: '#/components/schemas/Pet'
+#        '400':
+#          description: Invalid ID supplied
+#        '404':
+#          description: Pet not found
+#      security:
+#        - api_key: []
+#    post:
+#      tags:
+#        - pet
+#      summary: Updates a pet in the store with form data
+#      description: ''
+#      operationId: updatePetWithForm
+#      parameters:
+#        - name: petId
+#          in: path
+#          description: ID of pet that needs to be updated
+#          required: true
+#          schema:
+#            type: integer
+#            format: int64
+#      responses:
+#        '405':
+#          description: Invalid input
+#      security:
+#        - petstore_auth:
+#            - 'write:pets'
+#            - 'read:pets'
+#      requestBody:
+#        content:
+#          application/x-www-form-urlencoded:
+#            schema:
+#              type: object
+#              properties:
+#                name:
+#                  description: Updated name of the pet
+#                  type: string
+#                status:
+#                  description: Updated status of the pet
+#                  type: string
+
+components:
+#  requestBodies:
+#    UserArray:
+#      content:
+#        application/json:
+#          schema:
+#            type: array
+#            items:
+#              $ref: '#/components/schemas/User'
+#      description: List of user object
+#      required: true
+#    Pet:
+#      content:
+#        application/json:
+#          schema:
+#            $ref: '#/components/schemas/Pet'
+#        application/xml:
+#          schema:
+#            $ref: '#/components/schemas/Pet'
+#      description: Pet object that needs to be added to the store
+#      required: true
+#  securitySchemes:
+#    petstore_auth:
+#      type: oauth2
+#      flows:
+#        implicit:
+#          authorizationUrl: 'http://petstore.swagger.io/api/oauth/dialog'
+#          scopes:
+#            'write:pets': modify pets in your account
+#            'read:pets': read your pets
+#    api_key:
+#      type: apiKey
+#      name: api_key
+#      in: header
+  schemas:
+    Chapter:
+      title: Chapter
+      description: A chapter
+      type: object
+      properties:
+        token:
+          type: string
+          description: Unique identifier for the chapter
+        name:
+          type: string
+          description: Full chapter name
+      required:
+        - token
+        - name
+    Checkpoint:
+      title: Checkpoint
+      description: A checkpoint in a chapter
+      type: object
+      properties:
+        token:
+          type: string
+          description: Unique identifier for the checkpoint
+        name:
+          type: string
+          description: Checkpoint name
+      required:
+        - token
+        - name
+    Room:
+      title: Room
+      description: A single room
+      type: object
+      properties:
+        code:
+          type: string
+          description: Debug code of the room
+      required:
+        - code
+    Strat:
+      title: Strat
+      description: A strategy for some portion of a speedrun
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        notes:
+          type: string
+        start:
+          type: string
+        end:
+          type: string

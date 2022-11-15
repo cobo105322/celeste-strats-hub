@@ -29,9 +29,9 @@ class Difficulty(Base):
 class Chapter(Base):
     __tablename__ = 'chapter'
     id = Column(Integer, primary_key=True)
+    token = Column(String, nullable=False, unique=True)
     number = Column(Integer)
     side = Column(String(1))
-    short_name = Column(String, nullable=False, unique=True)
     full_name = Column(String, nullable=False, unique=True)
     # unique(number, side)
     checkpoints = relationship('Checkpoint', back_populates='chapter')
@@ -40,6 +40,7 @@ class Chapter(Base):
 class Checkpoint(Base):
     __tablename__ = 'checkpoint'
     id = Column(Integer, primary_key=True)
+    token = Column(String, nullable=False, unique=True)
     chapter_id = Column(Integer, ForeignKey('chapter.id'), nullable=False)
     number = Column(Integer, nullable=False)
     name = Column(String, nullable=False)

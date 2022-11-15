@@ -1,18 +1,8 @@
-from flask import Flask, jsonify, request
-from markupsafe import escape
-from werkzeug.middleware.proxy_fix import ProxyFix
+import connexion
+from connexion.resolver import RelativeResolver
 
-from config import PROXIES
-from database.repository import get_strats_for_room
+app = connexion.FlaskApp(__name__, specification_dir='../api/', options={"swagger_ui": False})
+app.add_api('api.yaml', resolver=RelativeResolver('service.service'))
 
-app = Flask(__name__)
-
-if PROXIES:
-    app.wsgi_app = ProxyFix(
-        app.wsgi_app, x_for=PROXIES, x_proto=PROXIES, x_host=PROXIES, x_prefix=PROXIES
-    )
-
-
-@app.get('/strats')
-def strats():
-    return jsonify(get_strats_for_room(escape(request.args['chapter']), escape(request.args['room'])))
+if __name__ == '__main__':
+    app.run()

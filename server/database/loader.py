@@ -6,6 +6,7 @@ from typing import List
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
+from .factory import chapter_factory, checkpoint_factory
 from .tables import Category, Chapter, Checkpoint, Difficulty, Room, Strat
 
 
@@ -22,17 +23,11 @@ def load_chapter_tree(session: Session, file: PathLike):
 
     for chapter_data in chapter_tree.values():
         for side_data in chapter_data['sides']:
-            side = side_data['name']
-            short_name = str(chapter_data['chapter_no']) + side.lower()
-            chapter_name = chapter_data['name']
-            if side != 'A':
-                chapter_name += f' {side}-Side'
-            chapter = Chapter(number=chapter_data['chapter_no'], side=side,
-                              short_name=short_name, full_name=chapter_name)
+            chapter = chapter_factory(chapter_data['chapter_no'], chapter_data['name'], side_data['name'])
             session.add(chapter)
             chapter_rooms_links = {}
             for checkpoint_index, checkpoint_data in enumerate(side_data['checkpoints']):
-                checkpoint = Checkpoint(number=checkpoint_index + 1, name=checkpoint_data['name'], chapter=chapter)
+                checkpoint = checkpoint_factory(chapter, checkpoint_index + 1, checkpoint_data['name'])
                 session.add(checkpoint)
                 for room_data in checkpoint_data['rooms']:
                     room = Room(code=room_data['debug_id'], nickname=room_data['name'], image=room_data['image'],
@@ -65,7 +60,9 @@ def load_chapter_strats(session: Session, file: PathLike, chapter_number: int, s
             Room.checkpoint).join(Checkpoint.chapter.and_(Chapter.number == chapter_number, Chapter.side == side))
         start_room = session.scalar(select_chapter_rooms.where(Room.code == start_room_code))
         end_room = session.scalar(select_chapter_rooms.where(Room.code == end_room_code))
-        strat = Strat(nickname=strat_data['name'], description=strat_data['description'],
+        strat = Strat(nickname=strat_data['name'],
+                      description=strat_data['description'],
+                      notes=strat_data.get('notes'),
                       start_room=start_room, start_detail=start_detail, end_room=end_room, end_detail=end_detail)
         strat.rooms = get_rooms_in_range(start_room, start_detail, end_room, end_detail)
         session.add(strat)

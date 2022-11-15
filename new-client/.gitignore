@@ -1,14 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-#client
 # dependencies
-/client/node_modules
+/node_modules
 /.pnp
 .pnp.js
 
-# production
-/client/build
+# testing
+/coverage
 
+# production
+/build
 
 # misc
 .DS_Store
@@ -16,24 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
-.idea
-__pycache__
-Thumbs.db
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-#api
-/api/node_modules
-
-#server
-/server/tests
-/server/config
-
-/server/venv
-/server/temp.db
-/server/generated
-
-/new-client/node_modules
-/new-client/generated
