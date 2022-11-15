@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from sqlalchemy.orm import Session
 
 from config import DATA_DIR
@@ -15,7 +17,8 @@ def initial_database_setup():
 
 
 if __name__ == '__main__':
-    # initial_database_setup()
+    Path('temp.db').unlink()
+    initial_database_setup()
     print(repository.get_chapters())
     print(repository.get_checkpoints('1a'))
     print(repository.get_rooms('1a-1'))

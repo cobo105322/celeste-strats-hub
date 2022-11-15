@@ -1,6 +1,6 @@
 {
-  "short_name": "Strats Hub",
-  "name": "Celeste Strats Hub",
+  "short_name": "Celeste Speedrunning Library",
+  "name": "Celeste Speedrunning Library",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,12 +10,7 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192 512x512"
     }
   ],
   "start_url": ".",

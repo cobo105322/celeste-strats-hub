@@ -1,4 +1,4 @@
-from sqlalchemy import Column, ForeignKey, Integer, String, Table
+from sqlalchemy import Column, ForeignKey, Integer, String, Table, UniqueConstraint
 from sqlalchemy.orm import declarative_base, relationship
 
 Base = declarative_base()
@@ -32,8 +32,9 @@ class Chapter(Base):
     token = Column(String, nullable=False, unique=True)
     number = Column(Integer)
     side = Column(String(1))
+    UniqueConstraint(number, side)
     full_name = Column(String, nullable=False, unique=True)
-    # unique(number, side)
+    image = Column(String)
     checkpoints = relationship('Checkpoint', back_populates='chapter')
 
 
@@ -44,6 +45,7 @@ class Checkpoint(Base):
     chapter_id = Column(Integer, ForeignKey('chapter.id'), nullable=False)
     number = Column(Integer, nullable=False)
     name = Column(String, nullable=False)
+    image = Column(String)
     chapter = relationship('Chapter', back_populates='checkpoints')
     rooms = relationship('Room', back_populates='checkpoint')
 
@@ -60,16 +62,19 @@ room_strats = Table('room_strats', Base.metadata,
 class Room(Base):
     __tablename__ = 'room'
     id = Column(Integer, primary_key=True)
+    chapter_id = Column(Integer, ForeignKey('chapter.id'), nullable=False)
     checkpoint_id = Column(Integer, ForeignKey('checkpoint.id'), nullable=False)
     code = Column(String, nullable=False)
     nickname = Column(String)
     image = Column(String)
     checkpoint = relationship('Checkpoint', back_populates='rooms')
+    chapter = relationship('Chapter')
     connected_rooms = relationship('Room',
                                    secondary='room_connections',
                                    primaryjoin=id == room_connections.c.room_a_id,
                                    secondaryjoin=id == room_connections.c.room_b_id)
     strats = relationship('Strat', secondary='room_strats', back_populates='rooms')
+    # UniqueConstraint(code, chapter_id)
 
 
 class Strat(Base):

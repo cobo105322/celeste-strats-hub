@@ -6,7 +6,7 @@ from typing import List
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from .factory import chapter_factory, checkpoint_factory
+from .factory import chapter_factory, checkpoint_factory, room_factory
 from .tables import Category, Chapter, Checkpoint, Difficulty, Room, Strat
 
 
@@ -30,8 +30,7 @@ def load_chapter_tree(session: Session, file: PathLike):
                 checkpoint = checkpoint_factory(chapter, checkpoint_index + 1, checkpoint_data['name'])
                 session.add(checkpoint)
                 for room_data in checkpoint_data['rooms']:
-                    room = Room(code=room_data['debug_id'], nickname=room_data['name'], image=room_data['image'],
-                                checkpoint=checkpoint)
+                    room = room_factory(checkpoint, room_data['debug_id'], room_data['name'])
                     session.add(room)
                     chapter_rooms_links[room.code] = (room, room_data.get('linked', []))
             for room, links in chapter_rooms_links.values():
@@ -70,5 +69,5 @@ def load_chapter_strats(session: Session, file: PathLike, chapter_number: int, s
 
 def load_all_data(session: Session, data_root: Path):
     load_hardcoded(session)
-    load_chapter_tree(session, data_root.joinpath('chapter-tree.json'))
+    load_chapter_tree(session, data_root.joinpath('meta/chapter-tree.json'))
     load_chapter_strats(session, data_root.joinpath('strats/1a/1a.json'), 1, 'A')

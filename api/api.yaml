@@ -282,6 +282,9 @@ components:
         name:
           type: string
           description: Full chapter name
+        image:
+          type: string
+          description: Image representing the chapter
       required:
         - token
         - name
@@ -296,6 +299,9 @@ components:
         name:
           type: string
           description: Checkpoint name
+        image:
+          type: string
+          description: Image representing the checkpoint
       required:
         - token
         - name
@@ -307,6 +313,9 @@ components:
         code:
           type: string
           description: Debug code of the room
+        image:
+          type: string
+          description: Image representing the room
       required:
         - code
     Strat:
