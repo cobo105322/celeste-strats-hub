@@ -15,7 +15,7 @@
 /build
 
 # symlink to actual assets for dev, should be copied in separately on production
-/public/assets/meta
+/public/assets/celeste-metadata
 
 # misc
 .DS_Store

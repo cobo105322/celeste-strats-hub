@@ -34,7 +34,22 @@ def get_rooms(checkpoint_token: str):
         return [{
             'code': room.code,
             'image': room.image,
+            'connected': [connected.code for connected in room.connected_rooms],
         } for room in rooms]
+
+
+# def get_room_details(chapter_token: str, room: str) -> dict:
+#     with Session(engine) as session:
+#         room = session.scalar(select(Room)
+#                               .join(Room.checkpoint)
+#                               .join(Checkpoint.chapter.and_(Chapter.token == chapter_token))
+#                               .where(Room.code == room))
+#         print(room.connected_rooms)
+#         return {
+#             'code': room.code,
+#             'image': room.image,
+#             'connected': room.connected_rooms,
+#         }
 
 
 def get_strats_for_room(chapter_token: str, room: str) -> list[dict]:

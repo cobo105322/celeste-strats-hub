@@ -1,26 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+#external data
+/data
+
 # misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 .idea
-__pycache__
 Thumbs.db
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-#api
-/api/node_modules
-
-#server
-/server/tests
-/server/config
-
-/server/venv
-/server/temp.db
-/server/generated

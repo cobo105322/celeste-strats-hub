@@ -313,11 +313,17 @@ components:
         code:
           type: string
           description: Debug code of the room
+        connected:
+          type: array
+          items:
+            type: string
+          description: The rooms connected to this one
         image:
           type: string
           description: Image representing the room
       required:
         - code
+        - connected
     Strat:
       title: Strat
       description: A strategy for some portion of a speedrun
