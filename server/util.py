@@ -2,7 +2,7 @@ from pathlib import Path
 
 from sqlalchemy.orm import Session
 
-from config import DATA_DIR
+from config import METADATA_DIR, SPEEDRUN_DATA_DIR
 from database.connector import engine
 from database.loader import load_all_data
 from database.tables import Base

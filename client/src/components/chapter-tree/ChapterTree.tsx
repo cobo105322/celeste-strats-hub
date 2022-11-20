@@ -1,8 +1,9 @@
+import {Breadcrumbs, Container, Link} from '@mui/material';
 import React, {useEffect, useState} from 'react';
 import {Chapter, Checkpoint, DefaultApi, DefaultApiInterface, Room} from '../../generated';
-import {Strats} from '../strats/Strats';
 import {ChapterSelect} from './ChapterSelect';
 import {CheckpointSelect} from './CheckpointSelect';
+import {RoomDetails} from './RoomDetails';
 import {RoomSelect} from './RoomSelect';
 
 export function ChapterTree() {
@@ -10,29 +11,28 @@ export function ChapterTree() {
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [checkpoints, setCheckpoints] = useState<Checkpoint[]>([]);
   const [rooms, setRooms] = useState<Room[]>([]);
-  const [selectedChapter, setSelectedChapter] = useState<string>();
-  const [selectedCheckpoint, setSelectedCheckpoint] = useState<string>();
-  const [selectedRoom, setSelectedRoom] = useState<string>();
+  const [selectedChapter, setSelectedChapter] = useState<Chapter>();
+  const [selectedCheckpoint, setSelectedCheckpoint] = useState<Checkpoint>();
+  const [selectedRoom, setSelectedRoom] = useState<Room>();
 
   useEffect(() => {
     api.getChapters().then(setChapters);
   }, []);
 
   useEffect(() => {
-    setSelectedRoom('');
-    setSelectedCheckpoint('');
+    setSelectedRoom(undefined);
+    setSelectedCheckpoint(undefined);
     if (selectedChapter) {
-      api.getCheckpoints({chapter: selectedChapter}).then(setCheckpoints);
+      api.getCheckpoints({chapter: selectedChapter.token}).then(setCheckpoints);
     } else {
       setCheckpoints([]);
     }
   }, [selectedChapter]);
 
   useEffect(() => {
-    setSelectedRoom('');
+    setSelectedRoom(undefined);
     if (selectedCheckpoint) {
-      api.getRooms({checkpoint: selectedCheckpoint}).then((res) => {
-        console.log(res);
+      api.getRooms({checkpoint: selectedCheckpoint.token}).then((res) => {
         setRooms(res);
       });
     } else {
@@ -40,15 +40,43 @@ export function ChapterTree() {
     }
   }, [selectedCheckpoint]);
 
+  const selectConnectedRoom = (connection: string) => {
+    /*
+    TODO: need to check if room belongs to current checkpoint or not.
+    If not, then we need to check across the whole chapter.
+    Maybe instead have an effect on the token of the selected room that selects the chapter + checkpoint?
+     */
+  }
+
+  const getActivePanel = () => {
+    if (selectedRoom) {
+      return (
+          <RoomDetails chapter={selectedChapter?.token} room={selectedRoom} onConnectedRoomSelected={selectConnectedRoom}></RoomDetails>
+      );
+    } else if (selectedCheckpoint) {
+      return (
+          <RoomSelect rooms={rooms} onRoomSelect={setSelectedRoom}></RoomSelect>
+      );
+    } else if (selectedChapter) {
+      return (
+          <CheckpointSelect checkpoints={checkpoints} onCheckpointSelect={setSelectedCheckpoint}></CheckpointSelect>
+      );
+    } else {
+      return (
+          <ChapterSelect chapters={chapters} onChapterSelect={setSelectedChapter}></ChapterSelect>
+      );
+    }
+  };
+
   return (
-      <div>
-        <ChapterSelect chapters={chapters} onChapterSelect={setSelectedChapter}></ChapterSelect>
-        <br/>
-        <CheckpointSelect checkpoints={checkpoints} onCheckpointSelect={setSelectedCheckpoint}></CheckpointSelect>
-        <br/>
-        <RoomSelect rooms={rooms} onRoomSelect={setSelectedRoom}></RoomSelect>
-        <br/>
-        <Strats chapter={selectedChapter} room={selectedRoom}></Strats>
-      </div>
+      <Container>
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link onClick={() => setSelectedChapter(undefined)}>Home</Link>
+          {selectedChapter && <Link onClick={() => setSelectedCheckpoint(undefined)}>{selectedChapter.name}</Link>}
+          {selectedCheckpoint && <Link onClick={() => setSelectedRoom(undefined)}>{selectedCheckpoint.name}</Link>}
+          {selectedRoom && <Link>{selectedRoom.code}</Link>}
+        </Breadcrumbs>
+        {getActivePanel()}
+      </Container>
   );
 }

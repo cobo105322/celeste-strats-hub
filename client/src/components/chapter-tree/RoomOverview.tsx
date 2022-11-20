@@ -4,12 +4,12 @@ import './RoomOverview.css';
 
 interface Props {
   room: Room;
-  onClick: (code: string) => void;
+  onClick: (room: Room) => void;
 }
 
 export function RoomOverview({room, onClick}: Props) {
   return (
-      <div className="room-box" onClick={() => onClick(room.code)}>
+      <div className="room-box" onClick={() => onClick(room)}>
         <img className="room-thumbnail" src={'assets/' + room.image}></img>
         {room.code}
       </div>

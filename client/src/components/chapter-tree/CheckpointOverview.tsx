@@ -4,12 +4,12 @@ import './CheckpointOverview.css';
 
 interface Props {
   checkpoint: Checkpoint;
-  onClick: (token: string) => void
+  onClick: (checkpoint: Checkpoint) => void
 }
 
 export function CheckpointOverview({checkpoint, onClick}: Props) {
   return (
-      <div className="checkpoint-box" onClick={() => onClick(checkpoint.token)}>
+      <div className="checkpoint-box" onClick={() => onClick(checkpoint)}>
         <img className="checkpoint-thumbnail" src={'assets/' + checkpoint.image}></img>
         {checkpoint.name}
       </div>
