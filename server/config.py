@@ -1,4 +1,6 @@
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
-METADATA_DIR = Path('../data/celeste-metadata')
-SPEEDRUN_DATA_DIR = Path('../data/celeste-speedrun-data')
+METADATA_DIR = Path('..', '..', 'celeste-metadata')
+SPEEDRUN_DATA_DIR = Path('..', '..', 'celeste-speedrun-data')
+
+WEB_METADATA_IMAGE_ROOT = PurePosixPath('assets', 'metadata', 'images')

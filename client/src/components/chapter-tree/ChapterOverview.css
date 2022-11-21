@@ -1,7 +1,7 @@
 .chapter-box {
     display: flex;
     flex-direction: column;
-    max-width: 210px;
+    max-width: 180px;
     align-items: center;
     text-align: center;
     margin: 10px;

@@ -1,3 +1,5 @@
+from pathlib import PurePosixPath
+
 from sqlalchemy import Column, ForeignKey, Integer, String, Table, UniqueConstraint
 from sqlalchemy.orm import declarative_base, relationship
 
@@ -26,16 +28,30 @@ class Difficulty(Base):
     label = Column(String)
 
 
+class ChapterParent(Base):
+    __tablename__ = 'chapter_parent'
+    id = Column(Integer, primary_key=True)
+    token = Column(String, nullable=False, unique=True)
+    number = Column(Integer)
+    name = Column(String, nullable=False)
+
+
 class Chapter(Base):
     __tablename__ = 'chapter'
     id = Column(Integer, primary_key=True)
     token = Column(String, nullable=False, unique=True)
-    number = Column(Integer)
+    parent_id = Column(Integer, ForeignKey('chapter_parent.id'), nullable=False)
     side = Column(String(1))
-    UniqueConstraint(number, side)
-    full_name = Column(String, nullable=False, unique=True)
-    image = Column(String)
-    checkpoints = relationship('Checkpoint', back_populates='chapter')
+    UniqueConstraint(parent_id, side)
+    relative_path = Column(String, nullable=False, unique=True)
+    chapter_parent: ChapterParent = relationship('ChapterParent')
+    checkpoints: list['Checkpoint'] = relationship('Checkpoint', back_populates='chapter')
+
+    @property
+    def full_name(self) -> str:
+        if self.side != 'A':
+            return f'{self.chapter_parent.name} {self.side}-Side'
+        return self.chapter_parent.name
 
 
 class Checkpoint(Base):
@@ -45,9 +61,12 @@ class Checkpoint(Base):
     chapter_id = Column(Integer, ForeignKey('chapter.id'), nullable=False)
     number = Column(Integer, nullable=False)
     name = Column(String, nullable=False)
-    image = Column(String)
     chapter = relationship('Chapter', back_populates='checkpoints')
     rooms = relationship('Room', back_populates='checkpoint')
+
+    @property
+    def image(self) -> PurePosixPath:
+        return self.rooms[0].image
 
 
 room_connections = Table('room_connections', Base.metadata,
@@ -66,7 +85,6 @@ class Room(Base):
     checkpoint_id = Column(Integer, ForeignKey('checkpoint.id'), nullable=False)
     code = Column(String, nullable=False)
     nickname = Column(String)
-    image = Column(String)
     checkpoint = relationship('Checkpoint', back_populates='rooms')
     chapter = relationship('Chapter')
     connected_rooms = relationship('Room',
@@ -74,7 +92,11 @@ class Room(Base):
                                    primaryjoin=id == room_connections.c.room_a_id,
                                    secondaryjoin=id == room_connections.c.room_b_id)
     strats = relationship('Strat', secondary='room_strats', back_populates='rooms')
-    # UniqueConstraint(code, chapter_id)
+    UniqueConstraint(code, chapter_id)
+
+    @property
+    def image(self) -> PurePosixPath:
+        return PurePosixPath(self.chapter.relative_path, self.code).with_suffix('.png')
 
 
 class Strat(Base):

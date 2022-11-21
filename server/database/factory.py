@@ -1,24 +1,22 @@
 from pathlib import PurePosixPath
 
-from .tables import Chapter, Checkpoint, Room
+from .tables import Chapter, ChapterParent, Checkpoint, Room
 
 
-def chapter_factory(chapter_number: int, chapter_name: str, side: str) -> Chapter:
-    assert len(side) == 1
-    token = str(chapter_number) + side.lower()
-    full_name = chapter_name
-    if side != 'A':
-        full_name += f' {side}-Side'
-    image = str(PurePosixPath('meta', 'chapters', token).with_suffix('.png'))
-    return Chapter(token=token, number=chapter_number, side=side, full_name=full_name, image=image)
+def chapter_parent(token: str, chapter_number: int, chapter_name: str) -> ChapterParent:
+    return ChapterParent(token=token, number=chapter_number, name=chapter_name)
 
 
-def checkpoint_factory(chapter: Chapter, checkpoint_number: int, name: str) -> Checkpoint:
+def chapter(parent: ChapterParent, side_token: str, side_label: str) -> Chapter:
+    token = f'{parent.token}-{side_token}'
+    path = PurePosixPath(parent.token, side_token)
+    return Chapter(token=token, side=side_label, relative_path=str(path), chapter_parent=parent)
+
+
+def checkpoint(chapter: Chapter, checkpoint_number: int, name: str) -> Checkpoint:
     token = chapter.token + '-' + str(checkpoint_number)
-    image = str(PurePosixPath('meta', 'checkpoints', token).with_suffix('.png'))
-    return Checkpoint(token=token, number=checkpoint_number, name=name, chapter=chapter, image=image)
+    return Checkpoint(token=token, number=checkpoint_number, name=name, chapter=chapter)
 
 
-def room_factory(checkpoint: Checkpoint, code: str, nickname: str) -> Room:
-    image = str(PurePosixPath('meta', 'rooms', checkpoint.chapter.token + '-' + code).with_suffix('.png'))
-    return Room(code=code, nickname=nickname, image=image, checkpoint=checkpoint, chapter=checkpoint.chapter)
+def room(checkpoint: Checkpoint, code: str, nickname: str) -> Room:
+    return Room(code=code, nickname=nickname, checkpoint=checkpoint, chapter=checkpoint.chapter)

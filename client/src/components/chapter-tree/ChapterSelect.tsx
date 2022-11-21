@@ -11,7 +11,7 @@ interface Props {
 }
 
 export function ChapterSelect({chapters, onChapterSelect}: Props) {
-  const groupedChapters = List<Chapter>(chapters).groupBy(chapter => chapter.token['0']);
+  const groupedChapters = List<Chapter>(chapters).groupBy(chapter => chapter.group);
   return (
       <Card>
         <CardHeader title="Chapters" />

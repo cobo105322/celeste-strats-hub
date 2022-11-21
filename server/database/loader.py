@@ -6,8 +6,8 @@ from typing import List
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from .factory import chapter_factory, checkpoint_factory, room_factory
-from .tables import Category, Chapter, Checkpoint, Difficulty, Room, Strat
+from . import factory
+from .tables import Category, Chapter, Difficulty, Room, Strat
 
 
 def load_hardcoded(session: Session):
@@ -21,18 +21,25 @@ def load_chapter_tree(session: Session, file: PathLike):
     with open(file, mode='r') as f:
         chapter_tree = json.load(f)
 
-    for chapter_data in chapter_tree.values():
+    for chapter_data in chapter_tree['chapters']:
+        chapter_parent = factory.chapter_parent(chapter_data['id'], chapter_data.get('chapterNo'), chapter_data['name'])
+        session.add(chapter_parent)
         for side_data in chapter_data['sides']:
-            chapter = chapter_factory(chapter_data['chapter_no'], chapter_data['name'], side_data['name'])
+            chapter = factory.chapter(chapter_parent, side_data['id'], side_data['name'])
             session.add(chapter)
-            chapter_rooms_links = {}
+            checkpoint_by_room = {}
             for checkpoint_index, checkpoint_data in enumerate(side_data['checkpoints']):
-                checkpoint = checkpoint_factory(chapter, checkpoint_index + 1, checkpoint_data['name'])
+                checkpoint = factory.checkpoint(chapter, checkpoint_index + 1, checkpoint_data['name'])
                 session.add(checkpoint)
-                for room_data in checkpoint_data['rooms']:
-                    room = room_factory(checkpoint, room_data['debug_id'], room_data['name'])
-                    session.add(room)
-                    chapter_rooms_links[room.code] = (room, room_data.get('linked', []))
+                for room_code in checkpoint_data['roomOrder']:
+                    checkpoint_by_room[room_code] = checkpoint
+            chapter_rooms_links = {}
+            assert set(checkpoint_by_room.keys()) == set(side_data['rooms'].keys())
+            for room_code in checkpoint_by_room:
+                room_data = side_data['rooms'][room_code]
+                room = factory.room(checkpoint_by_room[room_code], room_code, room_data['name'])
+                session.add(room)
+                chapter_rooms_links[room.code] = (room, room_data.get('linked', []))
             for room, links in chapter_rooms_links.values():
                 room.connected_rooms = [chapter_rooms_links[room_code][0] for room_code in links]
 
@@ -43,7 +50,7 @@ def get_rooms_in_range(start_room: Room, start_detail: str, end_room: Room, end_
     return [start_room]
 
 
-def load_chapter_strats(session: Session, file: PathLike, chapter_number: int, side: str):
+def load_chapter_strats(session: Session, file: PathLike, chapter: Chapter):
     with open(file) as f:
         strat_list = json.load(f)
 
@@ -55,8 +62,7 @@ def load_chapter_strats(session: Session, file: PathLike, chapter_number: int, s
             return tuple(split)
         start_room_code, start_detail = split_safe(strat_data['start'])
         end_room_code, end_detail = split_safe(strat_data['end'])
-        select_chapter_rooms = select(Room).join(
-            Room.checkpoint).join(Checkpoint.chapter.and_(Chapter.number == chapter_number, Chapter.side == side))
+        select_chapter_rooms = select(Room).join(Room.chapter.and_(Chapter.id == chapter.id))
         start_room = session.scalar(select_chapter_rooms.where(Room.code == start_room_code))
         end_room = session.scalar(select_chapter_rooms.where(Room.code == end_room_code))
         strat = Strat(nickname=strat_data['name'],
@@ -67,7 +73,11 @@ def load_chapter_strats(session: Session, file: PathLike, chapter_number: int, s
         session.add(strat)
 
 
-def load_all_data(session: Session, data_root: Path):
+def load_all_data(session: Session, metadata_root: Path, speedrun_data_root: Path):
     load_hardcoded(session)
-    load_chapter_tree(session, data_root.joinpath('meta/chapter-tree.json'))
-    load_chapter_strats(session, data_root.joinpath('strats/1a/1a.json'), 1, 'A')
+    load_chapter_tree(session, metadata_root.joinpath('celeste.json'))
+    chapters = session.scalars(select(Chapter))
+    for chapter in chapters:
+        strats_file = speedrun_data_root.joinpath(chapter.relative_path, 'strats.json')
+        if strats_file.is_file():
+            load_chapter_strats(session, strats_file, chapter)

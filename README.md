@@ -2,10 +2,9 @@
 
 To get the assets for development:
 ```
-mkdir data
-cd data
+cd ..
 git clone git@github.com:celeste-library/celeste-metadata.git
 git clone git@github.com:celeste-library/celeste-speedrun-data.git
-cd ..
-ln -s data/celeste-metadata client/public/assets/
+cd celeste-strats-hub
+ln -s ../../../../celeste-metadata client/public/assets/metadata
 ```

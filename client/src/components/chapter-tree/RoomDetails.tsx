@@ -15,7 +15,7 @@ export function RoomDetails({chapter, room, onConnectedRoomSelected}: Props) {
         <Card>
           <CardHeader title="Room Details"></CardHeader>
           <CardContent>
-            <img className="room-thumbnail" src={'assets/' + room.image}></img>
+            <img className="room-thumbnail" src={room.image}></img>
           <div>
             <table>
               <tbody>
