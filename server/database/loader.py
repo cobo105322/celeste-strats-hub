@@ -7,13 +7,17 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from . import factory
-from .tables import Category, Chapter, Difficulty, Room, Strat
+from .tables import Chapter, Difficulty, FullGameCategory, LevelCategory, Room, Strat
 
 
-def load_hardcoded(session: Session):
-    for category in ['Any%', 'ARB', '100%', 'All Cassettes', 'All Hearts', 'All A Sides', 'All B Sides', 'All C Sides']:
-        session.add(Category(label=category))
-    for difficulty in ['Master', 'Very hard', 'Hard', 'Intermediate', 'Easy', 'Beginner']:
+def load_metadata(session: Session, file: PathLike):
+    with open(file, mode='r') as f:
+        metadata = json.load(f)
+    for token, name in metadata['level_categories'].items():
+        session.add(LevelCategory(token=token, name=name))
+    for token, name in metadata['full_game_categories'].items():
+        session.add(FullGameCategory(token=token, name=name))
+    for difficulty in metadata['difficulties']:
         session.add(Difficulty(label=difficulty))
 
 
@@ -54,6 +58,8 @@ def load_chapter_strats(session: Session, file: PathLike, chapter: Chapter):
     with open(file) as f:
         strat_list = json.load(f)
 
+    category_map = {category.token: category for category in session.scalars(select(LevelCategory))}
+
     for strat_data in strat_list:
         def split_safe(to_split):
             split = to_split.split(' ', 1)
@@ -62,19 +68,21 @@ def load_chapter_strats(session: Session, file: PathLike, chapter: Chapter):
             return tuple(split)
         start_room_code, start_detail = split_safe(strat_data['start'])
         end_room_code, end_detail = split_safe(strat_data['end'])
+        categories = [category_map[category] for category in strat_data['categories']]
         select_chapter_rooms = select(Room).join(Room.chapter.and_(Chapter.id == chapter.id))
         start_room = session.scalar(select_chapter_rooms.where(Room.code == start_room_code))
         end_room = session.scalar(select_chapter_rooms.where(Room.code == end_room_code))
         strat = Strat(nickname=strat_data['name'],
                       description=strat_data['description'],
                       notes=strat_data.get('notes'),
+                      categories=categories,
                       start_room=start_room, start_detail=start_detail, end_room=end_room, end_detail=end_detail)
         strat.rooms = get_rooms_in_range(start_room, start_detail, end_room, end_detail)
         session.add(strat)
 
 
 def load_all_data(session: Session, metadata_root: Path, speedrun_data_root: Path):
-    load_hardcoded(session)
+    load_metadata(session, speedrun_data_root.joinpath('metadata.json'))
     load_chapter_tree(session, metadata_root.joinpath('celeste.json'))
     chapters = session.scalars(select(Chapter))
     for chapter in chapters:

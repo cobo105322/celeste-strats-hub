@@ -102,6 +102,19 @@ paths:
                   $ref: '#/components/schemas/Room'
         '400':
           description: Invalid request
+  /categories:
+    get:
+      summary: List speedrun categories
+      operationId: get_categories
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Category'
   /strats:
     get:
       summary: List all known strats for the specified room
@@ -117,6 +130,12 @@ paths:
           in: query
           description: Debug code of the room
           required: true
+          schema:
+            type: string
+        - name: category
+          in: query
+          description: Speedrun category to filter strats by
+          required: false
           schema:
             type: string
       responses:
@@ -197,6 +216,20 @@ components:
       required:
         - code
         - connected
+    Category:
+      title: Speedrun Category
+      description: A category of speedrun
+      type: object
+      properties:
+        token:
+          type: string
+          description: Unique identifier for the category
+        name:
+          type: string
+          description: Category name
+      required:
+        - token
+        - name
     Strat:
       title: Strat
       description: A strategy for some portion of a speedrun
@@ -211,4 +244,11 @@ components:
         start:
           type: string
         end:
+          type: string
+    Filters:
+      title: Filters
+      description: Filters for narrowing down selections
+      type: object
+      properties:
+        category:
           type: string

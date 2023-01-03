@@ -1,12 +1,16 @@
 import {Breadcrumbs, Container, Link} from '@mui/material';
 import React, {useEffect, useState} from 'react';
-import {Chapter, Checkpoint, DefaultApi, DefaultApiInterface, Room} from '../../generated';
+import {Category, Chapter, Checkpoint, DefaultApi, DefaultApiInterface, Filters, Room} from '../../generated';
 import {ChapterSelect} from './ChapterSelect';
 import {CheckpointSelect} from './CheckpointSelect';
 import {RoomDetails} from './RoomDetails';
 import {RoomSelect} from './RoomSelect';
 
-export function ChapterTree() {
+interface Props {
+  filters?: Filters;
+}
+
+export function ChapterTree({filters}: Props) {
   const api: DefaultApiInterface = new DefaultApi();
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [checkpoints, setCheckpoints] = useState<Checkpoint[]>([]);
@@ -51,7 +55,8 @@ export function ChapterTree() {
   const getActivePanel = () => {
     if (selectedRoom) {
       return (
-          <RoomDetails chapter={selectedChapter?.token} room={selectedRoom} onConnectedRoomSelected={selectConnectedRoom}></RoomDetails>
+          <RoomDetails chapter={selectedChapter?.token} room={selectedRoom} filters={filters}
+                       onConnectedRoomSelected={selectConnectedRoom}></RoomDetails>
       );
     } else if (selectedCheckpoint) {
       return (

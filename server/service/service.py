@@ -40,7 +40,15 @@ def get_rooms(checkpoint):
         } for room in repository.get_rooms(session, checkpoint)]
 
 
-def get_strats(chapter, room):
+def get_categories():
+    with Session(engine) as session:
+        return [{
+            'token': category.token,
+            'name': category.name,
+        } for category in repository.get_level_categories(session)]
+
+
+def get_strats(chapter, room, **kwargs):
     with Session(engine) as session:
         return [{
             'name': strat.nickname,
@@ -48,4 +56,4 @@ def get_strats(chapter, room):
             'notes': strat.notes,
             'start': ' '.join((strat.start_room.code, strat.start_detail)),
             'end': ' '.join((strat.end_room.code, strat.end_detail)),
-        } for strat in repository.get_strats_for_room(session, chapter, room)]
+        } for strat in repository.get_strats_for_room(session, chapter, room, kwargs.get('category'))]

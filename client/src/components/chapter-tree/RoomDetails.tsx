@@ -1,15 +1,16 @@
 import {Card, CardContent, CardHeader, Link} from '@mui/material';
 import React, {Fragment} from 'react';
-import {Room} from '../../generated';
+import {Filters, Room} from '../../generated';
 import {Strats} from '../strats/Strats';
 
 interface Props {
   chapter?: string;
   room?: Room;
+  filters?: Filters;
   onConnectedRoomSelected: (roomCode: string) => void;
 }
 
-export function RoomDetails({chapter, room, onConnectedRoomSelected}: Props) {
+export function RoomDetails({chapter, room, filters, onConnectedRoomSelected}: Props) {
   return (
       room && <>
         <Card>
@@ -39,7 +40,7 @@ export function RoomDetails({chapter, room, onConnectedRoomSelected}: Props) {
           </div>
           </CardContent>
         </Card>
-        <Strats chapter={chapter} room={room.code}></Strats>
+        <Strats chapter={chapter} room={room.code} filters={filters}></Strats>
       </> || <></>
   );
 }

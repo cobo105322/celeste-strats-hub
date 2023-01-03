@@ -6,20 +6,19 @@ from sqlalchemy.orm import declarative_base, relationship
 Base = declarative_base()
 
 
-class Category(Base):
-    __tablename__ = 'category'
+class LevelCategory(Base):
+    __tablename__ = 'level_category'
     id = Column(Integer, primary_key=True)
-    label = Column(String)
+    token = Column(String, nullable=False, unique=True)
+    name = Column(String, nullable=False)
 
-# fullgame_categories:
-#   id
-#   name
-#   ???
-#
-# chapter_categories:
-#   id
-#   name varchar
-#   (any%, arb, h, c, hc, 100%)
+
+class FullGameCategory(Base):
+    __tablename__ = 'fullgame_category'
+    id = Column(Integer, primary_key=True)
+    token = Column(String, nullable=False, unique=True)
+    name = Column(String, nullable=False)
+    # chapter_parent: LevelCategory = relationship('LevelCategory')
 
 
 class Difficulty(Base):
@@ -112,7 +111,12 @@ class Strat(Base):
     start_room = relationship('Room', foreign_keys=start_room_id)
     end_room = relationship('Room', foreign_keys=end_room_id)
     rooms = relationship('Room', secondary=room_strats, back_populates='strats')
-    # categories
+    categories = relationship('LevelCategory', secondary='strat_categories')
+
+
+strat_categories = Table('strat_categories', Base.metadata,
+                         Column('strat_id', Integer, ForeignKey('strat.id'), primary_key=True),
+                         Column('level_category_id', Integer, ForeignKey('level_category.id'), primary_key=True))
 
 # Other tables???
 # routes:

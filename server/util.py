@@ -17,7 +17,10 @@ def initial_database_setup():
 
 
 if __name__ == '__main__':
-    Path('temp.db').unlink()
+    try:
+        Path('temp.db').unlink()
+    except FileNotFoundError:
+        pass
     initial_database_setup()
     print(service.get_chapters())
     print(service.get_checkpoints('city-a'))
